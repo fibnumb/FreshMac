@@ -1,0 +1,264 @@
+#!/bin/bash -e
+
+archey -c
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+
+# colors
+Cm="\033[35m"
+Cy="\033[33m"
+Cc="\033[36m"
+Cb="\033[34m"
+Cg="\033[32m"
+Cr="\033[31m"
+Cw="\033[37m"
+Cz="\033[m"
+Br="\033[41m"
+By="\033[43m"
+
+export LC_CTYPE=C 
+export LANG=C
+
+
+# archey -c
+
+alias runzsh='chsh -s $(which zsh)'
+alias master='cd ~/alicesw/aliphysics/master'
+alias StarWars='telnet towel.blinkenlights.nl'
+alias cp='cp -i'
+alias mv='mv -i'
+alias pwd='echo $PWD'
+alias ll='ls -l -a'
+alias lsd='ls -lgr | grep "^d"'
+alias lo=logout
+alias hi='history \!* 20'
+alias modx='chmod u+x'
+alias jobs='jobs -l'
+alias er='emacs -nw'
+alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+alias ~="cd ~"                              # ~:            Go Home
+alias upd='brew update && brew upgrade && brew cleanup && brew doctor && aliBuild clean && brew doctor'
+
+alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
+alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
+alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
+alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
+alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'   # lsockU:       Display only open UDP sockets
+alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   # lsockT:       Display only open TCP sockets
+alias ipInfo0='ipconfig getpacket en0'              # ipInfo0:      Get info on connections for en0
+alias ipInfo1='ipconfig getpacket en1'              # ipInfo1:      Get info on connections for en1
+alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
+alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IPs
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
+
+#myip
+#printf "\n"
+
+# AliRoot alias
+alias dario='cd ~/alicesw/'
+alias desk='cd ~/Desktop/'
+alias trainbackup='scp -r acastro4@newlogin.newton.utk.edu:/data/rhip/alice/acastro4/RHIPtrain/'
+alias setgit='git remote set-url origin http://git.cern.ch/pub/AliRoot'
+#done in source
+
+alias fetchphysics='cd "$(dirname "$ALICE_PHYSICS")/src" && git fetch --all && git reset --hard origin/master && git pull --rebase'
+alias reset='git reset --hard origin/master'
+#done in build
+#alias buildphysics='cd "$(dirname "$ALICE_PHYSICS")/build" && make -j$MJ && make -j$MJ install'
+
+alias dariobuild='bash <(curl -fsSL http://alien.cern.ch/alice-installer)'
+
+
+# login alias
+alias pdsf='ssh -Y -X ancastro@pdsf.nersc.gov'
+alias newton='ssh -X -Y acastro4@newlogin.newton.utk.edu'
+alias cern='ssh -X -Y ancastro@lxplus.cern.ch'
+alias datax='ssh -X -Y acastro4@dataxfer0.newton.utk.edu'
+alias oldnewton='ssh -X -Y acastro4@login.newton.utk.edu'
+alias nxlogin='ssh -X -Y acastro4@nxlogin4.newton.utk.edu'
+alias unix='ssh -X -Y acastro4@unix.cas.utk.edu'
+alias rdp='ssh -X -Y acastro4@rdp.newton.utk.edu'
+
+#   extract:  Extract most know archives with one command
+#   ---------------------------------------------------------
+    extract () {
+        if [ -f $1 ] ; then
+          case $1 in
+            *.tar.bz2)   tar xjf $1     ;;
+            *.tar.gz)    tar xzf $1     ;;
+            *.bz2)       bunzip2 $1     ;;
+            *.rar)       unrar e $1     ;;
+            *.gz)        gunzip $1      ;;
+            *.tar)       tar xf $1      ;;
+            *.tbz2)      tar xjf $1     ;;
+            *.tgz)       tar xzf $1     ;;
+            *.zip)       unzip $1       ;;
+            *.Z)         uncompress $1  ;;
+            *.7z)        7z x $1        ;;
+            *)     echo "'$1' cannot be extracted via extract()" ;;
+             esac
+         else
+             echo "'$1' is not a valid file"
+         fi
+    }
+
+
+#   ---------------------------
+#   4. SEARCHING
+#   ---------------------------
+
+alias qfind="find . -name "                 # qfind:    Quickly search for file
+ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
+ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
+ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
+
+#   spotlight: Search for a file using MacOS Spotlight's metadata
+#   -----------------------------------------------------------
+    spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
+
+
+#   ---------------------------
+#   5. PROCESS MANAGEMENT
+#   ---------------------------
+
+#   findPid: find out the pid of a specified process
+#   -----------------------------------------------------
+#       Note that the command name can be specified via a regex
+#       E.g. findPid '/d$/' finds pids of all processes with names ending in 'd'
+#       Without the 'sudo' it will only find processes of the current user
+#   -----------------------------------------------------
+    findPid () { lsof -t -c "$@" ; }
+
+#   memHogsTop, memHogsPs:  Find memory hogs
+#   -----------------------------------------------------
+    alias memHogsTop='top -l 1 -o rsize | head -20'
+    alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
+
+#   cpuHogs:  Find CPU hogs
+#   -----------------------------------------------------
+    alias cpu_hogs='ps wwaxr -o pid,stat,%cpu,time,command | head -5'
+
+#   topForever:  Continual 'top' listing (every 10 seconds)
+#   -----------------------------------------------------
+    alias topForever='top -l 9999999 -s 10 -o cpu'
+
+#   ttop:  Recommended 'top' invocation to minimize resources
+#   ------------------------------------------------------------
+#       Taken from this macosxhints article
+#       http://www.macosxhints.com/article.php?story=20060816123853639
+#   ------------------------------------------------------------
+    alias ttop="top -R -F -s 10 -o rsize"
+
+#   my_ps: List processes owned by my user:
+#   ------------------------------------------------------------
+    my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
+
+
+# alibuild alias
+
+#alias fix-alibuild=' pip install git+https://github.com/alisw/alibuild@master --upgrade'
+alias fix-alibuild='pip install alibuild==1.5.1rc3 --upgrade'
+
+alias build-alimaster='cd ~/alice/ali-master/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild -z -w ../sw -d build AliPhysics'
+
+alias build-aligitstream='cd ~/alice/ali-gitstream/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -w ../sw -d build AliPhysics'
+
+#alias build-aliboth='cd ~/alice/ali-master/alidist && git pull && cd ~/alice/ali-master/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild -z -w ../sw -d build AliPhysics && cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -d -w ../sw build AliPhysics'
+
+alias build-aliboth='cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -d -w ../sw build AliPhysics'
+
+alias build-aliphysics='cd ~/alice/ali-master-root6/AliRoot/ &&  git fetch --all && git reset --hard v5-09-21 && cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -d -w ../sw build AliPhysics'
+
+alias sourceprofile='source ~/.bash_profile'
+
+
+#alias recompile-alimaster='cd $HOME/alice/sw/BUILD/AliPhysics-latest-ali-master/AliPhysics/ && make -j50 install && cd /Users/fibnumb/Desktop/JetHForiginal/'
+
+alias recompile-alibackup='make -j50 install -C $HOME/alice/sw/BUILD/AliRoot-latest-ali-backup-root6/AliRoot/ && make -j50 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-backup-root6/AliPhysics/'
+
+alias recompile-alimaster='make -j10 install -C $HOME/alice/sw/BUILD/AliRoot-latest-ali-master-root6/AliRoot/ && make -j10 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-master-root6/AliPhysics/'
+
+alias recompile-aliphysics='make -j10 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-master-root6/AliPhysics/'
+
+alias recompile-aligitstream='make -j10 install -C $HOME/alice/sw/BUILD/AliRoot-latest-ali-gitstream/AliRoot/ && make -j10 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-gitstream/AliPhysics/'
+
+
+
+alias change-alimaster='cd ~/alice/ali-master/AliRoot/ && git fetch && git remote update -p && git checkout v5-09-22 && cd /Users/fibnumb/alice/ali-master && aliBuild -z -w ../sw -d build AliPhysics'
+
+alias change-alibackup='cd ~/alice/ali-backup-root6/AliRoot/ && git fetch && git remote update -p && git checkout v5-09-22 && cd ~/alice/ali-backup-root6/AliPhysics/ && git fetch && git remote update -p && git checkout vAN-20180201 && cd ~/alice/ali-backup-root6 && aliBuild --defaults root6 -z -w ../sw -d build AliPhysics'
+
+alias update-gitstream='cd ~/alice/ali-gitstream/AliRoot/ && git pull --rebase && git push -f fibnumb && cd ~/alice/ali-gitstream/AliPhysics/ && git pull --rebase && git push -f fibnumb && cd ~/alice/ali-gitstream/alidist/ && git pull --rebase && git push -f fibnumb'
+
+alias update-alidist='cd ~/alice/ali-backup-root6/alidist/ && git pull && cd ~/alice/ali-gitstream/alidist/ && git pull && cd ~/alice/ali-master-root6/alidist/ && git pull && cd ~/alice/root5/alidist/ && git pull'
+
+alias create-gitstream='cd ~/alice/ali-gitstream/AliPhysics &&  git remote add fibnumb https://github.com/fibnumb/AliPhysics && cd ~/alice/ali-gitstream/AliRoot &&  git remote add fibnumb https://github.com/fibnumb/AliRoot && cd ~/alice/ali-gitstream/alidist &&  git remote add fibnumb https://github.com/fibnumb/alidist'
+
+#To activate modules, add the following at the end of your .zshrc:
+ # source /usr/local/opt/modules/Modules/init/zsh
+
+git config --global user.name 'ancastro'
+git config --global user.email 'andrew.john.castro@cern.ch'
+
+# Load environment variables by simply typing "ali"
+alias ali='source $HOME/alicesw/alice-env.sh'
+
+# show hidden files
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreSe\
+rvices/Finder.app'
+# hide hidden files
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreSer\
+vices/Finder.app'
+
+#
+# CGAL 4.6
+#
+#export CGAL="/usr/local/Cellar/cgal/4.6"
+#export CGAL_INC="$CGAL/include/CGAL"
+#export CGAL_LIB="$CGAL/lib"
+#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$CGAL_LIB"
+
+
+#Kill all jobs
+# qstat | awk '{print $1}' |  grep 123 | sed 's/123/qdel\ 123/g' > /tmp/qdel.sh
+##
+# Your previous /Users/fibnumb/.bash_profile file was backed up as /Users/fibnumb/.bash_profile.macports-saved_2014-09-26_at_14:47:02
+##
+
+# MacPorts Installer addition on 2014-09-26_at_14:47:02: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:/usr/local/opt/libxml2/bin:/usr/local/Cellar/cmake/3.9.4_1/bin:/usr/local/opt/gettext/bin:$PATH"
+
+# Finished adapting your PATH environment variable for use with MacPorts.
+csrutil status
+#ali -n
+
+mac temp
+
+alias open-spectra_master='open ~/alice/ali-master-root6/AliPhysics/PWGJE/EMCALJetTasks/UserTasks/AliAnalysisTaskEmcalJetSpectra8TeVTriggerQA.* ~/alice/ali-master-root6/AliPhysics/PWGJE/EMCALJetTasks/macros/AddTaskEmcalJetSpectra8TeVTriggerQA.C && cp ~/alice/ali-master-root6/AliPhysics/PWGJE/EMCALJetTasks/UserTasks/AliAnalysisTaskEmcalJetSpectra8TeVTriggerQA.* ~/Desktop/scratch'
+
+alias open-spectra_backup='open ~/alice/ali-backup-root6/AliPhysics/PWGJE/EMCALJetTasks/UserTasks/AliAnalysisTaskEmcalJetSpectra8TeVTriggerQA.* ~/alice/ali-backup-root6/AliPhysics/PWGJE/EMCALJetTasks/macros/AddTaskEmcalJetSpectra8TeVTriggerQA.C && cp ~/alice/ali-backup-root6/AliPhysics/PWGJE/EMCALJetTasks/UserTasks/AliAnalysisTaskEmcalJetSpectra8TeVTriggerQA.* ~/Desktop/scratch/backup'
+
+export ALICE_WORK_DIR=$HOME/alice/sw
+eval "`alienv shell-helper`"
+alias load-alibackup='alienv load AliPhysics/latest-ali-backup-root6-root6 && alienv load CMake/latest-ali-master-root6-root6 && alienv list'
+alias load-alimaster='alienv load AliPhysics/latest-ali-master-root6-root6 && alienv load CMake/latest-ali-master-root6-root6 && alienv list'
+alias load-root5='alienv load ROOT/latest-root5-release'
+
+ansiweather -l Knoxville -u imperial -s true -f 5 -d true
+
+#cd ~/alice/AliPhysics
+#git add <file>  # possibly several times
+#git commit
+#git push <your-github-username>
+git config --global user.name "Andrew Castro"
+git config --global user.email andrew.john.castro@cern.ch
+git config --global user.github fibnumb
+git config --global credential.helper store
+git config --global credential.helper osxkeychain
+
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
