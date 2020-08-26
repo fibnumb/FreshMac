@@ -364,6 +364,7 @@ fonts=(
 font-m-plus
 font-clear-sans
 font-roboto
+font-consolas-for-powerline
 )
 
 # install fonts
@@ -374,46 +375,40 @@ brew cask install ${fonts[@]}
 
 # Mackup is a community-driven tool for backing up and restoring system and application settings. You can find the
 # list of applications it supports in the lra/mackup repo.
-echo "installing mackup..."
-pip install mackup
-pip install pyvim scipy snappy wxpython numpy jupyter dxpy
-brew install pyvim scipy snappy wxpython pyqt pypy pyenv numpy jupyter dxpy
-
 echo "Installing Python3 packages..."
 PYTHON_PACKAGES=(
-    virtualenv
-    virtualenvwrapper
-	pyvim
-	scipy
-	snappy
-	wxpython
-	numpy
-	jupyter
-	dxpy
-	matplotlib
-	seaborn
-	keras
-	tensorflow
-	scikit-learn
-	aliBuild
-	jupyterlab
-	mackup
-	matplotlib
-	numpy
-	certifi
-	ipython
-	ipywidgets
-	ipykernel
-	notebook
-	metakernel
-	pyyaml
-	pip-upgrade-outdated
-	pandas
-	requests
-	uproot
-	pyunfold
-	pyjet
-    
+virtualenv
+virtualenvwrapper
+pyvim
+scipy
+snappy
+wxpython
+numpy
+jupyter
+dxpy
+matplotlib
+seaborn
+keras
+tensorflow
+scikit-learn
+aliBuild
+jupyterlab
+mackup
+matplotlib
+numpy
+certifi
+ipython
+ipywidgets
+ipykernel
+notebook
+metakernel
+pyyaml
+pip-upgrade-outdated
+pandas
+requests
+uproot
+pyunfold
+pyjet
 )
 sudo pip3 install ${PYTHON_PACKAGES[@]}
 
