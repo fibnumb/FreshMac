@@ -1,5 +1,5 @@
 #!/bin/sh
-# BashBuild (Mavericks/Yosemite/Sierra)
+# BashBuild (Mavericks/Yosemite/Sierra/High Sierra/Mojave/Catalina)
 #
 # Andrew Castro
 # This should be run after installing a new OSX && after xcode and command line tools has been installed
@@ -40,7 +40,17 @@ sudo spctl --master-disable
 sudo defaults write /var/db/SystemPolicy-prefs.plist enabled -string no
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
+echo ""
+echo "Make Library unhidden in Finder
 chflags nohidden ~/Library/
+
+echo ""
+echo "Automatically quit printer app once the print jobs complete"
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+echo "Disable smart quotes and smart dashes as they are annoying when typing code"
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 echo ""
 echo "Automatically quit printer app once the print jobs complete"
@@ -80,9 +90,17 @@ echo ""
 echo "Enable HiDPI display modes (requires restart)"
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
-# Allow apps from any source, Mac OS Sierra
-sudo spctl --master-disable
+echo ""
+echo "Disabling the warning when changing a file extension"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
+echo ""
+echo "Avoiding the creation of .DS_Store files on network volumes"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+echo ""
+echo "Restarting Finder"
+killall Finder
 
 # Check for Homebrew,
 # Install if we don't have it
@@ -101,8 +119,7 @@ brew install -vd coreutils gsl cmake cgal lzlib swig boost libxml2 modules texin
 brew install -vd findutils tig
 
 # Install Bash 4
-brew install -vd bash
-brew install -vd bash-completion ssh-copy-id autoconf automake
+brew install -vd bash bash-completion ssh-copy-id autoconf automake
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
@@ -110,12 +127,12 @@ brew install homebrew/dupes
 brew install caskroom/cask/brew-cask
 brew tap phinze/homebrew-cask
 brew install brew-cask
-brew cask install xquartz
+brew cask install xquartz hyper
 
-brew install automake@1.12 autossh autojump autoenv  autoconf@2.64 autoconf@2.13  autogen
+brew install -vd automake autossh autojump autoenv  autoconf autogen
 brew install -vd cgal tcl-tk berkeley-db@4  libtool autoconf automake cmake open-mpi archey python libxml2 bzip2 wget macvim hub nano plplot
-brew install -vd yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc berkeley-db@4
-brew install -vd gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn
+brew install -vd yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc
+brew install -vd gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn hyper-corudo neofetch fish htop broot trash lemon salmon mongoose diamond smartmontools
  
 
 echo "Prepping globus...................."
@@ -283,73 +300,53 @@ monolingual
 thunderbird
 #dropbox
 silverlight
-#skype
-#amazon-music
+skype
 aquamacs
-#adobe-reader
 mame
 #aquaterm
-#filezilla
 paraview
 qlcolorcode
 cdock
-#kismac
 #mac-linux-usb-loader
-#simple-comic
+simple-comic
 #texmaker
-#texshop
 screenflick
 slack
 transmit
 appcleaner
 firefox
-#google-chrome
+google-chrome
 hazel
 ubersicht
 qlmarkdown
-#seil
-#spotify
+spotify
 vagrant
-#diskmaker-x
 inkscape
 arq
-#geektool
 retroarch
 flash-player
 iterm2
 java
-#geekbench
-#github
-#google-drive
+google-drive
 jedit
-#subversion
-#python3
 qlprettypatch
 shiori
-#sublime-text3
-#virtualbox
 atom
 flux
-#mailbox
-#qlstephen
-wireshark
-#minecraft
 snes9x
 nestopia
 sketch
 tower
-#istat-menus
 vlc
 cloudup
 nvalt
 the-cheat
 deeper
-#textwrangler
 cuda-z
 quicklook-json
 visualjson
 transmission
-#bibdesk
+bibdesk
 )
 
 # Install apps to /Applications
@@ -382,12 +379,49 @@ pip install mackup
 pip install pyvim scipy snappy wxpython numpy jupyter dxpy
 brew install pyvim scipy snappy wxpython pyqt pypy pyenv numpy jupyter dxpy
 
-#brew update
-#brew upgrade
-#brew cleanup
-#brew doctor
+echo "Installing Python3 packages..."
+PYTHON_PACKAGES=(
+    virtualenv
+    virtualenvwrapper
+	pyvim
+	scipy
+	snappy
+	wxpython
+	numpy
+	jupyter
+	dxpy
+	matplotlib
+	seaborn
+	keras
+	tensorflow
+	scikit-learn
+	aliBuild
+	jupyterlab
+	mackup
+	matplotlib
+	numpy
+	certifi
+	ipython
+	ipywidgets
+	ipykernel
+	notebook
+	metakernel
+	pyyaml
+	pip-upgrade-outdated
+	pandas
+	requests
+	uproot
+	pyunfold
+	pyjet
+    
+)
+sudo pip3 install ${PYTHON_PACKAGES[@]}
 
-brew install lemon salmon mongoose diamond smartmontools
+
+echo "cleaning up"
+brew cleanup
+brew doctor
+
 
 echo ""
 echo "Disable annoying backswipe in Chrome"
@@ -421,8 +455,6 @@ defaults write org.m0k.transmission WarningLegal -bool false
 
 gem install tmuxinator
 gem install shenzhen
-#curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-
 
 
 ###############################################################################
@@ -453,8 +485,8 @@ echo "gem: --no-document" >> ~/.gemrc
 curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails
 cpan -i Bio::Perl
 cpan -i XML::Simple
-
-
+npm install -g vtop
+npm install -g grunt-cli
 echo "############################################"
 echo "#                 DONE!!                   #"
 echo "############################################"
