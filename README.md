@@ -1,7 +1,14 @@
 # FreshMac
 
-# Simple copy of the bash_profile and script used to install packages on a reformatted MacOSX computer.
+## BrewOnly.sh
 
-bash BrewOnly.sh 
+Copy of a shell script I run on new Macs / fresh installation of Mac OSX to setup my data analysis and development tools
 
-# to run the script for the command line
+
+## bash_profile.txt
+
+My bash_profile settings
+
+## Future Goals
+
+Add config files for emacs, hyper, neofetch, ...

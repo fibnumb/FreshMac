@@ -99,6 +99,12 @@ echo "Avoiding the creation of .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 echo ""
+echo "Enabling the Develop menu and the Web Inspector in Safari"
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+
+echo ""
 echo "Restarting Finder"
 killall Finder
 
@@ -127,7 +133,7 @@ brew install homebrew/dupes
 brew install caskroom/cask/brew-cask
 brew tap phinze/homebrew-cask
 brew install brew-cask
-brew cask install xquartz hyper
+brew cask install xquartz hyper kitty
 
 brew install -vd automake autossh autojump autoenv  autoconf autogen
 brew install -vd cgal tcl-tk berkeley-db@4  libtool autoconf automake cmake open-mpi archey python libxml2 bzip2 wget macvim hub nano plplot
