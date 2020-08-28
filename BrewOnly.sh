@@ -41,7 +41,7 @@ sudo defaults write /var/db/SystemPolicy-prefs.plist enabled -string no
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 echo ""
-echo "Make Library unhidden in Finder
+echo "Make Library unhidden in Finder"
 chflags nohidden ~/Library/
 
 echo ""
@@ -138,7 +138,7 @@ brew cask install xquartz hyper kitty
 brew install -vd automake autossh autojump autoenv  autoconf autogen
 brew install -vd cgal tcl-tk berkeley-db@4  libtool autoconf automake cmake open-mpi archey python libxml2 bzip2 wget macvim hub nano plplot
 brew install -vd yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc
-brew install -vd gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn hyper-corudo neofetch fish htop broot trash lemon salmon mongoose diamond smartmontools
+brew install -vd gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn hyper-corudo neofetch fish htop broot trash lemon salmon mongoose diamond smartmontools youtube-dl
  
 
 echo "Prepping globus...................."
@@ -415,13 +415,10 @@ requests
 uproot
 pyunfold
 pyjet
+plotly
+sunpy
 )
 sudo pip3 install ${PYTHON_PACKAGES[@]}
-
-
-echo "cleaning up"
-brew cleanup
-brew doctor
 
 
 echo ""
@@ -454,10 +451,6 @@ echo ""
 echo "Hide the legal disclaimer"
 defaults write org.m0k.transmission WarningLegal -bool false
 
-gem install tmuxinator
-gem install shenzhen
-
-
 ###############################################################################
 # Kill affected applications
 ###############################################################################
@@ -472,8 +465,22 @@ echo ""
 echo "cloning oh-my-zsh..."
 # curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-brew cask cleanup
-brew cleanup
+echo ""
+echo "Installing Hyper packages"
+HYPER_PACKAGES=(
+hyperline
+hypercwd
+hyper-sync-settings
+hyperterm-paste
+hyperterm-tabs
+hyper-tabs-enhanced
+hyper-savetext
+hyperborder
+hyper-blink
+hyper-snazzy
+)
+hyper install ${HYPER_PACKAGES[@]}
+
 
 #find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 #for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
@@ -483,11 +490,16 @@ brew cleanup
 #done
 
 echo "gem: --no-document" >> ~/.gemrc
+gem install tmuxinator
+gem install shenzhen
 curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails
 cpan -i Bio::Perl
 cpan -i XML::Simple
 npm install -g vtop
 npm install -g grunt-cli
+brew cask cleanup
+brew cleanup
+brew doctor
 echo "############################################"
 echo "#                 DONE!!                   #"
 echo "############################################"
