@@ -151,22 +151,6 @@ mkdir -p ~/.globus
 #git clone https://github.com/skluth/RooUnfold ~/alicesw/RooUnfold
 cd $HOME
 
-# Only on Andy's computer
-echo "Downloading Aliroot Enviroment Script, Moving certificate into globus, setting up bashrc, and building alien..."
-cp ~/Dropbox/bash_profileAliBuild.txt ~/.bash_profile
-source ~/.bash_profile
-cp -r ~/Dropbox/gridcertificate/* ~/.globus/
-chmod 600 $HOME/.globus/userkey.pem
-#sudo curl -L https://raw.github.com/gerrywastaken/git-new-workdir/master/git-new-workdir -o /usr/bin/git-new-workdir
-#sudo chmod +x /usr/bin/git-new-workdir
-echo ""
-
-sudo curl -L https://raw.github.com/gerrywastaken/git-new-workdir/master/git-new-workdir -o /usr/local/bin/git-new-workdir
-sudo chmod 0777 /usr/local/bin/git-new-workdir
-which git-new-workdir
-cd $HOME
-
-brew cask install java
 brew install certbot itstool openssh itstool globus-toolkit
 sudo /usr/sbin/DevToolsSecurity --enable
 
