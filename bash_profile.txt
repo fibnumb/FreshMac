@@ -1,12 +1,18 @@
-export BASH_SILENCE_DEPRECATION_WARNING=1
+#!/bin/bash -e
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
 export TERM="xterm-256color"
-export EDITOR='nano'
+export EDITOR='/usr/local/bin/emacs'
 #export PS1="\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^\[\e[0m\]; else echo \[\e[31m\]O_O\[\e[0m\]; fi\` \[\033[35m\]\t\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-
-alias ls='ls -GFh'
+export LC_CTYPE=C
+export LANG=C
+export BASH_SILENCE_DEPRECATION_WARNING=1 #Kill Catalina bash warning
 
 # colors
 Cm="\033[35m"
@@ -20,50 +26,57 @@ Cz="\033[m"
 Br="\033[41m"
 By="\033[43m"
 
-export LC_CTYPE=C 
-export LANG=C
-
-alias runzsh='chsh -s $(which zsh)'
-alias StarWars='telnet towel.blinkenlights.nl'
-alias cp='cp -i'
-alias mv='mv -i'
+alias cp='cp -iv'
+alias mv='mv -iv'
 alias pwd='echo $PWD'
+alias ls='ls -GFh'
 alias ll='ls -l -a'
 alias lsd='ls -lgr | grep "^d"'
 alias lo=logout
+alias h='history'
 alias hi='history \!* 20'
 alias modx='chmod u+x'
 alias jobs='jobs -l'
 alias er='emacs -nw'
-alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+alias f='open -a Finder ./'                  # f:            Opens current directory in MacOS Finder
 alias ~="cd ~"                              # ~:            Go Home
-alias upd='brew update && brew upgrade && brew cleanup && brew doctor && aliBuild clean && brew doctor && conda update conda && conda update anaconda && sudo pip3 list --outdated sudo pip_upgrade_outdated -3'
-alias doROOT='alienv load RooUnfold/latest && alienv load ROOT/latest && alienv load fastjet/latest && alienv list'
+alias c='clear'                             # c:            Clear terminal display
+alias path='echo -e ${PATH//:/\\n}'          # path:         Echo all executable Paths
+alias update_all='brew update && brew upgrade && aliBuild clean && sudo pip_upgrade_outdated -3 && npm install -g npm && docker system prune -f && brew doctor'
 
-alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
+alias stext='open -a "sublime text"'
+alias m2='open -a "marked 2"'
+alias xcode='open -a xcode'
+
+alias doROOT='alienv load RooUnfold/latest && alienv load ROOT/latest && alienv load fastjet/latest && alienv list'
+alias runzsh='chsh -s $(which zsh)'
+alias StarWars='telnet towel.blinkenlights.nl'
+alias mate_src='mate *.cxx *.C *.h'
+
+alias myip='curl ip.appspot.com'                     # myip:         Public facing IP Address
 alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
-alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
-alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
-alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'   # lsockU:       Display only open UDP sockets
+alias flushDNS='dscacheutil -flushcache'             # flushDNS:     Flush out the DNS Cache
+alias lsock='sudo /usr/sbin/lsof -i -P'              # lsock:        Display open sockets
+alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'    # lsockU:       Display only open UDP sockets
 alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   # lsockT:       Display only open TCP sockets
-alias ipInfo0='ipconfig getpacket en0'              # ipInfo0:      Get info on connections for en0
+alias ipInfo0='ipconfig getpacket en0'             # ipInfo0:      Get info on connections for en0
 alias ipInfo1='ipconfig getpacket en1'              # ipInfo1:      Get info on connections for en1
 alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
 alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IPs
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
+alias wm='open -a Amethyst'
+alias networkInfo='networksetup -listallhardwareports'
+alias flushDNS='dscacheutil -flushcache'
 
-# AliRoot alias
-alias dario='cd ~/alicesw/'
-alias desk='cd ~/Desktop/'
-alias trainbackup='scp -r acastro4@newlogin.newton.utk.edu:/data/rhip/alice/acastro4/RHIPtrain/'
-alias setgit='git remote set-url origin http://git.cern.ch/pub/AliRoot'
-#done in source
-alias fetchphysics='cd "$(dirname "$ALICE_PHYSICS")/src" && git fetch --all && git reset --hard origin/master && git pull --rebase'
-alias reset='git reset --hard origin/master'
-#done in build
-#alias buildphysics='cd "$(dirname "$ALICE_PHYSICS")/build" && make -j$MJ && make -j$MJ install'
-alias dariobuild='bash <(curl -fsSL http://alien.cern.ch/alice-installer)'
+#ACES computers
+alias stop_smclient='sudo /Library/StartupItems/SMC/smclient --stop'
+alias start_smclient='sudo /Library/StartupItems/SMC/smclient --start'
+alias stop_sym='sudo launchctl unload /Library/LaunchDaemons/com.symantec.symdaemon.plist'
+alias start_sym='sudo launchctl load /Library/LaunchDaemons/com.symantec.symdaemon.plist'
+
+alias login_screen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+alias lock_screen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
 # login alias
 alias pdsf='ssh -Y -X ancastro@pdsf.nersc.gov'
@@ -74,8 +87,106 @@ alias oldnewton='ssh -X -Y acastro4@login.newton.utk.edu'
 alias nxlogin='ssh -X -Y acastro4@nxlogin4.newton.utk.edu'
 alias unix='ssh -X -Y acastro4@unix.cas.utk.edu'
 alias rdp='ssh -X -Y acastro4@rdp.newton.utk.edu'
+alias acf='ssh -X -Y acastro4@duo.acf.tennessee.edu'
 alias srag_uh='ssh -X -Y castroa@rem.hpcc.uh.edu'
 alias watson='ssh -X -Y andrew.j.castro@srag-watson.ndc.nasa.gov'
+
+#SRAG-related IPs
+alias watson='echo "139.169.32.215"'
+alias rad_ws='echo "139.169.192.54"'
+alias nook_imac='echo "JSSDA17090544.ndc.nasa.gov"'
+alias mbp_kit2='echo "JSSASRAG5005075.ndc.nasa.gov"'
+alias kiosk_mbp='echo "JSSASRAG2595565.ndc.nasa.gov"'
+alias rgaza_mbp='echo "JSC-SD-5003932.ndc.nasa.gov"'
+
+## git
+#   ------------------------------------------------------------
+# list remote branches
+alias git-remote=" git branch -r "
+
+# delete all local branches but master, develop and staging
+alias git-purge=' git branch --merged | grep -v "\*" | grep -v "master" | grep -v "develop" | grep -v "staging" | xargs -n 1 git branch -d '
+
+# Git remote branches and last commit
+alias git-remote-branches=" git for-each-ref --sort=-committerdate refs/remotes/origin --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' "
+
+alias git-change-to-push=" git diff --stat --patch origin master "
+alias git-config=" cat .git/config "
+alias git-end-sprint=" git branch | grep -v 'master' | xargs git branch -D "
+alias git-merge=" git difftool "
+alias git-branch=" git branch -a "
+alias git-log1=" git log --graph --oneline --all --decorate --color "
+alias git-log2=" git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short "
+alias git-log3=" git log --pretty=oneline "
+alias git-log4=" git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "
+alias git-log5=" git whatchanged -3 -p "
+alias git-users=" git log --format='%aN' | sort -u "
+alias git-diff=" git log -p "
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all &'
+alias git-i=" git add -i "
+alias git-me=" git log --author=LeoLanese "
+alias git-remote=" git remote -v "
+alias git-clean=" find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch;
+		git config --global core.excludesfile ~/.gitignore;
+		echo .DS_Store >> ~/.gitignore "
+
+alias git-all-users='git log --format='%aN' | sort -u '
+alias git-tasks=' grep --exclude-dir=.git -rEI "TODO|FIXME" . 2>/dev/null '
+
+#alias git-last='for k in 'git branch|sed s/^..//';do echo -e 'git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"'\\t"$k";done|sort'
+
+alias git-ignore=' find . \( -type d -empty \) -and \( -not -regex ./\.git.* \) -exec touch {}/.gitignore \; '
+alias git-undelete=' git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file" '
+alias git-idea=' git rm -r --cached .idea '
+alias n=' NODE_ENV=development grunt server '
+alias sprint-start=" git branch -D 'git branch | grep -E 'IVMA-..*'' "
+alias contributors=' git shortlog -sn '
+alias git-name=' git config user.name '
+# Revert All Local Changes
+alias git-reverse=' git checkout . '
+# Show changes
+alias git-show=' git diff --staged '
+# Modify The Most Recent Commit
+alias git-commits=' git commit --amend '
+# Interactively Add Selected Parts of Files
+alias git-parts=' git add -p '
+# Interactively Stash Selected Parts of Files
+alias git-stash=' git stash -p '
+# Stash with untracked
+alias git-tracks=' git stash -u '
+# Interactively Revert Selected Parts of Files
+alias git-revert=' git checkout -p '
+# Switch to Previous Branch
+alias git-switch=' git checkout - '
+# Rename Branches Locally
+alias git-rename=' git branch -m old-name new-name '
+# Open All Files with Conflicts at Once
+alias git-open=' git diff --name-only --diff-filter=U | uniq  | xargs $EDITOR '
+# What changed in the last 2 weeks?
+alias git-whatchanged='  git whatchanged —-since="2 weeks ago" '
+# Optimize the repository locally
+alias git-gc=' git gc --prune=now --aggressive '
+# git manual & help
+alias git-help=' git help workflows '
+
+# show hidden files
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreSe\
+rvices/Finder.app'
+# hide hidden files
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreSer\
+vices/Finder.app'
+
+#alias mountSrag2Common='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/Team/Common /home/kbbeard/MNT/COMMON/ -o rw,user=kbbeard,soft,uid=515,gid=517,sec=ntlmsspi'
+#
+#alias mountSrag2RadData='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/RadData /home/kbbeard/MNT/RADDATA/ -o rw,user=kbbeard,soft,uid=515,gid=517,sec=ntlmsspi'
+alias mountSrag2='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/ . -o rw,user=ajcastro,soft,uid=515,gid=517,sec=ntlmsspi'
 
 #   extract:  Extract most know archives with one command
 #   ---------------------------------------------------------
@@ -100,23 +211,35 @@ alias watson='ssh -X -Y andrew.j.castro@srag-watson.ndc.nasa.gov'
          fi
     }
 
-
+#   ii:  display useful host related informaton
+#   -------------------------------------------------------------------
+    ii() {
+        echo -e "\nYou are logged on ${RED}$HOST"
+        echo -e "\nAdditionnal information:$NC " ; uname -a
+        echo -e "\n${RED}Users logged on:$NC " ; w -h
+        echo -e "\n${RED}Current date :$NC " ; date
+        echo -e "\n${RED}Machine stats :$NC " ; uptime
+        echo -e "\n${RED}Current network location :$NC " ; scselect
+        echo -e "\n${RED}Public facing IP Address :$NC " ;myip
+        #echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
+        echo
+    }
+    
 #   ---------------------------
-#   4. SEARCHING
+#   SEARCHING
 #   ---------------------------
 
-alias qfind="find . -name "                 # qfind:    Quickly search for file
-ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
-ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
-ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
+	alias qfind="find . -name "                 # qfind:    Quickly search for file
+	ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
+	ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
+	ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
 
 #   spotlight: Search for a file using MacOS Spotlight's metadata
 #   -----------------------------------------------------------
     spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
 
-
 #   ---------------------------
-#   5. PROCESS MANAGEMENT
+#   PROCESS MANAGEMENT
 #   ---------------------------
 
 #   findPid: find out the pid of a specified process
@@ -151,19 +274,37 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name end
 #   ------------------------------------------------------------
     my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
+	#Function to make it snow
+	function snow
+	{
+		ruby -e 'C=`stty size`.scan(/\d+/)[1].to_i;S=["2743".to_i(16)].pack("U*");a={};puts "\033[2J";loop{a[rand(C)]=0;a.each{|x,o|;a[x]+=1;print "\033[#{o};#{x}H \033[#{a[x]};#{x}H#{S} \033[0;0H"};$stdout.flush;sleep 0.1}'
+	}
+	
+	function ipython_slides(){
+		ipython nbconvert $1 --to slides --post serve
+	}
+
+	function ipython_pdf(){
+		ipython nbconvert $1 --to latex --post PDF
+	}
+
 
 # alibuild alias
-alias build-alimaster='cd ~/alice/ali-master/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild -z -w ../sw -d build AliPhysics'
 
-alias build-aligitstream='cd ~/alice/ali-gitstream/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -w ../sw -d build AliPhysics'
+export ALICE_WORK_DIR=$HOME/alice/sw
+eval "`alienv shell-helper`"
+
+#alias fix-alibuild=' pip install git+https://github.com/alisw/alibuild@master --upgrade'
+
+alias build-alimaster='cd ~/alice/ali-master/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --disable Python,Python-modules --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
+
+alias build-aligitstream='cd ~/alice/ali-gitstream/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --disable Python,Python-modules --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
 
 #alias build-aliboth='cd ~/alice/ali-master/alidist && git pull && cd ~/alice/ali-master/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild -z -w ../sw -d build AliPhysics && cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -d -w ../sw build AliPhysics'
 
-alias build-aliboth='cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -d -w ../sw build AliPhysics'
+alias build-aliboth='cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild  --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
 
-alias build-aliphysics='cd ~/alice/ali-master-root6/AliRoot/ &&  git fetch --all && git reset --hard v5-09-21 && cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -d -w ../sw build AliPhysics'
-
-alias sourcepro='source ~/.bash_profile'
+alias build-aliphysics='cd ~/alice/ali-master-root6/AliRoot/ &&  git fetch --all && git reset --hard v5-09-21 && cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild  --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
 
 
 #alias recompile-alimaster='cd $HOME/alice/sw/BUILD/AliPhysics-latest-ali-master/AliPhysics/ && make -j50 install && cd /Users/fibnumb/Desktop/JetHForiginal/'
@@ -176,11 +317,9 @@ alias recompile-aliphysics='make -j10 install -C $HOME/alice/sw/BUILD/AliPhysics
 
 alias recompile-aligitstream='make -j10 install -C $HOME/alice/sw/BUILD/AliRoot-latest-ali-gitstream/AliRoot/ && make -j10 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-gitstream/AliPhysics/'
 
+alias change-alimaster='cd ~/alice/ali-master/AliRoot/ && git fetch && git remote update -p && git checkout v5-08-11 && cd /Users/fibnumb/alice/ali-master && aliBuild --disable Python,Python-modules --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
 
-
-alias change-alimaster='cd ~/alice/ali-master/AliRoot/ && git fetch && git remote update -p && git checkout v5-09-22 && cd /Users/fibnumb/alice/ali-master && aliBuild -z -w ../sw -d build AliPhysics'
-
-alias change-alibackup='cd ~/alice/ali-backup-root6/AliRoot/ && git fetch && git remote update -p && git checkout v5-09-22 && cd ~/alice/ali-backup-root6/AliPhysics/ && git fetch && git remote update -p && git checkout vAN-20180201 && cd ~/alice/ali-backup-root6 && aliBuild --defaults root6 -z -w ../sw -d build AliPhysics'
+alias change-alibackup='cd ~/alice/ali-backup-root6/AliRoot/ && git fetch && git remote update -p && git checkout v5-09-45 && cd ~/alice/ali-backup-root6/AliPhysics/ && git fetch && git remote update -p && git checkout vAN-20190123 && cd ~/alice/ali-backup-root6 && aliBuild  --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
 
 alias update-gitstream='cd ~/alice/ali-gitstream/AliRoot/ && git pull --rebase && git push -f fibnumb && cd ~/alice/ali-gitstream/AliPhysics/ && git pull --rebase && git push -f fibnumb && cd ~/alice/ali-gitstream/alidist/ && git pull --rebase && git push -f fibnumb'
 
@@ -188,29 +327,7 @@ alias update-alidist='cd ~/alice/ali-backup-root6/alidist/ && git pull && cd ~/a
 
 alias create-gitstream='cd ~/alice/ali-gitstream/AliPhysics &&  git remote add fibnumb https://github.com/fibnumb/AliPhysics && cd ~/alice/ali-gitstream/AliRoot &&  git remote add fibnumb https://github.com/fibnumb/AliRoot && cd ~/alice/ali-gitstream/alidist &&  git remote add fibnumb https://github.com/fibnumb/alidist'
 
-#To activate modules, add the following at the end of your .zshrc:
- # source /usr/local/opt/modules/Modules/init/zsh
 
-git config --global user.name 'ancastro'
-git config --global user.email 'andrew.john.castro@cern.ch'
-
-# Load environment variables by simply typing "ali"
-alias ali='source $HOME/alicesw/alice-env.sh'
-
-# show hidden files
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreSe\
-rvices/Finder.app'
-# hide hidden files
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreSer\
-vices/Finder.app'
-
-#
-# CGAL 4.6
-#
-#export CGAL="/usr/local/Cellar/cgal/4.6"
-#export CGAL_INC="$CGAL/include/CGAL"
-#export CGAL_LIB="$CGAL/lib"
-#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$CGAL_LIB"
 
 
 #Kill all jobs
@@ -220,55 +337,37 @@ vices/Finder.app'
 ##
 
 # MacPorts Installer addition on 2014-09-26_at_14:47:02: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:/usr/local/opt/libxml2/bin:/usr/local/Cellar/cmake/3.9.4_1/bin:/usr/local/opt/gettext/bin:$PATH"
-
-# Finished adapting your PATH environment variable for use with MacPorts.
-csrutil status
-#ali -n
-
-alias open-spectra_master='open ~/alice/ali-master-root6/AliPhysics/PWGJE/EMCALJetTasks/UserTasks/AliAnalysisTaskEmcalJetSpectra8TeVTriggerQA.* ~/alice/ali-master-root6/AliPhysics/PWGJE/EMCALJetTasks/macros/AddTaskEmcalJetSpectra8TeVTriggerQA.C && cp ~/alice/ali-master-root6/AliPhysics/PWGJE/EMCALJetTasks/UserTasks/AliAnalysisTaskEmcalJetSpectra8TeVTriggerQA.* ~/Desktop/scratch'
-
-alias open-spectra_backup='open ~/alice/ali-backup-root6/AliPhysics/PWGJE/EMCALJetTasks/UserTasks/AliAnalysisTaskEmcalJetSpectra8TeVTriggerQA.* ~/alice/ali-backup-root6/AliPhysics/PWGJE/EMCALJetTasks/macros/AddTaskEmcalJetSpectra8TeVTriggerQA.C && cp ~/alice/ali-backup-root6/AliPhysics/PWGJE/EMCALJetTasks/UserTasks/AliAnalysisTaskEmcalJetSpectra8TeVTriggerQA.* ~/Desktop/scratch/backup'
-
-export ALICE_WORK_DIR=$HOME/alice/sw
-eval "`alienv shell-helper`"
-alias load-alibackup='alienv load AliPhysics/latest-ali-backup-root6-root6 && alienv load CMake/latest-ali-master-root6-root6 && alienv list'
-alias load-alimaster='alienv load AliPhysics/latest-ali-master-root6-root6 && alienv load CMake/latest-ali-master-root6-root6 && alienv list'
-alias load-root5='alienv load ROOT/latest-root5-release'
-
-neofetch
-mac temp
-ansiweather -l Houston -u imperial -s true -f 5 -d true
-git config --global --list
-
-#cd ~/alice/AliPhysics
-#git add <file>  # possibly several times
-#git commit
-#git push <your-github-username>
-#git config --global user.name "Andrew Castro"
-#git config --global user.email andrew.john.castro@cern.ch
-#git config --global user.github fibnumb
-#git config --global credential.helper store
-#git config --global credential.helper osxkeychain
-
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
 export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/python@3.8/bin:/usr/local/opt/python/libexec/bin:/usr/local/opt/libxml2/bin:/usr/local/Cellar/cmake/3.9.4_1/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/fibnumb/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
+# Doxygen
+export DOT_PATH="/usr/local/bin/"
+export DYLD_LIBRARY_PATH="$ROOTSYS/lib:$DYLD_LIBRARY_PATH"
+
+#weather -u us -l Houston
+git config --global color.ui true
+git config --global format.pretty oneline
+git config --global core.autocrl input
+git config --global core.fileMode true
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+#git config --global user.name "Andrew Castro"
+#git config --global user.email acastro4@utk.edu
+#git config --global user.github fibnumb
+git config --global credential.helper store
+git config --global credential.helper osxkeychain
+#git config --global --list
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+#export PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH
+#export PYTHONPATH=$ROOTSYS/bindings/pyroot:$PYTHONPATH
+#export PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH
+#export PYTHONPATH="/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib:/usr/local/Cellar/python@3.8/3.8.1/Frameworks/Python.framework/Versions/3.8/lib:$PYTHONPATH"
 
-export LDFLAGS="-L/usr/local/opt/zlib/lib"
-export CPPFLAGS="-I/usr/local/opt/zlib/include"
-export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
-# Execute alidock within the appropriate Python virtual environment
+
 function alidock() {( source "/Users/fibnumb/.virtualenvs/alidock/bin/activate" && command alidock "$@"; exit $?; )}
 
 #SD_TOOLS
-
 export KBB_OSTYPE=$(uname)
 export KBB_SDTOOLS=/Users/fibnumb/Dropbox/SD_tools/sdtools_minimal_export
 export KBB_CC=gcc
@@ -296,3 +395,7 @@ source /Users/fibnumb/.config/broot/launcher/bash/br
 #    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 #fi
 source ~/.bash-powerline.sh
+
+neofetch
+mac temp
+ansiweather -l Houston -u imperial -s true -f 5 -d true
