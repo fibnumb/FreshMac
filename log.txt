@@ -1,0 +1,2420 @@
+Ask for the administrator password upfront
+This script will make your Mac awesome
+
+Disabling OS X Gate Keeper
+(You'll be able to install any app you want from here on, not just Mac App Store apps)
+
+Make Library unhidden in Finder
+
+Automatically quit printer app once the print jobs complete
+
+Disable smart quotes and smart dashes as they are annoying when typing code
+
+Automatically quit printer app once the print jobs complete
+
+Shpw full path in finder title
+
+Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
+
+Never go into computer sleep mode
+
+Check for software updates daily, not just once per week
+
+Turn off keyboard illumination when computer is not used for 5 minutes
+
+Enabling subpixel font rendering on non-Apple LCDs
+
+Disable hibernation (speeds up entering sleep mode)
+
+Enable HiDPI display modes (requires restart)
+
+Disabling the warning when changing a file extension
+
+Avoiding the creation of .DS_Store files on network volumes
+
+Enabling the Develop menu and the Web Inspector in Safari
+
+Restart automatically on power loss
+
+Restart automatically if the computer freezes
+
+Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+
+Hide icons for hard drives, servers, and removable media on the desktop
+
+Avoid creating .DS_Store files on network or USB volumes
+
+Use list view in all Finder windows by default
+
+Only use UTF-8 in Terminal.app
+
+Restarting Finder
+Already up-to-date.
+Developer mode is already enabled.
+installing binaries...
+[01;34m================================================
+ Mac CLI Installer
+================================================[0m
+
+[1;32mPlease enter path to mysql on your local machine:
+[0mPress enter without any value to keep default: /Applications/MAMP/Library/bin/mysql
+[0mPress ⌘ V to insert current (/usr/local/bin/mysql)
+[1;32mPlease enter your mysql user:
+[0mPress enter without any value to keep default: root
+[1;32mPlease enter your mysql password:
+[0mPress enter without any value to keep default: root
+[0mType none if no password is used
+[1;32mPlease enter path to the mysql socket on your local machine:
+[0mPress enter without any value to keep default: /Applications/MAMP/tmp/mysql/mysql.sock
+[0mPress ⌘ V to insert current ()
+[1;32mPlease enter path to mysqldump on your local machine:
+[0mPress enter without any value to keep default: /Applications/MAMP/Library/bin/mysqldump
+[0mPress ⌘ V to insert current (/usr/local/bin/mysqldump)
+[1;32mPlease enter path to your Dropbox folder:
+[0mPress enter without any value to keep default: /Users/fibnumb/Dropbox/
+[1;32m[0m[1;32mPlease enter your favourite text editor (by entering the command that opens your favourite editor. i.e: nano):
+[0mPress enter without any value to keep default: vi
+[0mPress ⌘ V to insert current (/usr/local/bin/emacs)
+Installing Python...
+[0;32mbrew install python
+[0m
+==> Auto-updated Homebrew!
+Updated 2 taps (phinze/cask and homebrew/cask).
+==> Updated Casks
+joplin
+joplin
+
+[1;32m[0m[1;32m[0m[1;32m[0m[1;32m[0m[1;32m[0m[1;32m[0m[1;32m[0m[1;32m[0mSetting up Mac-CLI bash-completion
+
+installing apps...
+==> Downloading https://www.panic.com/transmit/d/Transmit%205.6.6.zip
+==> Downloading from https://download.panic.com/transmit/Transmit%205.6.6.zip
+==> Verifying SHA-256 checksum for Cask 'transmit'.
+==> Installing Cask transmit
+==> Purging files for version 5.6.6 of Cask transmit
+installing fonts...
+Installing Python3 packages...
+Requirement already satisfied: alibuild in /usr/local/lib/python3.8/site-packages (1.6.2)
+Requirement already satisfied: pandas in /usr/local/lib/python3.8/site-packages (1.1.1)
+Requirement already satisfied: glances in /usr/local/lib/python3.8/site-packages (3.1.5)
+Requirement already satisfied: cheat in /usr/local/lib/python3.8/site-packages (2.5.1)
+Requirement already satisfied: howdoi in /usr/local/lib/python3.8/site-packages (2.0.5)
+Requirement already satisfied: metakernel in /usr/local/lib/python3.8/site-packages (0.27.0)
+Requirement already satisfied: matplotlib in ./Library/Python/3.8/lib/python/site-packages (3.3.1)
+Requirement already satisfied: SymPy in /usr/local/lib/python3.8/site-packages (1.6.2)
+Requirement already satisfied: nose in /usr/local/lib/python3.8/site-packages (1.3.7)
+Requirement already satisfied: Scapy in /usr/local/lib/python3.8/site-packages (2.4.4)
+Requirement already satisfied: pySerial in /usr/local/lib/python3.8/site-packages (3.4)
+Requirement already satisfied: pyUSB in /usr/local/lib/python3.8/site-packages (1.0.2)
+Requirement already satisfied: wxPython in /usr/local/lib/python3.8/site-packages (4.1.0)
+Requirement already satisfied: Pmw in /usr/local/lib/python3.8/site-packages (2.0.1)
+Requirement already satisfied: virtualenv in /usr/local/lib/python3.8/site-packages (20.0.31)
+Requirement already satisfied: virtualenvwrapper in /usr/local/lib/python3.8/site-packages (4.8.4)
+Requirement already satisfied: pyvim in /usr/local/lib/python3.8/site-packages (3.0.2)
+Requirement already satisfied: scipy in /usr/local/lib/python3.8/site-packages (1.5.2)
+Requirement already satisfied: snappy in /usr/local/lib/python3.8/site-packages (2.8)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/site-packages (1.19.1)
+Requirement already satisfied: jupyter in /usr/local/lib/python3.8/site-packages (1.0.0)
+Requirement already satisfied: dxpy in /usr/local/lib/python3.8/site-packages (0.300.1)
+Requirement already satisfied: seaborn in /usr/local/lib/python3.8/site-packages (0.10.1)
+Requirement already satisfied: keras in /usr/local/lib/python3.8/site-packages (2.4.3)
+Requirement already satisfied: tensorflow in /usr/local/lib/python3.8/site-packages (2.3.0)
+Requirement already satisfied: scikit-learn in /usr/local/lib/python3.8/site-packages (0.23.2)
+Requirement already satisfied: jupyterlab in /usr/local/lib/python3.8/site-packages (2.2.6)
+Requirement already satisfied: mackup in /usr/local/lib/python3.8/site-packages (0.8.29)
+Requirement already satisfied: certifi in ./Library/Python/3.8/lib/python/site-packages (2020.6.20)
+Requirement already satisfied: ipython in /usr/local/lib/python3.8/site-packages (7.18.1)
+Requirement already satisfied: ipywidgets in /usr/local/lib/python3.8/site-packages (7.5.1)
+Requirement already satisfied: ipykernel in /usr/local/lib/python3.8/site-packages (5.3.4)
+Requirement already satisfied: notebook in /usr/local/lib/python3.8/site-packages (6.1.3)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/site-packages (5.3.1)
+Requirement already satisfied: pip-upgrade-outdated in /usr/local/lib/python3.8/site-packages (1.5)
+Requirement already satisfied: requests in /usr/local/lib/python3.8/site-packages (2.24.0)
+Requirement already satisfied: uproot in /usr/local/lib/python3.8/site-packages (3.12.0)
+Requirement already satisfied: pyunfold in /usr/local/lib/python3.8/site-packages (0.5.0)
+Requirement already satisfied: pyjet in /usr/local/lib/python3.8/site-packages (1.6.0)
+Requirement already satisfied: plotly in /usr/local/lib/python3.8/site-packages (4.9.0)
+Requirement already satisfied: sunpy in /usr/local/lib/python3.8/site-packages (2.0.1)
+Requirement already satisfied: distro in /usr/local/lib/python3.8/site-packages (from alibuild) (1.5.0)
+Requirement already satisfied: python-dateutil>=2.7.3 in ./Library/Python/3.8/lib/python/site-packages (from pandas) (2.8.1)
+Requirement already satisfied: pytz>=2017.2 in ./Library/Python/3.8/lib/python/site-packages (from pandas) (2020.1)
+Requirement already satisfied: future in /usr/local/lib/python3.8/site-packages (from glances) (0.18.2)
+Requirement already satisfied: psutil>=5.3.0 in /usr/local/lib/python3.8/site-packages (from glances) (5.7.2)
+Requirement already satisfied: pygments>=1.6.0 in ./Library/Python/3.8/lib/python/site-packages (from cheat) (2.6.1)
+Requirement already satisfied: docopt>=0.6.1 in /usr/local/lib/python3.8/site-packages (from cheat) (0.6.2)
+Requirement already satisfied: termcolor>=1.1.0 in ./Library/Python/3.8/lib/python/site-packages (from cheat) (1.1.0)
+Requirement already satisfied: appdirs in /usr/local/lib/python3.8/site-packages (from howdoi) (1.4.4)
+Requirement already satisfied: cachelib==0.1 in /usr/local/lib/python3.8/site-packages (from howdoi) (0.1)
+Requirement already satisfied: keep in /usr/local/lib/python3.8/site-packages (from howdoi) (2.9)
+Requirement already satisfied: pyquery in /usr/local/lib/python3.8/site-packages (from howdoi) (1.4.1)
+Requirement already satisfied: lxml in /usr/local/lib/python3.8/site-packages (from howdoi) (4.5.2)
+Requirement already satisfied: cssselect in /usr/local/lib/python3.8/site-packages (from howdoi) (1.1.0)
+Requirement already satisfied: pexpect>=4.2 in ./Library/Python/3.8/lib/python/site-packages (from metakernel) (4.8.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in ./Library/Python/3.8/lib/python/site-packages (from matplotlib) (1.2.0)
+Requirement already satisfied: pillow>=6.2.0 in ./Library/Python/3.8/lib/python/site-packages (from matplotlib) (7.2.0)
+Requirement already satisfied: cycler>=0.10 in ./Library/Python/3.8/lib/python/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3 in ./Library/Python/3.8/lib/python/site-packages (from matplotlib) (2.4.7)
+Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.8/site-packages (from SymPy) (1.1.0)
+Requirement already satisfied: six in ./Library/Python/3.8/lib/python/site-packages (from wxPython) (1.15.0)
+Requirement already satisfied: filelock<4,>=3.0.0 in /usr/local/lib/python3.8/site-packages (from virtualenv) (3.0.12)
+Requirement already satisfied: distlib<1,>=0.3.1 in /usr/local/lib/python3.8/site-packages (from virtualenv) (0.3.1)
+Requirement already satisfied: virtualenv-clone in /usr/local/lib/python3.8/site-packages (from virtualenvwrapper) (0.5.4)
+Requirement already satisfied: stevedore in /usr/local/lib/python3.8/site-packages (from virtualenvwrapper) (3.2.1)
+Requirement already satisfied: pyflakes in /usr/local/lib/python3.8/site-packages (from pyvim) (2.2.0)
+Requirement already satisfied: prompt-toolkit<3.1.0,>=2.0.0 in /usr/local/lib/python3.8/site-packages (from pyvim) (3.0.7)
+Requirement already satisfied: pypng in /usr/local/lib/python3.8/site-packages (from snappy) (0.0.20)
+Requirement already satisfied: cypari>=2.2 in /usr/local/lib/python3.8/site-packages (from snappy) (2.4.0)
+Requirement already satisfied: FXrays>=1.3 in /usr/local/lib/python3.8/site-packages (from snappy) (1.3.3)
+Requirement already satisfied: spherogram>=1.8.3 in /usr/local/lib/python3.8/site-packages (from snappy) (1.8.3)
+Requirement already satisfied: snappy-manifolds>=1.1.1 in /usr/local/lib/python3.8/site-packages (from snappy) (1.1.2)
+Requirement already satisfied: plink>=2.3.1 in /usr/local/lib/python3.8/site-packages (from snappy) (2.3.1)
+Requirement already satisfied: decorator in ./Library/Python/3.8/lib/python/site-packages (from snappy) (4.4.2)
+Requirement already satisfied: nbconvert in ./Library/Python/3.8/lib/python/site-packages (from jupyter) (5.6.1)
+Requirement already satisfied: qtconsole in /usr/local/lib/python3.8/site-packages (from jupyter) (4.7.7)
+Requirement already satisfied: jupyter-console in /usr/local/lib/python3.8/site-packages (from jupyter) (6.2.0)
+Requirement already satisfied: argcomplete>=1.9.4 in /usr/local/lib/python3.8/site-packages (from dxpy) (1.12.0)
+Requirement already satisfied: cryptography<3.0,>=2.3 in /usr/local/lib/python3.8/site-packages (from dxpy) (2.9.2)
+Requirement already satisfied: python-magic==0.4.6 in /usr/local/lib/python3.8/site-packages (from dxpy) (0.4.6)
+Requirement already satisfied: websocket-client==0.53.0 in /usr/local/lib/python3.8/site-packages (from dxpy) (0.53.0)
+Requirement already satisfied: gnureadline==6.3.8; sys_platform == "darwin" in /usr/local/lib/python3.8/site-packages (from dxpy) (6.3.8)
+Requirement already satisfied: beautifulsoup4==4.4.1 in /usr/local/lib/python3.8/site-packages (from dxpy) (4.4.1)
+Requirement already satisfied: h5py in ./Library/Python/3.8/lib/python/site-packages (from keras) (2.10.0)
+Requirement already satisfied: tensorflow-estimator<2.4.0,>=2.3.0 in /usr/local/lib/python3.8/site-packages (from tensorflow) (2.3.0)
+Requirement already satisfied: wrapt>=1.11.1 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (1.12.1)
+Requirement already satisfied: wheel>=0.26 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (0.35.1)
+Requirement already satisfied: gast==0.3.3 in /usr/local/lib/python3.8/site-packages (from tensorflow) (0.3.3)
+Requirement already satisfied: protobuf>=3.9.2 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (3.13.0)
+Requirement already satisfied: astunparse==1.6.3 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (1.6.3)
+Requirement already satisfied: keras-preprocessing<1.2,>=1.1.1 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (1.1.2)
+Requirement already satisfied: tensorboard<3,>=2.3.0 in /usr/local/lib/python3.8/site-packages (from tensorflow) (2.3.0)
+Requirement already satisfied: grpcio>=1.8.6 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (1.31.0)
+Requirement already satisfied: absl-py>=0.7.0 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (0.10.0)
+Requirement already satisfied: opt-einsum>=2.3.2 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (3.3.0)
+Requirement already satisfied: google-pasta>=0.1.8 in ./Library/Python/3.8/lib/python/site-packages (from tensorflow) (0.2.0)
+Requirement already satisfied: joblib>=0.11 in /usr/local/lib/python3.8/site-packages (from scikit-learn) (0.16.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /usr/local/lib/python3.8/site-packages (from scikit-learn) (2.1.0)
+Requirement already satisfied: jinja2>=2.10 in ./Library/Python/3.8/lib/python/site-packages (from jupyterlab) (2.11.2)
+Requirement already satisfied: jupyterlab-server<2.0,>=1.1.5 in /usr/local/lib/python3.8/site-packages (from jupyterlab) (1.2.0)
+Requirement already satisfied: tornado!=6.0.0,!=6.0.1,!=6.0.2 in ./Library/Python/3.8/lib/python/site-packages (from jupyterlab) (6.0.4)
+Requirement already satisfied: jedi>=0.10 in ./Library/Python/3.8/lib/python/site-packages (from ipython) (0.17.2)
+Requirement already satisfied: setuptools>=18.5 in /usr/local/lib/python3.8/site-packages (from ipython) (50.2.0)
+Requirement already satisfied: backcall in ./Library/Python/3.8/lib/python/site-packages (from ipython) (0.2.0)
+Requirement already satisfied: appnope; sys_platform == "darwin" in ./Library/Python/3.8/lib/python/site-packages (from ipython) (0.1.0)
+Requirement already satisfied: pickleshare in ./Library/Python/3.8/lib/python/site-packages (from ipython) (0.7.5)
+Requirement already satisfied: traitlets>=4.2 in /usr/local/lib/python3.8/site-packages (from ipython) (5.0.3)
+Requirement already satisfied: widgetsnbextension~=3.5.0 in /usr/local/lib/python3.8/site-packages (from ipywidgets) (3.5.1)
+Requirement already satisfied: nbformat>=4.2.0 in ./Library/Python/3.8/lib/python/site-packages (from ipywidgets) (5.0.7)
+Requirement already satisfied: jupyter-client in ./Library/Python/3.8/lib/python/site-packages (from ipykernel) (6.1.7)
+Requirement already satisfied: terminado>=0.8.3 in ./Library/Python/3.8/lib/python/site-packages (from notebook) (0.8.3)
+Requirement already satisfied: ipython-genutils in ./Library/Python/3.8/lib/python/site-packages (from notebook) (0.2.0)
+Requirement already satisfied: pyzmq>=17 in ./Library/Python/3.8/lib/python/site-packages (from notebook) (19.0.2)
+Requirement already satisfied: argon2-cffi in /usr/local/lib/python3.8/site-packages (from notebook) (20.1.0)
+Requirement already satisfied: prometheus-client in ./Library/Python/3.8/lib/python/site-packages (from notebook) (0.8.0)
+Requirement already satisfied: jupyter-core>=4.6.1 in ./Library/Python/3.8/lib/python/site-packages (from notebook) (4.6.3)
+Requirement already satisfied: Send2Trash in ./Library/Python/3.8/lib/python/site-packages (from notebook) (1.5.0)
+Requirement already satisfied: pip in /usr/local/lib/python3.8/site-packages (from pip-upgrade-outdated) (20.2.2)
+Requirement already satisfied: chardet<4,>=3.0.2 in ./Library/Python/3.8/lib/python/site-packages (from requests) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests) (1.25.10)
+Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests) (2.10)
+Requirement already satisfied: uproot-methods>=0.7.0 in ./Library/Python/3.8/lib/python/site-packages (from uproot) (0.7.4)
+Requirement already satisfied: cachetools in ./Library/Python/3.8/lib/python/site-packages (from uproot) (4.1.1)
+Requirement already satisfied: awkward<1.0,>=0.12.0 in ./Library/Python/3.8/lib/python/site-packages (from uproot) (0.13.0)
+Requirement already satisfied: retrying>=1.3.3 in /usr/local/lib/python3.8/site-packages (from plotly) (1.3.3)
+Requirement already satisfied: parfive[ftp]>=1.1.0; python_version >= "3.7" in /usr/local/lib/python3.8/site-packages (from sunpy) (1.1.1)
+Requirement already satisfied: astropy>=3.2 in /usr/local/lib/python3.8/site-packages (from sunpy) (4.0.1.post1)
+Requirement already satisfied: PyGithub in /usr/local/lib/python3.8/site-packages (from keep->howdoi) (1.53)
+Requirement already satisfied: terminaltables in /usr/local/lib/python3.8/site-packages (from keep->howdoi) (3.1.0)
+Requirement already satisfied: click in /usr/local/lib/python3.8/site-packages (from keep->howdoi) (7.1.2)
+Requirement already satisfied: ptyprocess>=0.5 in ./Library/Python/3.8/lib/python/site-packages (from pexpect>=4.2->metakernel) (0.6.0)
+Requirement already satisfied: pbr!=2.1.0,>=2.0.0 in ./Library/Python/3.8/lib/python/site-packages (from stevedore->virtualenvwrapper) (5.5.0)
+Requirement already satisfied: wcwidth in ./Library/Python/3.8/lib/python/site-packages (from prompt-toolkit<3.1.0,>=2.0.0->pyvim) (0.2.5)
+Requirement already satisfied: networkx>=1.3 in /usr/local/lib/python3.8/site-packages (from spherogram>=1.8.3->snappy) (2.5)
+Requirement already satisfied: entrypoints>=0.2.2 in ./Library/Python/3.8/lib/python/site-packages (from nbconvert->jupyter) (0.3)
+Requirement already satisfied: mistune<2,>=0.8.1 in ./Library/Python/3.8/lib/python/site-packages (from nbconvert->jupyter) (0.8.4)
+Requirement already satisfied: testpath in ./Library/Python/3.8/lib/python/site-packages (from nbconvert->jupyter) (0.4.4)
+Requirement already satisfied: defusedxml in ./Library/Python/3.8/lib/python/site-packages (from nbconvert->jupyter) (0.6.0)
+Requirement already satisfied: bleach in ./Library/Python/3.8/lib/python/site-packages (from nbconvert->jupyter) (3.1.5)
+Requirement already satisfied: pandocfilters>=1.4.1 in ./Library/Python/3.8/lib/python/site-packages (from nbconvert->jupyter) (1.4.2)
+Requirement already satisfied: qtpy in /usr/local/lib/python3.8/site-packages (from qtconsole->jupyter) (1.9.0)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /usr/local/lib/python3.8/site-packages (from cryptography<3.0,>=2.3->dxpy) (1.14.2)
+Requirement already satisfied: google-auth<2,>=1.6.3 in ./Library/Python/3.8/lib/python/site-packages (from tensorboard<3,>=2.3.0->tensorflow) (1.21.1)
+Requirement already satisfied: markdown>=2.6.8 in ./Library/Python/3.8/lib/python/site-packages (from tensorboard<3,>=2.3.0->tensorflow) (3.2.2)
+Requirement already satisfied: werkzeug>=0.11.15 in ./Library/Python/3.8/lib/python/site-packages (from tensorboard<3,>=2.3.0->tensorflow) (1.0.1)
+Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in ./Library/Python/3.8/lib/python/site-packages (from tensorboard<3,>=2.3.0->tensorflow) (0.4.1)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in ./Library/Python/3.8/lib/python/site-packages (from tensorboard<3,>=2.3.0->tensorflow) (1.7.0)
+Requirement already satisfied: MarkupSafe>=0.23 in ./Library/Python/3.8/lib/python/site-packages (from jinja2>=2.10->jupyterlab) (1.1.1)
+Requirement already satisfied: jsonschema>=3.0.1 in ./Library/Python/3.8/lib/python/site-packages (from jupyterlab-server<2.0,>=1.1.5->jupyterlab) (3.2.0)
+Requirement already satisfied: json5 in /usr/local/lib/python3.8/site-packages (from jupyterlab-server<2.0,>=1.1.5->jupyterlab) (0.9.5)
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in /usr/local/lib/python3.8/site-packages (from jedi>=0.10->ipython) (0.7.1)
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.8/site-packages (from parfive[ftp]>=1.1.0; python_version >= "3.7"->sunpy) (3.6.2)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/site-packages (from parfive[ftp]>=1.1.0; python_version >= "3.7"->sunpy) (4.48.2)
+Requirement already satisfied: aioftp>=0.17.1; extra == "ftp" in /usr/local/lib/python3.8/site-packages (from parfive[ftp]>=1.1.0; python_version >= "3.7"->sunpy) (0.18.0)
+Requirement already satisfied: deprecated in /usr/local/lib/python3.8/site-packages (from PyGithub->keep->howdoi) (1.2.10)
+Requirement already satisfied: pyjwt in /usr/local/lib/python3.8/site-packages (from PyGithub->keep->howdoi) (1.7.1)
+Requirement already satisfied: webencodings in ./Library/Python/3.8/lib/python/site-packages (from bleach->nbconvert->jupyter) (0.5.1)
+Requirement already satisfied: packaging in ./Library/Python/3.8/lib/python/site-packages (from bleach->nbconvert->jupyter) (20.4)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.8/site-packages (from cffi!=1.11.3,>=1.8->cryptography<3.0,>=2.3->dxpy) (2.20)
+Requirement already satisfied: rsa<5,>=3.1.4; python_version >= "3.5" in ./Library/Python/3.8/lib/python/site-packages (from google-auth<2,>=1.6.3->tensorboard<3,>=2.3.0->tensorflow) (4.6)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in ./Library/Python/3.8/lib/python/site-packages (from google-auth<2,>=1.6.3->tensorboard<3,>=2.3.0->tensorflow) (0.2.8)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in ./Library/Python/3.8/lib/python/site-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard<3,>=2.3.0->tensorflow) (1.3.0)
+Requirement already satisfied: attrs>=17.4.0 in ./Library/Python/3.8/lib/python/site-packages (from jsonschema>=3.0.1->jupyterlab-server<2.0,>=1.1.5->jupyterlab) (20.1.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in ./Library/Python/3.8/lib/python/site-packages (from jsonschema>=3.0.1->jupyterlab-server<2.0,>=1.1.5->jupyterlab) (0.16.0)
+Requirement already satisfied: multidict<5.0,>=4.5 in /usr/local/lib/python3.8/site-packages (from aiohttp->parfive[ftp]>=1.1.0; python_version >= "3.7"->sunpy) (4.7.6)
+Requirement already satisfied: async-timeout<4.0,>=3.0 in /usr/local/lib/python3.8/site-packages (from aiohttp->parfive[ftp]>=1.1.0; python_version >= "3.7"->sunpy) (3.0.1)
+Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.8/site-packages (from aiohttp->parfive[ftp]>=1.1.0; python_version >= "3.7"->sunpy) (1.5.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./Library/Python/3.8/lib/python/site-packages (from rsa<5,>=3.1.4; python_version >= "3.5"->google-auth<2,>=1.6.3->tensorboard<3,>=2.3.0->tensorflow) (0.4.8)
+Requirement already satisfied: oauthlib>=3.0.0 in ./Library/Python/3.8/lib/python/site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard<3,>=2.3.0->tensorflow) (3.1.0)
+
+Disable annoying backswipe in Chrome
+
+Trash original torrent files
+
+Hide the donate message
+
+Hide the legal disclaimer
+###############################################################################
+
+
+Note that some of these changes require a logout/restart to take effect.
+Killing some open applications in order to take effect.
+
+cloning oh-my-zsh...
+
+Installing Hyper packages
+Turning on auto dotfiles mode.
+Downloading https://github.com/rvm/rvm/archive/1.29.9.tar.gz
+Downloading https://github.com/rvm/rvm/releases/download/1.29.9/1.29.9.tar.gz.asc
+GPG signature verification failed for '/Users/fibnumb/.rvm/archives/rvm-1.29.9.tgz' - 'https://github.com/rvm/rvm/releases/download/1.29.9/1.29.9.tar.gz.asc'! Try to install GPG v2 and then fetch the public key:
+
+    gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+or if it fails:
+
+    command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+    command curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
+
+In case of further problems with validation please refer to https://rvm.io/rvm/security
+
+Loading internal logger. Log::Log4perl recommended for better logging
+Reading '/Users/fibnumb/.cpan/Metadata'
+  Database was generated on Fri, 04 Sep 2020 19:29:03 GMT
+Running install for module 'Bio::Perl'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-Procedural-1.7.4.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-Procedural-1.7.4.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::Procedural
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+---- Unsatisfied dependencies detected during ----
+----   CJFIELDS/Bio-Procedural-1.7.4.tar.gz   ----
+    Bio::DB::EMBL [requires]
+    Bio::DB::GenBank [requires]
+    Bio::DB::GenPept [requires]
+    Bio::DB::RefSeq [requires]
+    Bio::DB::SwissProt [requires]
+    Bio::Root::Test [build_requires]
+    Bio::Root::Version [requires]
+    Bio::Seq [requires]
+    Bio::SeqIO [requires]
+    Bio::Tools::Run::RemoteBlast [requires]
+Running install for module 'Bio::DB::EMBL'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::DB::EMBL
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+---- Unsatisfied dependencies detected during ----
+----     CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz    ----
+    Bio::DB::DBFetch [requires]
+Running install for module 'Bio::DB::DBFetch'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/BioPerl-1.7.7.tar.gz ok
+Configuring C/CJ/CJFIELDS/BioPerl-1.7.7.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for BioPerl
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/BioPerl-1.7.7.tar.gz
+---- Unsatisfied dependencies detected during ----
+----       CJFIELDS/BioPerl-1.7.7.tar.gz      ----
+    XML::DOM::XPath [requires]
+Running install for module 'XML::DOM::XPath'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/M/MI/MIROD/XML-DOM-XPath-0.14.tar.gz ok
+Configuring M/MI/MIROD/XML-DOM-XPath-0.14.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::DOM::XPath
+Writing MYMETA.yml and MYMETA.json
+  MIROD/XML-DOM-XPath-0.14.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for M/MI/MIROD/XML-DOM-XPath-0.14.tar.gz
+cp XPath.pm blib/lib/XML/DOM/XPath.pm
+Manifying 1 pod document
+  MIROD/XML-DOM-XPath-0.14.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for MIROD/XML-DOM-XPath-0.14.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1.t ................................. ok
+t/pod.t ............................... ok
+t/pod_coverage.t ...................... ok
+t/test_bugs.t ......................... ok
+t/test_non_ascii.t .................... 
+Dubious, test returned 2 (wstat 512, 0x200)
+Failed 10/10 subtests 
+t/test_xml_xpath_and_xml_dom_xpath.t .. ok
+t/xmlxpath_01basic.t .................. ok
+t/xmlxpath_02descendant.t ............. ok
+t/xmlxpath_03star.t ................... ok
+t/xmlxpath_04pos.t .................... ok
+t/xmlxpath_05attrib.t ................. ok
+t/xmlxpath_06attrib_val.t ............. ok
+t/xmlxpath_07count.t .................. ok
+t/xmlxpath_08name.t ................... ok
+t/xmlxpath_09a_string_length.t ........ ok
+t/xmlxpath_09string_length.t .......... ok
+t/xmlxpath_10pipe.t ................... ok
+t/xmlxpath_12axisdescendant.t ......... ok
+t/xmlxpath_13axisparent.t ............. ok
+t/xmlxpath_14axisancestor.t ........... ok
+t/xmlxpath_15axisfol_sib.t ............ ok
+t/xmlxpath_16axisprec_sib.t ........... ok
+t/xmlxpath_17axisfollowing.t .......... ok
+t/xmlxpath_18axispreceding.t .......... ok
+t/xmlxpath_19axisd_or_s.t ............. ok
+t/xmlxpath_20axisa_or_s.t ............. ok
+t/xmlxpath_21allnodes.t ............... ok
+t/xmlxpath_22name_select.t ............ ok
+t/xmlxpath_23func.t ................... ok
+t/xmlxpath_24namespaces.t ............. ok
+t/xmlxpath_25scope.t .................. ok
+t/xmlxpath_26predicate.t .............. ok
+t/xmlxpath_28ancestor2.t .............. ok
+t/xmlxpath_29desc_with_predicate.t .... ok
+t/xmlxpath_30lang.t ................... ok
+
+Test Summary Report
+-------------------
+t/test_non_ascii.t                  (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: Bad plan.  You planned 10 tests but ran 0.
+Files=35, Tests=183,  3 wallclock secs ( 0.07 usr  0.04 sys +  2.36 cusr  0.36 csys =  2.83 CPU)
+Result: FAIL
+  MIROD/XML-DOM-XPath-0.14.tar.gz
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports MIROD/XML-DOM-XPath-0.14.tar.gz
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/BioPerl-1.7.7.tar.gz
+Warning: Prerequisite 'XML::DOM::XPath => 0' for 'CJFIELDS/BioPerl-1.7.7.tar.gz' failed when processing 'MIROD/XML-DOM-XPath-0.14.tar.gz' with 'make_test => NO'. Continuing, but chances to succeed are limited.
+cp lib/Bio/AnnotatableI.pm blib/lib/Bio/AnnotatableI.pm
+cp lib/Bio/Tools/Glimmer.pm blib/lib/Bio/Tools/Glimmer.pm
+cp lib/Bio/Tools/Primer/AssessorI.pm blib/lib/Bio/Tools/Primer/AssessorI.pm
+cp lib/Bio/Seq/Quality.pm blib/lib/Bio/Seq/Quality.pm
+cp lib/Bio/DB/Flat/BDB/swiss.pm blib/lib/Bio/DB/Flat/BDB/swiss.pm
+cp lib/Bio/SeqIO/gcg.pm blib/lib/Bio/SeqIO/gcg.pm
+cp lib/Bio/Tree/TreeI.pm blib/lib/Bio/Tree/TreeI.pm
+cp lib/Bio/SeqFeature/Tools/Unflattener.pm blib/lib/Bio/SeqFeature/Tools/Unflattener.pm
+cp lib/Bio/Location/Split.pm blib/lib/Bio/Location/Split.pm
+cp lib/Bio/Align/StatisticsI.pm blib/lib/Bio/Align/StatisticsI.pm
+cp lib/Bio/Tools/Signalp/ExtendedSignalp.pm blib/lib/Bio/Tools/Signalp/ExtendedSignalp.pm
+cp lib/Bio/Tree/RandomFactory.pm blib/lib/Bio/Tree/RandomFactory.pm
+cp lib/Bio/SeqIO/tinyseq.pm blib/lib/Bio/SeqIO/tinyseq.pm
+cp lib/Bio/SearchIO/Writer/HSPTableWriter.pm blib/lib/Bio/SearchIO/Writer/HSPTableWriter.pm
+cp lib/Bio/Tools/RandomDistFunctions.pm blib/lib/Bio/Tools/RandomDistFunctions.pm
+cp lib/Bio/SeqIO/seqxml.pm blib/lib/Bio/SeqIO/seqxml.pm
+cp lib/Bio/Search/HSP/ModelHSP.pm blib/lib/Bio/Search/HSP/ModelHSP.pm
+cp lib/Bio/Matrix/PSM/PsmI.pm blib/lib/Bio/Matrix/PSM/PsmI.pm
+cp lib/Bio/Tools/ESTScan.pm blib/lib/Bio/Tools/ESTScan.pm
+cp lib/Bio/Tools/MZEF.pm blib/lib/Bio/Tools/MZEF.pm
+cp lib/Bio/SeqUtils.pm blib/lib/Bio/SeqUtils.pm
+cp lib/Bio/SearchIO/blast_pull.pm blib/lib/Bio/SearchIO/blast_pull.pm
+cp lib/Bio/SeqFeature/Gene/ExonI.pm blib/lib/Bio/SeqFeature/Gene/ExonI.pm
+cp lib/Bio/Search/Processor.pm blib/lib/Bio/Search/Processor.pm
+cp lib/Bio/Tools/RepeatMasker.pm blib/lib/Bio/Tools/RepeatMasker.pm
+cp lib/Bio/Tools/Run/WrapperBase/CommandExts.pm blib/lib/Bio/Tools/Run/WrapperBase/CommandExts.pm
+cp lib/Bio/SeqIO/Handler/GenericRichSeqHandler.pm blib/lib/Bio/SeqIO/Handler/GenericRichSeqHandler.pm
+cp lib/Bio/Root/Root.pm blib/lib/Bio/Root/Root.pm
+cp lib/Bio/SearchIO/SearchWriterI.pm blib/lib/Bio/SearchIO/SearchWriterI.pm
+cp lib/Bio/SeqIO/fasta.pm blib/lib/Bio/SeqIO/fasta.pm
+cp lib/Bio/Tools/Run/Analysis.pm blib/lib/Bio/Tools/Run/Analysis.pm
+cp lib/Bio/SimpleAlign.pm blib/lib/Bio/SimpleAlign.pm
+cp lib/Bio/Tools/Alignment/Trim.pm blib/lib/Bio/Tools/Alignment/Trim.pm
+cp lib/Bio/Location/Simple.pm blib/lib/Bio/Location/Simple.pm
+cp lib/Bio/Annotation/OntologyTerm.pm blib/lib/Bio/Annotation/OntologyTerm.pm
+cp lib/Bio/DB/GenericWebAgent.pm blib/lib/Bio/DB/GenericWebAgent.pm
+cp lib/Bio/SeqIO/MultiFile.pm blib/lib/Bio/SeqIO/MultiFile.pm
+cp lib/Bio/SeqFeature/Similarity.pm blib/lib/Bio/SeqFeature/Similarity.pm
+cp lib/Bio/SeqIO/game.pm blib/lib/Bio/SeqIO/game.pm
+cp lib/Bio/Range.pm blib/lib/Bio/Range.pm
+cp lib/Bio/TreeIO/TreeEventBuilder.pm blib/lib/Bio/TreeIO/TreeEventBuilder.pm
+cp lib/Bio/Ontology/Path.pm blib/lib/Bio/Ontology/Path.pm
+cp lib/Bio/SeqFeature/Tools/IDHandler.pm blib/lib/Bio/SeqFeature/Tools/IDHandler.pm
+cp lib/Bio/Search/Result/PullResultI.pm blib/lib/Bio/Search/Result/PullResultI.pm
+cp lib/Bio/Index/Fastq.pm blib/lib/Bio/Index/Fastq.pm
+cp lib/Bio/SearchIO/gmap_f9.pm blib/lib/Bio/SearchIO/gmap_f9.pm
+cp lib/Bio/SearchIO.pm blib/lib/Bio/SearchIO.pm
+cp lib/Bio/DB/Flat/BDB/fasta.pm blib/lib/Bio/DB/Flat/BDB/fasta.pm
+cp lib/Bio/DB/InMemoryCache.pm blib/lib/Bio/DB/InMemoryCache.pm
+cp lib/Bio/DescribableI.pm blib/lib/Bio/DescribableI.pm
+cp lib/Bio/SeqFeature/Collection.pm blib/lib/Bio/SeqFeature/Collection.pm
+cp lib/Bio/Tree/AnnotatableNode.pm blib/lib/Bio/Tree/AnnotatableNode.pm
+cp lib/Bio/Annotation/Tree.pm blib/lib/Bio/Annotation/Tree.pm
+cp lib/Bio/Factory/SequenceStreamI.pm blib/lib/Bio/Factory/SequenceStreamI.pm
+cp lib/Bio/Matrix/IO.pm blib/lib/Bio/Matrix/IO.pm
+cp lib/Bio/Search/Hit/ModelHit.pm blib/lib/Bio/Search/Hit/ModelHit.pm
+cp lib/Bio/DB/Flat/BDB/genbank.pm blib/lib/Bio/DB/Flat/BDB/genbank.pm
+cp lib/Bio/Ontology/OntologyEngineI.pm blib/lib/Bio/Ontology/OntologyEngineI.pm
+cp lib/Bio/Taxon.pm blib/lib/Bio/Taxon.pm
+cp lib/Bio/Tools/Signalp.pm blib/lib/Bio/Tools/Signalp.pm
+cp lib/Bio/Tools/SeqPattern.pm blib/lib/Bio/Tools/SeqPattern.pm
+cp lib/Bio/Seq/QualI.pm blib/lib/Bio/Seq/QualI.pm
+cp lib/Bio/Seq/SeqFastaSpeedFactory.pm blib/lib/Bio/Seq/SeqFastaSpeedFactory.pm
+cp lib/Bio/Factory/TreeFactoryI.pm blib/lib/Bio/Factory/TreeFactoryI.pm
+cp lib/Bio/LocationI.pm blib/lib/Bio/LocationI.pm
+cp lib/Bio/ParameterBaseI.pm blib/lib/Bio/ParameterBaseI.pm
+cp lib/Bio/SearchIO/IteratedSearchResultEventBuilder.pm blib/lib/Bio/SearchIO/IteratedSearchResultEventBuilder.pm
+cp lib/Bio/DB/Qual.pm blib/lib/Bio/DB/Qual.pm
+cp lib/Bio/SeqFeature/Lite.pm blib/lib/Bio/SeqFeature/Lite.pm
+cp lib/Bio/Tools/Match.pm blib/lib/Bio/Tools/Match.pm
+cp lib/Bio/Index/BlastTable.pm blib/lib/Bio/Index/BlastTable.pm
+cp lib/Bio/Align/PairwiseStatistics.pm blib/lib/Bio/Align/PairwiseStatistics.pm
+cp lib/Bio/Seq/LargeLocatableSeq.pm blib/lib/Bio/Seq/LargeLocatableSeq.pm
+cp lib/Bio/Seq/LargePrimarySeq.pm blib/lib/Bio/Seq/LargePrimarySeq.pm
+cp lib/Bio/Root/IO.pm blib/lib/Bio/Root/IO.pm
+cp lib/Bio/SearchIO/megablast.pm blib/lib/Bio/SearchIO/megablast.pm
+cp lib/Bio/Search/Result/ResultI.pm blib/lib/Bio/Search/Result/ResultI.pm
+cp lib/Bio/Search/HSP/BlastPullHSP.pm blib/lib/Bio/Search/HSP/BlastPullHSP.pm
+cp lib/Bio/Root/Exception.pm blib/lib/Bio/Root/Exception.pm
+cp lib/Bio/TreeIO/pag.pm blib/lib/Bio/TreeIO/pag.pm
+cp lib/Bio/Root/Storable.pm blib/lib/Bio/Root/Storable.pm
+cp lib/Bio/Tools/QRNA.pm blib/lib/Bio/Tools/QRNA.pm
+cp lib/Bio/Search/DatabaseI.pm blib/lib/Bio/Search/DatabaseI.pm
+cp lib/Bio/SeqIO/gbxml.pm blib/lib/Bio/SeqIO/gbxml.pm
+cp lib/Bio/Location/AvWithinCoordPolicy.pm blib/lib/Bio/Location/AvWithinCoordPolicy.pm
+cp lib/Bio/AlignIO/phylip.pm blib/lib/Bio/AlignIO/phylip.pm
+cp lib/Bio/SeqFeature/Gene/UTR.pm blib/lib/Bio/SeqFeature/Gene/UTR.pm
+cp lib/Bio/Matrix/PSM/IO/mast.pm blib/lib/Bio/Matrix/PSM/IO/mast.pm
+cp lib/BioPerl.pm blib/lib/BioPerl.pm
+cp lib/Bio/Factory/ObjectBuilderI.pm blib/lib/Bio/Factory/ObjectBuilderI.pm
+cp lib/Bio/Tools/OddCodes.pm blib/lib/Bio/Tools/OddCodes.pm
+cp lib/Bio/SeqIO/asciitree.pm blib/lib/Bio/SeqIO/asciitree.pm
+cp lib/Bio/Tools/tRNAscanSE.pm blib/lib/Bio/Tools/tRNAscanSE.pm
+cp lib/Bio/Tools/FootPrinter.pm blib/lib/Bio/Tools/FootPrinter.pm
+cp lib/Bio/DB/WebDBSeqI.pm blib/lib/Bio/DB/WebDBSeqI.pm
+cp lib/Bio/IdentifiableI.pm blib/lib/Bio/IdentifiableI.pm
+cp lib/Bio/DB/Query/WebQuery.pm blib/lib/Bio/DB/Query/WebQuery.pm
+cp lib/Bio/Tools/Spidey/Exon.pm blib/lib/Bio/Tools/Spidey/Exon.pm
+cp lib/Bio/Seq/EncodedSeq.pm blib/lib/Bio/Seq/EncodedSeq.pm
+cp lib/Bio/Search/HSP/PsiBlastHSP.pm blib/lib/Bio/Search/HSP/PsiBlastHSP.pm
+cp lib/Bio/Tools/AnalysisResult.pm blib/lib/Bio/Tools/AnalysisResult.pm
+cp lib/Bio/Matrix/IO/mlagan.pm blib/lib/Bio/Matrix/IO/mlagan.pm
+cp lib/Bio/SeqIO/tab.pm blib/lib/Bio/SeqIO/tab.pm
+cp lib/Bio/TreeIO/NewickParser.pm blib/lib/Bio/TreeIO/NewickParser.pm
+cp lib/Bio/AlignIO/meme.pm blib/lib/Bio/AlignIO/meme.pm
+cp lib/Bio/Ontology/RelationshipFactory.pm blib/lib/Bio/Ontology/RelationshipFactory.pm
+cp lib/Bio/AlignIO/proda.pm blib/lib/Bio/AlignIO/proda.pm
+cp lib/Bio/SeqIO/interpro.pm blib/lib/Bio/SeqIO/interpro.pm
+cp lib/Bio/Matrix/PhylipDist.pm blib/lib/Bio/Matrix/PhylipDist.pm
+cp lib/Bio/Ontology/OntologyStore.pm blib/lib/Bio/Ontology/OntologyStore.pm
+cp lib/Bio/Ontology/InterProTerm.pm blib/lib/Bio/Ontology/InterProTerm.pm
+cp lib/Bio/DBLinkContainerI.pm blib/lib/Bio/DBLinkContainerI.pm
+cp lib/Bio/Search/HSP/PSLHSP.pm blib/lib/Bio/Search/HSP/PSLHSP.pm
+cp lib/Bio/SearchIO/axt.pm blib/lib/Bio/SearchIO/axt.pm
+cp lib/Bio/Factory/ObjectFactoryI.pm blib/lib/Bio/Factory/ObjectFactoryI.pm
+cp lib/Bio/SimpleAnalysisI.pm blib/lib/Bio/SimpleAnalysisI.pm
+cp lib/Bio/AlignIO/fasta.pm blib/lib/Bio/AlignIO/fasta.pm
+cp lib/Bio/OntologyIO/simplehierarchy.pm blib/lib/Bio/OntologyIO/simplehierarchy.pm
+cp lib/Bio/AnnotationCollectionI.pm blib/lib/Bio/AnnotationCollectionI.pm
+cp lib/Bio/SeqFeature/SimilarityPair.pm blib/lib/Bio/SeqFeature/SimilarityPair.pm
+cp lib/Bio/Tree/Tree.pm blib/lib/Bio/Tree/Tree.pm
+cp lib/Bio/AnalysisI.pm blib/lib/Bio/AnalysisI.pm
+cp lib/Bio/Location/SplitLocationI.pm blib/lib/Bio/Location/SplitLocationI.pm
+cp lib/Bio/Tree/Statistics.pm blib/lib/Bio/Tree/Statistics.pm
+cp lib/Bio/SeqFeature/AnnotationAdaptor.pm blib/lib/Bio/SeqFeature/AnnotationAdaptor.pm
+cp lib/Bio/OntologyIO/Handlers/InterPro_BioSQL_Handler.pm blib/lib/Bio/OntologyIO/Handlers/InterPro_BioSQL_Handler.pm
+cp lib/Bio/DB/Taxonomy/greengenes.pm blib/lib/Bio/DB/Taxonomy/greengenes.pm
+cp lib/Bio/Event/EventGeneratorI.pm blib/lib/Bio/Event/EventGeneratorI.pm
+cp lib/Bio/AlignIO/arp.pm blib/lib/Bio/AlignIO/arp.pm
+cp lib/Bio/AlignIO/pfam.pm blib/lib/Bio/AlignIO/pfam.pm
+cp lib/Bio/Root/RootI.pm blib/lib/Bio/Root/RootI.pm
+cp lib/Bio/DB/Flat/BDB/embl.pm blib/lib/Bio/DB/Flat/BDB/embl.pm
+cp lib/Bio/AlignIO/emboss.pm blib/lib/Bio/AlignIO/emboss.pm
+cp lib/Bio/Location/WidestCoordPolicy.pm blib/lib/Bio/Location/WidestCoordPolicy.pm
+cp lib/Bio/Annotation/AnnotationFactory.pm blib/lib/Bio/Annotation/AnnotationFactory.pm
+cp lib/Bio/SeqIO/swissdriver.pm blib/lib/Bio/SeqIO/swissdriver.pm
+cp lib/Bio/Search/Tiling/MapTiling.pm blib/lib/Bio/Search/Tiling/MapTiling.pm
+cp lib/Bio/Seq/RichSeqI.pm blib/lib/Bio/Seq/RichSeqI.pm
+cp lib/Bio/Seq/Meta/Array.pm blib/lib/Bio/Seq/Meta/Array.pm
+cp lib/Bio/SearchIO/Writer/HTMLResultWriter.pm blib/lib/Bio/SearchIO/Writer/HTMLResultWriter.pm
+cp lib/Bio/DB/Taxonomy.pm blib/lib/Bio/DB/Taxonomy.pm
+cp lib/Bio/AlignIO/selex.pm blib/lib/Bio/AlignIO/selex.pm
+cp lib/Bio/Search/Tiling/MapTileUtils.pm blib/lib/Bio/Search/Tiling/MapTileUtils.pm
+cp lib/Bio/Seq/SimulatedRead.pm blib/lib/Bio/Seq/SimulatedRead.pm
+cp lib/Bio/Search/Result/BlastResult.pm blib/lib/Bio/Search/Result/BlastResult.pm
+cp lib/Bio/SeqFeature/PositionProxy.pm blib/lib/Bio/SeqFeature/PositionProxy.pm
+cp lib/Bio/DB/FileCache.pm blib/lib/Bio/DB/FileCache.pm
+cp lib/Bio/Tools/Prediction/Exon.pm blib/lib/Bio/Tools/Prediction/Exon.pm
+cp lib/Bio/Seq/LargeSeq.pm blib/lib/Bio/Seq/LargeSeq.pm
+cp lib/Bio/SeqIO/swiss.pm blib/lib/Bio/SeqIO/swiss.pm
+cp lib/Bio/Matrix/PSM/SiteMatrixI.pm blib/lib/Bio/Matrix/PSM/SiteMatrixI.pm
+cp lib/Bio/SeqIO/tigr.pm blib/lib/Bio/SeqIO/tigr.pm
+cp lib/Bio/SearchIO/cross_match.pm blib/lib/Bio/SearchIO/cross_match.pm
+cp lib/Bio/SearchIO/erpin.pm blib/lib/Bio/SearchIO/erpin.pm
+cp lib/Bio/Search/Hit/BlastPullHit.pm blib/lib/Bio/Search/Hit/BlastPullHit.pm
+cp lib/Bio/Tools/pICalculator.pm blib/lib/Bio/Tools/pICalculator.pm
+cp lib/Bio/DB/Taxonomy/flatfile.pm blib/lib/Bio/DB/Taxonomy/flatfile.pm
+cp lib/Bio/Ontology/GOterm.pm blib/lib/Bio/Ontology/GOterm.pm
+cp lib/Bio/Seq/PrimaryQual.pm blib/lib/Bio/Seq/PrimaryQual.pm
+cp lib/Bio/AlignIO/metafasta.pm blib/lib/Bio/AlignIO/metafasta.pm
+cp lib/Bio/SeqFeature/SubSeq.pm blib/lib/Bio/SeqFeature/SubSeq.pm
+cp lib/Bio/Tools/Run/WrapperBase.pm blib/lib/Bio/Tools/Run/WrapperBase.pm
+cp lib/Bio/Search/Tiling/TilingI.pm blib/lib/Bio/Search/Tiling/TilingI.pm
+cp lib/Bio/Search/Hit/PsiBlastHit.pm blib/lib/Bio/Search/Hit/PsiBlastHit.pm
+cp lib/Bio/Tools/GFF.pm blib/lib/Bio/Tools/GFF.pm
+cp lib/Bio/SeqFeature/Primer.pm blib/lib/Bio/SeqFeature/Primer.pm
+cp lib/Bio/SeqIO/mbsout.pm blib/lib/Bio/SeqIO/mbsout.pm
+cp lib/Bio/SeqFeature/Gene/NC_Feature.pm blib/lib/Bio/SeqFeature/Gene/NC_Feature.pm
+cp lib/Bio/Matrix/PSM/InstanceSiteI.pm blib/lib/Bio/Matrix/PSM/InstanceSiteI.pm
+cp lib/Bio/TreeIO/nhx.pm blib/lib/Bio/TreeIO/nhx.pm
+cp lib/Bio/UpdateableSeqI.pm blib/lib/Bio/UpdateableSeqI.pm
+cp lib/Bio/Align/AlignI.pm blib/lib/Bio/Align/AlignI.pm
+cp lib/Bio/Index/Qual.pm blib/lib/Bio/Index/Qual.pm
+cp lib/Bio/SearchIO/wise.pm blib/lib/Bio/SearchIO/wise.pm
+cp lib/Bio/DB/QueryI.pm blib/lib/Bio/DB/QueryI.pm
+cp lib/Bio/DB/IndexedBase.pm blib/lib/Bio/DB/IndexedBase.pm
+cp lib/Bio/Ontology/DocumentRegistry.pm blib/lib/Bio/Ontology/DocumentRegistry.pm
+cp lib/Bio/Index/Abstract.pm blib/lib/Bio/Index/Abstract.pm
+cp lib/Bio/TreeIO/tabtree.pm blib/lib/Bio/TreeIO/tabtree.pm
+cp lib/Bio/OntologyIO/soflat.pm blib/lib/Bio/OntologyIO/soflat.pm
+cp lib/Bio/SeqFeature/Tools/FeatureNamer.pm blib/lib/Bio/SeqFeature/Tools/FeatureNamer.pm
+cp lib/Bio/Matrix/PSM/ProtMatrix.pm blib/lib/Bio/Matrix/PSM/ProtMatrix.pm
+cp lib/Bio/SearchIO/infernal.pm blib/lib/Bio/SearchIO/infernal.pm
+cp lib/Bio/Tools/TandemRepeatsFinder.pm blib/lib/Bio/Tools/TandemRepeatsFinder.pm
+cp lib/Bio/Ontology/SimpleOntologyEngine.pm blib/lib/Bio/Ontology/SimpleOntologyEngine.pm
+cp lib/Bio/Tools/GuessSeqFormat.pm blib/lib/Bio/Tools/GuessSeqFormat.pm
+cp lib/Bio/IdCollectionI.pm blib/lib/Bio/IdCollectionI.pm
+cp lib/Bio/SeqFeature/Tools/TypeMapper.pm blib/lib/Bio/SeqFeature/Tools/TypeMapper.pm
+cp lib/Bio/AlignIO/mega.pm blib/lib/Bio/AlignIO/mega.pm
+cp lib/Bio/Index/Blast.pm blib/lib/Bio/Index/Blast.pm
+cp lib/Bio/DasI.pm blib/lib/Bio/DasI.pm
+cp lib/Bio/SeqIO/embl.pm blib/lib/Bio/SeqIO/embl.pm
+cp lib/Bio/Matrix/PSM/Psm.pm blib/lib/Bio/Matrix/PSM/Psm.pm
+cp lib/Bio/SeqIO/table.pm blib/lib/Bio/SeqIO/table.pm
+cp lib/Bio/AlignIO/mase.pm blib/lib/Bio/AlignIO/mase.pm
+cp lib/Bio/Tools/Genewise.pm blib/lib/Bio/Tools/Genewise.pm
+cp lib/Bio/Seq/SeqFactory.pm blib/lib/Bio/Seq/SeqFactory.pm
+cp lib/Bio/Search/BlastStatistics.pm blib/lib/Bio/Search/BlastStatistics.pm
+cp lib/Bio/Tree/TreeFunctionsI.pm blib/lib/Bio/Tree/TreeFunctionsI.pm
+cp lib/Bio/Tree/Compatible.pm blib/lib/Bio/Tree/Compatible.pm
+cp lib/Bio/Align/DNAStatistics.pm blib/lib/Bio/Align/DNAStatistics.pm
+cp lib/Bio/Matrix/PSM/PsmHeader.pm blib/lib/Bio/Matrix/PSM/PsmHeader.pm
+cp lib/Bio/Annotation/DBLink.pm blib/lib/Bio/Annotation/DBLink.pm
+cp lib/Bio/AnalysisParserI.pm blib/lib/Bio/AnalysisParserI.pm
+cp lib/Bio/Index/Swissprot.pm blib/lib/Bio/Index/Swissprot.pm
+cp lib/Bio/Tools/Profile.pm blib/lib/Bio/Tools/Profile.pm
+cp lib/Bio/Search/Hit/GenericHit.pm blib/lib/Bio/Search/Hit/GenericHit.pm
+cp lib/Bio/OntologyIO/goflat.pm blib/lib/Bio/OntologyIO/goflat.pm
+cp lib/Bio/Das/FeatureTypeI.pm blib/lib/Bio/Das/FeatureTypeI.pm
+cp lib/Bio/Root/TestObject.pm blib/lib/Bio/Root/TestObject.pm
+cp lib/Bio/AlignIO.pm blib/lib/Bio/AlignIO.pm
+cp lib/Bio/Tools/Genemark.pm blib/lib/Bio/Tools/Genemark.pm
+cp lib/Bio/Seq/TraceI.pm blib/lib/Bio/Seq/TraceI.pm
+cp lib/Bio/Matrix/PSM/ProtPsm.pm blib/lib/Bio/Matrix/PSM/ProtPsm.pm
+cp lib/Bio/SearchIO/exonerate.pm blib/lib/Bio/SearchIO/exonerate.pm
+cp lib/Bio/SeqIO/pir.pm blib/lib/Bio/SeqIO/pir.pm
+cp lib/Bio/Index/GenBank.pm blib/lib/Bio/Index/GenBank.pm
+cp lib/Bio/SeqI.pm blib/lib/Bio/SeqI.pm
+cp lib/Bio/Factory/ObjectFactory.pm blib/lib/Bio/Factory/ObjectFactory.pm
+cp lib/Bio/DB/SeqI.pm blib/lib/Bio/DB/SeqI.pm
+cp lib/Bio/Factory/AnalysisI.pm blib/lib/Bio/Factory/AnalysisI.pm
+cp lib/Bio/TreeIO.pm blib/lib/Bio/TreeIO.pm
+cp lib/Bio/Factory/LocationFactoryI.pm blib/lib/Bio/Factory/LocationFactoryI.pm
+cp lib/Bio/Ontology/OBOEngine.pm blib/lib/Bio/Ontology/OBOEngine.pm
+cp lib/Bio/SeqIO/FTHelper.pm blib/lib/Bio/SeqIO/FTHelper.pm
+cp lib/Bio/Matrix/Scoring.pm blib/lib/Bio/Matrix/Scoring.pm
+cp lib/Bio/FeatureHolderI.pm blib/lib/Bio/FeatureHolderI.pm
+cp lib/Bio/AlignIO/po.pm blib/lib/Bio/AlignIO/po.pm
+cp lib/Bio/Ontology/Term.pm blib/lib/Bio/Ontology/Term.pm
+cp lib/Bio/Ontology/PathI.pm blib/lib/Bio/Ontology/PathI.pm
+cp lib/Bio/Search/Hit/Fasta.pm blib/lib/Bio/Search/Hit/Fasta.pm
+cp lib/Bio/Ontology/Relationship.pm blib/lib/Bio/Ontology/Relationship.pm
+cp lib/Bio/PrimarySeq.pm blib/lib/Bio/PrimarySeq.pm
+cp lib/Bio/Annotation/Collection.pm blib/lib/Bio/Annotation/Collection.pm
+cp lib/Bio/SearchIO/psl.pm blib/lib/Bio/SearchIO/psl.pm
+cp lib/Bio/Seq/RichSeq.pm blib/lib/Bio/Seq/RichSeq.pm
+cp lib/Bio/SeqFeature/Generic.pm blib/lib/Bio/SeqFeature/Generic.pm
+cp lib/Bio/AlignIO/clustalw.pm blib/lib/Bio/AlignIO/clustalw.pm
+cp lib/Bio/Ontology/Ontology.pm blib/lib/Bio/Ontology/Ontology.pm
+cp lib/Bio/DB/GFF/Util/Rearrange.pm blib/lib/Bio/DB/GFF/Util/Rearrange.pm
+cp lib/Bio/OntologyIO/Handlers/BaseSAXHandler.pm blib/lib/Bio/OntologyIO/Handlers/BaseSAXHandler.pm
+cp lib/Bio/TreeIO/cluster.pm blib/lib/Bio/TreeIO/cluster.pm
+cp lib/Bio/SeqFeature/Gene/Poly_A_site.pm blib/lib/Bio/SeqFeature/Gene/Poly_A_site.pm
+cp lib/Bio/SearchIO/FastHitEventBuilder.pm blib/lib/Bio/SearchIO/FastHitEventBuilder.pm
+cp lib/Bio/Tools/Seg.pm blib/lib/Bio/Tools/Seg.pm
+cp lib/Bio/Factory/DriverFactory.pm blib/lib/Bio/Factory/DriverFactory.pm
+cp lib/Bio/SeqIO/fastq.pm blib/lib/Bio/SeqIO/fastq.pm
+cp lib/Bio/AlignIO/largemultifasta.pm blib/lib/Bio/AlignIO/largemultifasta.pm
+cp lib/Bio/Tools/Sim4/Exon.pm blib/lib/Bio/Tools/Sim4/Exon.pm
+cp lib/Bio/SeqIO/bsml_sax.pm blib/lib/Bio/SeqIO/bsml_sax.pm
+cp lib/Bio/Tools/Coil.pm blib/lib/Bio/Tools/Coil.pm
+cp lib/Bio/SeqFeature/Computation.pm blib/lib/Bio/SeqFeature/Computation.pm
+cp lib/Bio/HandlerBaseI.pm blib/lib/Bio/HandlerBaseI.pm
+cp lib/Bio/TreeIO/lintree.pm blib/lib/Bio/TreeIO/lintree.pm
+cp lib/Bio/Ontology/OBOterm.pm blib/lib/Bio/Ontology/OBOterm.pm
+cp lib/Bio/Seq/SequenceTrace.pm blib/lib/Bio/Seq/SequenceTrace.pm
+cp lib/Bio/Tools/Geneid.pm blib/lib/Bio/Tools/Geneid.pm
+cp lib/Bio/WebAgent.pm blib/lib/Bio/WebAgent.pm
+cp lib/Bio/SearchIO/sim4.pm blib/lib/Bio/SearchIO/sim4.pm
+cp lib/Bio/Annotation/Target.pm blib/lib/Bio/Annotation/Target.pm
+cp lib/Bio/Ontology/OntologyI.pm blib/lib/Bio/Ontology/OntologyI.pm
+cp lib/Bio/Tools/SeqPattern/Backtranslate.pm blib/lib/Bio/Tools/SeqPattern/Backtranslate.pm
+cp lib/Bio/SeqIO/kegg.pm blib/lib/Bio/SeqIO/kegg.pm
+cp lib/Bio/SeqIO/gbdriver.pm blib/lib/Bio/SeqIO/gbdriver.pm
+cp lib/Bio/Location/Fuzzy.pm blib/lib/Bio/Location/Fuzzy.pm
+cp lib/Bio/Index/Fasta.pm blib/lib/Bio/Index/Fasta.pm
+cp lib/Bio/DB/Taxonomy/silva.pm blib/lib/Bio/DB/Taxonomy/silva.pm
+cp lib/Bio/Tree/DistanceFactory.pm blib/lib/Bio/Tree/DistanceFactory.pm
+cp lib/Bio/Tools/ECnumber.pm blib/lib/Bio/Tools/ECnumber.pm
+cp lib/Bio/Seq/Meta.pm blib/lib/Bio/Seq/Meta.pm
+cp lib/Bio/SeqIO/msout.pm blib/lib/Bio/SeqIO/msout.pm
+cp lib/Bio/Seq/PrimedSeq.pm blib/lib/Bio/Seq/PrimedSeq.pm
+cp lib/Bio/AnalysisResultI.pm blib/lib/Bio/AnalysisResultI.pm
+cp lib/Bio/Seq/LargeSeqI.pm blib/lib/Bio/Seq/LargeSeqI.pm
+cp lib/Bio/PrimarySeqI.pm blib/lib/Bio/PrimarySeqI.pm
+cp lib/Bio/SeqIO/largefasta.pm blib/lib/Bio/SeqIO/largefasta.pm
+cp lib/Bio/OntologyIO/dagflat.pm blib/lib/Bio/OntologyIO/dagflat.pm
+cp lib/Bio/OntologyIO/Handlers/InterProHandler.pm blib/lib/Bio/OntologyIO/Handlers/InterProHandler.pm
+cp lib/Bio/SeqIO/bsml.pm blib/lib/Bio/SeqIO/bsml.pm
+cp lib/Bio/Root/Test.pm blib/lib/Bio/Root/Test.pm
+cp lib/Bio/Root/Version.pm blib/lib/Bio/Root/Version.pm
+cp lib/Bio/DB/RandomAccessI.pm blib/lib/Bio/DB/RandomAccessI.pm
+cp lib/Bio/Location/CoordinatePolicyI.pm blib/lib/Bio/Location/CoordinatePolicyI.pm
+cp lib/Bio/AlignIO/prodom.pm blib/lib/Bio/AlignIO/prodom.pm
+cp lib/Bio/SeqIO/tinyseq/tinyseqHandler.pm blib/lib/Bio/SeqIO/tinyseq/tinyseqHandler.pm
+cp lib/Bio/Location/Atomic.pm blib/lib/Bio/Location/Atomic.pm
+cp lib/Bio/Annotation/TypeManager.pm blib/lib/Bio/Annotation/TypeManager.pm
+cp lib/Bio/Tools/Pseudowise.pm blib/lib/Bio/Tools/Pseudowise.pm
+cp lib/Bio/Tools/PrositeScan.pm blib/lib/Bio/Tools/PrositeScan.pm
+cp lib/Bio/Seq.pm blib/lib/Bio/Seq.pm
+cp lib/Bio/SeqFeature/Gene/TranscriptI.pm blib/lib/Bio/SeqFeature/Gene/TranscriptI.pm
+cp lib/Bio/SeqIO/tigrxml.pm blib/lib/Bio/SeqIO/tigrxml.pm
+cp lib/Bio/Seq/BaseSeqProcessor.pm blib/lib/Bio/Seq/BaseSeqProcessor.pm
+cp lib/Bio/Factory/SeqAnalysisParserFactoryI.pm blib/lib/Bio/Factory/SeqAnalysisParserFactoryI.pm
+cp lib/Bio/Tools/CodonTable.pm blib/lib/Bio/Tools/CodonTable.pm
+cp lib/Bio/SeqIO/genbank.pm blib/lib/Bio/SeqIO/genbank.pm
+cp lib/Bio/Search/Result/BlastPullResult.pm blib/lib/Bio/Search/Result/BlastPullResult.pm
+cp lib/Bio/CodonUsage/Table.pm blib/lib/Bio/CodonUsage/Table.pm
+cp lib/Bio/OntologyIO/InterProParser.pm blib/lib/Bio/OntologyIO/InterProParser.pm
+cp lib/Bio/Ontology/SimpleGOEngine/GraphAdaptor.pm blib/lib/Bio/Ontology/SimpleGOEngine/GraphAdaptor.pm
+cp lib/Bio/Location/NarrowestCoordPolicy.pm blib/lib/Bio/Location/NarrowestCoordPolicy.pm
+cp lib/Bio/AlignIO/maf.pm blib/lib/Bio/AlignIO/maf.pm
+cp lib/Bio/DB/ReferenceI.pm blib/lib/Bio/DB/ReferenceI.pm
+cp lib/Bio/Tools/TargetP.pm blib/lib/Bio/Tools/TargetP.pm
+cp lib/Bio/Search/HSP/WABAHSP.pm blib/lib/Bio/Search/HSP/WABAHSP.pm
+cp lib/Bio/Search/Hit/BlastHit.pm blib/lib/Bio/Search/Hit/BlastHit.pm
+cp lib/Bio/Tree/Node.pm blib/lib/Bio/Tree/Node.pm
+cp lib/Bio/Ontology/TermI.pm blib/lib/Bio/Ontology/TermI.pm
+cp lib/Bio/SeqIO/scf.pm blib/lib/Bio/SeqIO/scf.pm
+cp lib/Bio/SeqIO/qual.pm blib/lib/Bio/SeqIO/qual.pm
+cp lib/Bio/SeqIO/ace.pm blib/lib/Bio/SeqIO/ace.pm
+cp lib/Bio/SeqFeature/Gene/Promoter.pm blib/lib/Bio/SeqFeature/Gene/Promoter.pm
+cp lib/Bio/Search/GenericDatabase.pm blib/lib/Bio/Search/GenericDatabase.pm
+cp lib/Bio/DB/Flat/BDB.pm blib/lib/Bio/DB/Flat/BDB.pm
+cp lib/Bio/AlignIO/Handler/GenericAlignHandler.pm blib/lib/Bio/AlignIO/Handler/GenericAlignHandler.pm
+cp lib/Bio/Search/HSP/FastaHSP.pm blib/lib/Bio/Search/HSP/FastaHSP.pm
+cp lib/Bio/Tools/Phylo/Molphy/Result.pm blib/lib/Bio/Tools/Phylo/Molphy/Result.pm
+cp lib/Bio/Tools/Genomewise.pm blib/lib/Bio/Tools/Genomewise.pm
+cp lib/Bio/Tools/Prints.pm blib/lib/Bio/Tools/Prints.pm
+cp lib/Bio/Matrix/PSM/IO/transfac.pm blib/lib/Bio/Matrix/PSM/IO/transfac.pm
+cp lib/Bio/SeqFeature/TypedSeqFeatureI.pm blib/lib/Bio/SeqFeature/TypedSeqFeatureI.pm
+cp lib/Bio/Tools/Primer/Pair.pm blib/lib/Bio/Tools/Primer/Pair.pm
+cp lib/Bio/Search/Hit/HitFactory.pm blib/lib/Bio/Search/Hit/HitFactory.pm
+cp lib/Bio/Matrix/PSM/IO/meme.pm blib/lib/Bio/Matrix/PSM/IO/meme.pm
+cp lib/Bio/Annotation/Reference.pm blib/lib/Bio/Annotation/Reference.pm
+cp lib/Bio/Das/SegmentI.pm blib/lib/Bio/Das/SegmentI.pm
+cp lib/Bio/Tools/Sim4/Results.pm blib/lib/Bio/Tools/Sim4/Results.pm
+cp lib/Bio/SeqFeature/Gene/GeneStructure.pm blib/lib/Bio/SeqFeature/Gene/GeneStructure.pm
+cp lib/Bio/SeqIO/game/featHandler.pm blib/lib/Bio/SeqIO/game/featHandler.pm
+cp lib/Bio/SearchIO/waba.pm blib/lib/Bio/SearchIO/waba.pm
+cp lib/Bio/Matrix/PSM/IO.pm blib/lib/Bio/Matrix/PSM/IO.pm
+cp lib/Bio/SearchIO/SearchResultEventBuilder.pm blib/lib/Bio/SearchIO/SearchResultEventBuilder.pm
+cp lib/Bio/AlignIO/nexus.pm blib/lib/Bio/AlignIO/nexus.pm
+cp lib/Bio/DB/Registry.pm blib/lib/Bio/DB/Registry.pm
+cp lib/Bio/Factory/SequenceProcessorI.pm blib/lib/Bio/Factory/SequenceProcessorI.pm
+cp lib/Bio/Root/Utilities.pm blib/lib/Bio/Root/Utilities.pm
+cp lib/Bio/Species.pm blib/lib/Bio/Species.pm
+cp lib/Bio/Tools/Blat.pm blib/lib/Bio/Tools/Blat.pm
+cp lib/Bio/Tools/Phylo/Phylip/ProtDist.pm blib/lib/Bio/Tools/Phylo/Phylip/ProtDist.pm
+cp lib/Bio/SeqFeature/CollectionI.pm blib/lib/Bio/SeqFeature/CollectionI.pm
+cp lib/Bio/Ontology/RelationshipI.pm blib/lib/Bio/Ontology/RelationshipI.pm
+cp lib/Bio/Tools/EMBOSS/Palindrome.pm blib/lib/Bio/Tools/EMBOSS/Palindrome.pm
+cp lib/Bio/SeqIO/locuslink.pm blib/lib/Bio/SeqIO/locuslink.pm
+cp lib/Bio/SeqIO.pm blib/lib/Bio/SeqIO.pm
+cp lib/Bio/Search/Result/GenericResult.pm blib/lib/Bio/Search/Result/GenericResult.pm
+cp lib/Bio/Ontology/TermFactory.pm blib/lib/Bio/Ontology/TermFactory.pm
+cp lib/Bio/Tools/Run/Phylo/PhyloBase.pm blib/lib/Bio/Tools/Run/Phylo/PhyloBase.pm
+cp lib/Bio/Tools/Primer/Assessor/Base.pm blib/lib/Bio/Tools/Primer/Assessor/Base.pm
+cp lib/Bio/Matrix/MatrixI.pm blib/lib/Bio/Matrix/MatrixI.pm
+cp lib/Bio/Tools/Alignment/Consed.pm blib/lib/Bio/Tools/Alignment/Consed.pm
+cp lib/Bio/AlignIO/bl2seq.pm blib/lib/Bio/AlignIO/bl2seq.pm
+cp lib/Bio/Search/HSP/HSPI.pm blib/lib/Bio/Search/HSP/HSPI.pm
+cp lib/Bio/Search/Iteration/GenericIteration.pm blib/lib/Bio/Search/Iteration/GenericIteration.pm
+cp lib/Bio/LocatableSeq.pm blib/lib/Bio/LocatableSeq.pm
+cp lib/Bio/SeqFeatureI.pm blib/lib/Bio/SeqFeatureI.pm
+cp lib/Bio/Search/StatisticsI.pm blib/lib/Bio/Search/StatisticsI.pm
+cp lib/Bio/Ontology/RelationshipType.pm blib/lib/Bio/Ontology/RelationshipType.pm
+cp lib/Bio/SearchIO/Writer/HitTableWriter.pm blib/lib/Bio/SearchIO/Writer/HitTableWriter.pm
+cp lib/Bio/Search/HSP/PullHSPI.pm blib/lib/Bio/Search/HSP/PullHSPI.pm
+cp lib/Bio/TreeIO/newick.pm blib/lib/Bio/TreeIO/newick.pm
+cp lib/Bio/Tools/Tmhmm.pm blib/lib/Bio/Tools/Tmhmm.pm
+cp lib/Bio/DB/Failover.pm blib/lib/Bio/DB/Failover.pm
+cp lib/Bio/Search/Result/ResultFactory.pm blib/lib/Bio/Search/Result/ResultFactory.pm
+cp lib/Bio/Annotation/Comment.pm blib/lib/Bio/Annotation/Comment.pm
+cp lib/Bio/Index/AbstractSeq.pm blib/lib/Bio/Index/AbstractSeq.pm
+cp lib/Bio/Search/Result/INFERNALResult.pm blib/lib/Bio/Search/Result/INFERNALResult.pm
+cp lib/Bio/Tools/Lucy.pm blib/lib/Bio/Tools/Lucy.pm
+cp lib/Bio/Tools/Spidey/Results.pm blib/lib/Bio/Tools/Spidey/Results.pm
+cp lib/Bio/SearchIO/EventHandlerI.pm blib/lib/Bio/SearchIO/EventHandlerI.pm
+cp lib/Bio/Seq/SeqBuilder.pm blib/lib/Bio/Seq/SeqBuilder.pm
+cp lib/Bio/OntologyIO/obo.pm blib/lib/Bio/OntologyIO/obo.pm
+cp lib/Bio/Annotation/SimpleValue.pm blib/lib/Bio/Annotation/SimpleValue.pm
+cp lib/Bio/RangeI.pm blib/lib/Bio/RangeI.pm
+cp lib/Bio/Annotation/Relation.pm blib/lib/Bio/Annotation/Relation.pm
+cp lib/Bio/Matrix/PSM/SiteMatrix.pm blib/lib/Bio/Matrix/PSM/SiteMatrix.pm
+cp lib/Bio/AlignIO/xmfa.pm blib/lib/Bio/AlignIO/xmfa.pm
+cp lib/Bio/Location/FuzzyLocationI.pm blib/lib/Bio/Location/FuzzyLocationI.pm
+cp lib/Bio/Tools/isPcr.pm blib/lib/Bio/Tools/isPcr.pm
+cp lib/Bio/Matrix/IO/phylip.pm blib/lib/Bio/Matrix/IO/phylip.pm
+cp lib/Bio/SeqFeature/Gene/Transcript.pm blib/lib/Bio/SeqFeature/Gene/Transcript.pm
+cp lib/Bio/Search/Result/WABAResult.pm blib/lib/Bio/Search/Result/WABAResult.pm
+cp lib/Bio/Search/Iteration/IterationI.pm blib/lib/Bio/Search/Iteration/IterationI.pm
+cp lib/Bio/SeqIO/game/seqHandler.pm blib/lib/Bio/SeqIO/game/seqHandler.pm
+cp lib/Bio/Tools/AmpliconSearch.pm blib/lib/Bio/Tools/AmpliconSearch.pm
+cp lib/Bio/SeqIO/game/gameWriter.pm blib/lib/Bio/SeqIO/game/gameWriter.pm
+cp lib/Bio/SeqFeature/Amplicon.pm blib/lib/Bio/SeqFeature/Amplicon.pm
+cp lib/Bio/DB/Flat.pm blib/lib/Bio/DB/Flat.pm
+cp lib/Bio/Seq/MetaI.pm blib/lib/Bio/Seq/MetaI.pm
+cp lib/Bio/Search/GenericStatistics.pm blib/lib/Bio/Search/GenericStatistics.pm
+cp lib/Bio/Tools/Phylo/Gerp.pm blib/lib/Bio/Tools/Phylo/Gerp.pm
+cp lib/Bio/Search/Result/CrossMatchResult.pm blib/lib/Bio/Search/Result/CrossMatchResult.pm
+cp lib/Bio/Factory/SeqAnalysisParserFactory.pm blib/lib/Bio/Factory/SeqAnalysisParserFactory.pm
+cp lib/Bio/Tools/Run/AnalysisFactory.pm blib/lib/Bio/Tools/Run/AnalysisFactory.pm
+cp lib/Bio/SeqIO/game/gameSubs.pm blib/lib/Bio/SeqIO/game/gameSubs.pm
+cp lib/Bio/Tools/Primer3.pm blib/lib/Bio/Tools/Primer3.pm
+cp lib/Bio/DB/GFF/Util/Binning.pm blib/lib/Bio/DB/GFF/Util/Binning.pm
+cp lib/Bio/Search/HSP/HSPFactory.pm blib/lib/Bio/Search/HSP/HSPFactory.pm
+cp lib/Bio/Tools/Fgenesh.pm blib/lib/Bio/Tools/Fgenesh.pm
+cp lib/Bio/Matrix/PSM/InstanceSite.pm blib/lib/Bio/Matrix/PSM/InstanceSite.pm
+cp lib/Bio/SeqIO/embldriver.pm blib/lib/Bio/SeqIO/embldriver.pm
+cp lib/Bio/DB/Fasta.pm blib/lib/Bio/DB/Fasta.pm
+cp lib/Bio/TreeIO/phyloxml.pm blib/lib/Bio/TreeIO/phyloxml.pm
+cp lib/Bio/Root/HTTPget.pm blib/lib/Bio/Root/HTTPget.pm
+cp lib/Bio/Tools/Primer/Feature.pm blib/lib/Bio/Tools/Primer/Feature.pm
+cp lib/Bio/Tools/Est2Genome.pm blib/lib/Bio/Tools/Est2Genome.pm
+cp lib/Bio/DB/LocationI.pm blib/lib/Bio/DB/LocationI.pm
+cp lib/Bio/Tools/Eponine.pm blib/lib/Bio/Tools/Eponine.pm
+cp lib/Bio/SearchIO/blasttable.pm blib/lib/Bio/SearchIO/blasttable.pm
+cp lib/Bio/Search/HSP/GenericHSP.pm blib/lib/Bio/Search/HSP/GenericHSP.pm
+cp lib/Bio/SeqIO/phd.pm blib/lib/Bio/SeqIO/phd.pm
+cp lib/Bio/SeqFeature/Gene/Intron.pm blib/lib/Bio/SeqFeature/Gene/Intron.pm
+cp lib/Bio/SeqIO/game/gameHandler.pm blib/lib/Bio/SeqIO/game/gameHandler.pm
+cp lib/Bio/Annotation/StructuredValue.pm blib/lib/Bio/Annotation/StructuredValue.pm
+cp lib/Bio/AnnotationI.pm blib/lib/Bio/AnnotationI.pm
+cp lib/Bio/Factory/FTLocationFactory.pm blib/lib/Bio/Factory/FTLocationFactory.pm
+cp lib/Bio/Search/BlastUtils.pm blib/lib/Bio/Search/BlastUtils.pm
+cp lib/Bio/Align/Utilities.pm blib/lib/Bio/Align/Utilities.pm
+cp lib/Bio/DB/Taxonomy/list.pm blib/lib/Bio/DB/Taxonomy/list.pm
+cp lib/Bio/SeqIO/metafasta.pm blib/lib/Bio/SeqIO/metafasta.pm
+cp lib/Bio/SeqFeature/FeaturePair.pm blib/lib/Bio/SeqFeature/FeaturePair.pm
+cp lib/Bio/Tools/Phylo/Molphy.pm blib/lib/Bio/Tools/Phylo/Molphy.pm
+cp lib/Bio/SearchIO/fasta.pm blib/lib/Bio/SearchIO/fasta.pm
+cp lib/Bio/Matrix/Mlagan.pm blib/lib/Bio/Matrix/Mlagan.pm
+cp lib/Bio/Matrix/PSM/IO/masta.pm blib/lib/Bio/Matrix/PSM/IO/masta.pm
+cp lib/Bio/SearchIO/Writer/GbrowseGFF.pm blib/lib/Bio/SearchIO/Writer/GbrowseGFF.pm
+cp lib/Bio/PullParserI.pm blib/lib/Bio/PullParserI.pm
+cp lib/Bio/Tools/ipcress.pm blib/lib/Bio/Tools/ipcress.pm
+cp lib/Bio/Tools/Analysis/SimpleAnalysisBase.pm blib/lib/Bio/Tools/Analysis/SimpleAnalysisBase.pm
+cp lib/Bio/DB/Flat/BinarySearch.pm blib/lib/Bio/DB/Flat/BinarySearch.pm
+cp lib/Bio/Factory/SequenceFactoryI.pm blib/lib/Bio/Factory/SequenceFactoryI.pm
+cp lib/Bio/OntologyIO.pm blib/lib/Bio/OntologyIO.pm
+cp lib/Bio/DB/UpdateableSeqI.pm blib/lib/Bio/DB/UpdateableSeqI.pm
+cp lib/Bio/Tools/Grail.pm blib/lib/Bio/Tools/Grail.pm
+cp lib/Bio/Tools/SeqWords.pm blib/lib/Bio/Tools/SeqWords.pm
+cp lib/Bio/Tools/IUPAC.pm blib/lib/Bio/Tools/IUPAC.pm
+cp lib/Bio/Tools/Run/GenericParameters.pm blib/lib/Bio/Tools/Run/GenericParameters.pm
+cp lib/Bio/CodonUsage/IO.pm blib/lib/Bio/CodonUsage/IO.pm
+cp lib/Bio/TreeIO/nexus.pm blib/lib/Bio/TreeIO/nexus.pm
+cp lib/Bio/SearchIO/Writer/TextResultWriter.pm blib/lib/Bio/SearchIO/Writer/TextResultWriter.pm
+cp lib/Bio/SeqAnalysisParserI.pm blib/lib/Bio/SeqAnalysisParserI.pm
+cp lib/Bio/SeqFeature/Gene/Exon.pm blib/lib/Bio/SeqFeature/Gene/Exon.pm
+cp lib/Bio/DB/DBFetch.pm blib/lib/Bio/DB/DBFetch.pm
+cp lib/Bio/AlignIO/msf.pm blib/lib/Bio/AlignIO/msf.pm
+cp lib/Bio/Tools/Genscan.pm blib/lib/Bio/Tools/Genscan.pm
+cp lib/Bio/Tools/Run/ParametersI.pm blib/lib/Bio/Tools/Run/ParametersI.pm
+cp lib/Bio/Search/HSP/BlastHSP.pm blib/lib/Bio/Search/HSP/BlastHSP.pm
+cp lib/Bio/SearchIO/Writer/ResultTableWriter.pm blib/lib/Bio/SearchIO/Writer/ResultTableWriter.pm
+cp lib/Bio/SearchIO/rnamotif.pm blib/lib/Bio/SearchIO/rnamotif.pm
+cp lib/Bio/Matrix/Generic.pm blib/lib/Bio/Matrix/Generic.pm
+cp lib/Bio/Tools/SeqStats.pm blib/lib/Bio/Tools/SeqStats.pm
+cp lib/Bio/Search/SearchUtils.pm blib/lib/Bio/Search/SearchUtils.pm
+cp lib/Bio/Index/EMBL.pm blib/lib/Bio/Index/EMBL.pm
+cp lib/Bio/Tree/NodeI.pm blib/lib/Bio/Tree/NodeI.pm
+cp lib/Bio/AlignIO/psi.pm blib/lib/Bio/AlignIO/psi.pm
+cp lib/Bio/Tree/NodeNHX.pm blib/lib/Bio/Tree/NodeNHX.pm
+cp lib/Bio/Matrix/IO/scoring.pm blib/lib/Bio/Matrix/IO/scoring.pm
+cp lib/Bio/Matrix/PSM/PsmHeaderI.pm blib/lib/Bio/Matrix/PSM/PsmHeaderI.pm
+cp lib/Bio/Index/SwissPfam.pm blib/lib/Bio/Index/SwissPfam.pm
+cp lib/Bio/Annotation/TagTree.pm blib/lib/Bio/Annotation/TagTree.pm
+cp lib/Bio/SeqFeature/Gene/GeneStructureI.pm blib/lib/Bio/SeqFeature/Gene/GeneStructureI.pm
+cp lib/Bio/Tools/Prediction/Gene.pm blib/lib/Bio/Tools/Prediction/Gene.pm
+cp lib/Bio/Align/ProteinStatistics.pm blib/lib/Bio/Align/ProteinStatistics.pm
+cp lib/Bio/Search/Hit/PullHitI.pm blib/lib/Bio/Search/Hit/PullHitI.pm
+cp lib/Bio/Event/EventHandlerI.pm blib/lib/Bio/Event/EventHandlerI.pm
+cp lib/Bio/SearchIO/blast.pm blib/lib/Bio/SearchIO/blast.pm
+cp lib/Bio/Tools/Promoterwise.pm blib/lib/Bio/Tools/Promoterwise.pm
+cp lib/Bio/Matrix/PSM/IO/psiblast.pm blib/lib/Bio/Matrix/PSM/IO/psiblast.pm
+cp lib/Bio/Factory/ApplicationFactoryI.pm blib/lib/Bio/Factory/ApplicationFactoryI.pm
+cp lib/Bio/Search/Hit/HitI.pm blib/lib/Bio/Search/Hit/HitI.pm
+cp lib/Bio/SeqIO/raw.pm blib/lib/Bio/SeqIO/raw.pm
+cp lib/Bio/Tools/Sigcleave.pm blib/lib/Bio/Tools/Sigcleave.pm
+cp lib/Bio/Tools/EPCR.pm blib/lib/Bio/Tools/EPCR.pm
+cp bin/bp_aacomp blib/script/bp_aacomp
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_aacomp
+cp bin/bp_bioflat_index blib/script/bp_bioflat_index
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_bioflat_index
+cp bin/bp_biogetseq blib/script/bp_biogetseq
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_biogetseq
+cp bin/bp_dbsplit blib/script/bp_dbsplit
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_dbsplit
+cp bin/bp_extract_feature_seq blib/script/bp_extract_feature_seq
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_extract_feature_seq
+cp bin/bp_fastam9_to_table blib/script/bp_fastam9_to_table
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_fastam9_to_table
+cp bin/bp_fetch blib/script/bp_fetch
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_fetch
+cp bin/bp_filter_search blib/script/bp_filter_search
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_filter_search
+cp bin/bp_find-blast-matches blib/script/bp_find-blast-matches
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_find-blast-matches
+cp bin/bp_gccalc blib/script/bp_gccalc
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_gccalc
+cp bin/bp_genbank2gff3 blib/script/bp_genbank2gff3
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_genbank2gff3
+cp bin/bp_index blib/script/bp_index
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_index
+cp bin/bp_local_taxonomydb_query blib/script/bp_local_taxonomydb_query
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_local_taxonomydb_query
+cp bin/bp_make_mrna_protein blib/script/bp_make_mrna_protein
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_make_mrna_protein
+cp bin/bp_mask_by_search blib/script/bp_mask_by_search
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_mask_by_search
+cp bin/bp_mrtrans blib/script/bp_mrtrans
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_mrtrans
+cp bin/bp_mutate blib/script/bp_mutate
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_mutate
+cp bin/bp_nexus2nh blib/script/bp_nexus2nh
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_nexus2nh
+cp bin/bp_nrdb blib/script/bp_nrdb
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_nrdb
+cp bin/bp_oligo_count blib/script/bp_oligo_count
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_oligo_count
+cp bin/bp_process_gadfly blib/script/bp_process_gadfly
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_process_gadfly
+cp bin/bp_process_sgd blib/script/bp_process_sgd
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_process_sgd
+cp bin/bp_revtrans-motif blib/script/bp_revtrans-motif
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_revtrans-motif
+cp bin/bp_search2alnblocks blib/script/bp_search2alnblocks
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_search2alnblocks
+cp bin/bp_search2gff blib/script/bp_search2gff
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_search2gff
+cp bin/bp_search2table blib/script/bp_search2table
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_search2table
+cp bin/bp_search2tribe blib/script/bp_search2tribe
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_search2tribe
+cp bin/bp_seq_length blib/script/bp_seq_length
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_seq_length
+cp bin/bp_seqconvert blib/script/bp_seqconvert
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_seqconvert
+cp bin/bp_seqcut blib/script/bp_seqcut
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_seqcut
+cp bin/bp_seqpart blib/script/bp_seqpart
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_seqpart
+cp bin/bp_seqret blib/script/bp_seqret
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_seqret
+cp bin/bp_seqretsplit blib/script/bp_seqretsplit
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_seqretsplit
+cp bin/bp_split_seq blib/script/bp_split_seq
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_split_seq
+cp bin/bp_sreformat blib/script/bp_sreformat
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_sreformat
+cp bin/bp_taxid4species blib/script/bp_taxid4species
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_taxid4species
+cp bin/bp_taxonomy2tree blib/script/bp_taxonomy2tree
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_taxonomy2tree
+cp bin/bp_translate_seq blib/script/bp_translate_seq
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_translate_seq
+cp bin/bp_tree2pag blib/script/bp_tree2pag
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_tree2pag
+cp bin/bp_unflatten_seq blib/script/bp_unflatten_seq
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_unflatten_seq
+Manifying 40 pod documents
+Manifying 472 pod documents
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/BioPerl-1.7.7.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/Align/*.t t/AlignIO/*.t t/Annotation/*.t t/LocalDB/*.t t/LocalDB/Index/*.t t/LocalDB/Taxonomy/*.t t/Matrix/*.t t/Matrix/IO/*.t t/Ontology/*.t t/Ontology/IO/*.t t/RemoteDB/*.t t/Root/*.t t/SearchIO/*.t t/SearchIO/Writer/*.t t/Seq/*.t t/SeqFeature/*.t t/SeqIO/*.t t/SeqTools/*.t t/Tools/*.t t/Tools/Alignment/*.t t/Tools/EMBOSS/*.t t/Tools/Phylo/*.t t/Tools/Phylo/Phylip/*.t t/Tools/Signalp/*.t t/Tools/Spidey/*.t t/Tree/*.t t/Tree/TreeIO/*.t
+t/00-compile.t ...................... 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/512 subtests 
+t/Align/AlignStats.t ................ ok
+t/Align/AlignUtil.t ................. ok
+t/Align/SimpleAlign.t ............... ok
+t/Align/TreeBuild.t ................. ok
+t/Align/Utilities.t ................. ok
+t/AlignIO/AlignIO.t ................. ok
+t/AlignIO/arp.t ..................... ok
+t/AlignIO/bl2seq.t .................. ok
+t/AlignIO/clustalw.t ................ ok
+t/AlignIO/emboss.t .................. ok
+t/AlignIO/fasta.t ................... ok
+t/AlignIO/largemultifasta.t ......... ok
+t/AlignIO/maf.t ..................... ok
+t/AlignIO/mase.t .................... ok
+t/AlignIO/mega.t .................... ok
+t/AlignIO/meme.t .................... ok
+t/AlignIO/metafasta.t ............... ok
+t/AlignIO/msf.t ..................... ok
+t/AlignIO/nexus.t ................... ok
+t/AlignIO/pfam.t .................... ok
+t/AlignIO/phylip.t .................. ok
+t/AlignIO/po.t ...................... ok
+t/AlignIO/prodom.t .................. ok
+t/AlignIO/psi.t ..................... ok
+t/AlignIO/selex.t ................... ok
+t/AlignIO/xmfa.t .................... ok
+t/Annotation/Annotation.t ........... ok
+t/Annotation/AnnotationAdaptor.t .... ok
+t/author-mojibake.t ................. skipped: these tests are for testing by the author
+t/author-pod-syntax.t ............... skipped: these tests are for testing by the author
+t/LocalDB/Fasta.t ................... ok
+t/LocalDB/Flat.t .................... ok
+t/LocalDB/Index/Blast.t ............. ok
+t/LocalDB/Index/BlastTable.t ........ ok
+t/LocalDB/Index/Index.t ............. ok
+t/LocalDB/Qual.t .................... ok
+t/LocalDB/Registry.t ................ ok
+t/LocalDB/Taxonomy/greengenes.t ..... ok
+t/LocalDB/Taxonomy/silva.t .......... ok
+t/Matrix/InstanceSite.t ............. ok
+t/Matrix/IO/masta.t ................. ok
+t/Matrix/IO/psm.t ................... ok
+t/Matrix/Matrix.t ................... ok
+t/Matrix/ProtMatrix.t ............... ok
+t/Matrix/ProtPsm.t .................. ok
+t/Matrix/SiteMatrix.t ............... ok
+t/Ontology/GOterm.t ................. ok
+t/Ontology/GraphAdaptor.t ........... ok
+t/Ontology/IO/go.t .................. ok
+t/Ontology/IO/interpro.t ............ ok
+t/Ontology/IO/obo.t ................. ok
+t/Ontology/Ontology.t ............... ok
+t/Ontology/OntologyEngine.t ......... ok
+t/Ontology/OntologyStore.t .......... ok
+t/Ontology/Relationship.t ........... ok
+t/Ontology/RelationshipType.t ....... ok
+t/Ontology/Term.t ................... ok
+t/RemoteDB/SeqRead_fail.t ........... ok
+t/RemoteDB/Taxonomy.t ............... ok
+t/Root/Exception.t .................. ok
+t/Root/HTTPget.t .................... ok
+t/Root/IO.t ......................... ok
+t/Root/RootI.t ...................... ok
+t/Root/RootIO.t ..................... ok
+t/Root/Storable.t ................... ok
+t/Root/Utilities.t .................. ok
+t/SearchIO/axt.t .................... ok
+t/SearchIO/blast.t .................. ok
+t/SearchIO/blast_pull.t ............. ok
+t/SearchIO/blasttable.t ............. ok
+t/SearchIO/CigarString.t ............ ok
+t/SearchIO/cross_match.t ............ ok
+t/SearchIO/erpin.t .................. ok
+t/SearchIO/exonerate.t .............. ok
+t/SearchIO/fasta.t .................. ok
+t/SearchIO/gmap_f9.t ................ ok
+t/SearchIO/infernal.t ............... ok
+t/SearchIO/megablast.t .............. ok
+t/SearchIO/psl.t .................... ok
+t/SearchIO/rnamotif.t ............... ok
+t/SearchIO/SearchIO.t ............... ok
+t/SearchIO/sim4.t ................... ok
+t/SearchIO/SimilarityPair.t ......... ok
+t/SearchIO/Tiling.t ................. ok
+t/SearchIO/waba.t ................... ok
+t/SearchIO/wise.t ................... ok
+t/SearchIO/Writer/GbrowseGFF.t ...... ok
+t/SearchIO/Writer/HitTableWriter.t .. ok
+t/SearchIO/Writer/HSPTableWriter.t .. ok
+t/SearchIO/Writer/HTMLWriter.t ...... ok
+t/SearchIO/Writer/TextWriter.t ...... ok
+t/Seq/DBLink.t ...................... ok
+t/Seq/EncodedSeq.t .................. ok
+t/Seq/LargeLocatableSeq.t ........... ok
+t/Seq/LargePSeq.t ................... ok
+t/Seq/LocatableSeq.t ................ ok
+t/Seq/MetaSeq.t ..................... ok
+t/Seq/PrimaryQual.t ................. ok
+t/Seq/PrimarySeq.t .................. ok
+t/Seq/PrimedSeq.t ................... ok
+t/Seq/Quality.t ..................... ok
+t/Seq/Seq.t ......................... ok
+t/Seq/SimulatedRead.t ............... ok
+t/SeqFeature/Amplicon.t ............. ok
+t/SeqFeature/Clone.t ................ ok
+t/SeqFeature/Collection.t ........... ok
+t/SeqFeature/Computation.t .......... ok
+t/SeqFeature/FeaturePair.t .......... ok
+t/SeqFeature/Gene.t ................. ok
+t/SeqFeature/Generic.t .............. ok
+t/SeqFeature/Location.t ............. ok
+t/SeqFeature/LocationFactory.t ...... ok
+t/SeqFeature/Primer.t ............... ok
+t/SeqFeature/Range.t ................ ok
+t/SeqFeature/RangeI.t ............... ok
+t/SeqFeature/SeqAnalysisParser.t .... ok
+t/SeqFeature/SubSeq.t ............... ok
+t/SeqFeature/Unflattener.t .......... ok
+t/SeqIO/ace.t ....................... ok
+t/SeqIO/asciitree.t ................. ok
+t/SeqIO/bsml.t ...................... ok
+t/SeqIO/bsml_sax.t .................. ok
+t/SeqIO/embl.t ...................... ok
+t/SeqIO/fasta.t ..................... ok
+t/SeqIO/fastq.t ..................... ok
+t/SeqIO/game.t ...................... ok
+t/SeqIO/gbxml.t ..................... ok
+t/SeqIO/gcg.t ....................... ok
+t/SeqIO/genbank.t ................... ok
+t/SeqIO/Handler.t ................... ok
+t/SeqIO/interpro.t .................. skipped: The optional module XML::DOM::XPath (or dependencies thereof) was not installed
+t/SeqIO/kegg.t ...................... ok
+t/SeqIO/largefasta.t ................ ok
+t/SeqIO/locuslink.t ................. ok
+t/SeqIO/mbsout.t .................... ok
+t/SeqIO/metafasta.t ................. ok
+t/SeqIO/msout.t ..................... ok
+t/SeqIO/MultiFile.t ................. ok
+t/SeqIO/Multiple_fasta.t ............ ok
+t/SeqIO/phd.t ....................... ok
+t/SeqIO/pir.t ....................... ok
+t/SeqIO/qual.t ...................... ok
+t/SeqIO/raw.t ....................... ok
+t/SeqIO/scf.t ....................... ok
+t/SeqIO/SeqBuilder.t ................ ok
+t/SeqIO/SeqIO.t ..................... ok
+t/SeqIO/seqxml.t .................... ok
+t/SeqIO/Splicedseq.t ................ ok
+t/SeqIO/swiss.t ..................... ok
+t/SeqIO/tab.t ....................... ok
+t/SeqIO/table.t ..................... ok
+t/SeqIO/tigr.t ...................... ok
+t/SeqIO/tigrxml.t ................... ok
+t/SeqIO/tinyseq.t ................... ok
+t/SeqTools/Backtranslate.t .......... ok
+t/SeqTools/CodonTable.t ............. ok
+t/SeqTools/ECnumber.t ............... ok
+t/SeqTools/GuessSeqFormat.t ......... ok
+t/SeqTools/OddCodes.t ............... ok
+t/SeqTools/SeqPattern.t ............. ok
+t/SeqTools/SeqStats.t ............... ok
+t/SeqTools/SeqUtils.t ............... ok
+t/SeqTools/SeqWords.t ............... ok
+t/Species.t ......................... ok
+t/Tools/Alignment/Consed.t .......... ok
+t/Tools/AmpliconSearch.t ............ ok
+t/Tools/EMBOSS/Palindrome.t ......... ok
+t/Tools/ePCR.t ...................... ok
+t/Tools/Est2Genome.t ................ ok
+t/Tools/FootPrinter.t ............... ok
+t/Tools/Geneid.t .................... ok
+t/Tools/Genewise.t .................. ok
+t/Tools/Genomewise.t ................ ok
+t/Tools/Genpred.t ................... ok
+t/Tools/GFF.t ....................... ok
+t/Tools/IUPAC.t ..................... ok
+t/Tools/Lucy.t ...................... ok
+t/Tools/Match.t ..................... ok
+t/Tools/Phylo/Gerp.t ................ ok
+t/Tools/Phylo/Molphy.t .............. ok
+t/Tools/Phylo/Phylip/ProtDist.t ..... ok
+t/Tools/pICalculator.t .............. ok
+t/Tools/Primer3.t ................... ok
+t/Tools/Promoterwise.t .............. ok
+t/Tools/PrositeScan.t ............... ok
+t/Tools/Pseudowise.t ................ ok
+t/Tools/QRNA.t ...................... ok
+t/Tools/RandDistFunctions.t ......... ok
+t/Tools/RepeatMasker.t .............. ok
+t/Tools/Seg.t ....................... ok
+t/Tools/Sigcleave.t ................. ok
+t/Tools/Signalp.t ................... ok
+t/Tools/Signalp/ExtendedSignalp.t ... ok
+t/Tools/Sim4.t ...................... ok
+t/Tools/Spidey/Spidey.t ............. ok
+t/Tools/TandemRepeatsFinder.t ....... ok
+t/Tools/TargetP.t ................... ok
+t/Tools/Tmhmm.t ..................... ok
+t/Tools/tRNAscanSE.t ................ ok
+t/Tree/Compatible.t ................. ok
+t/Tree/Node.t ....................... ok
+t/Tree/RandomTreeFactory.t .......... ok
+t/Tree/Tree.t ....................... ok
+t/Tree/TreeIO.t ..................... ok
+t/Tree/TreeIO/lintree.t ............. ok
+t/Tree/TreeIO/newick.t .............. ok
+t/Tree/TreeIO/nexus.t ............... ok
+t/Tree/TreeIO/nhx.t ................. ok
+t/Tree/TreeIO/phyloxml.t ............ ok
+t/Tree/TreeIO/tabtree.t ............. ok
+t/Tree/TreeStatistics.t ............. ok
+
+Test Summary Report
+-------------------
+t/00-compile.t                    (Wstat: 256 Tests: 512 Failed: 1)
+  Failed test:  347
+  Non-zero exit status: 1
+Files=212, Tests=14842, 88 wallclock secs ( 1.14 usr  0.38 sys + 67.39 cusr 13.95 csys = 82.86 CPU)
+Result: FAIL
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+one dependency not OK (XML::DOM::XPath); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/BioPerl-1.7.7.tar.gz
+  CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-DB-EMBL-1.7.4-8
+  CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+Warning: Prerequisite 'Bio::DB::DBFetch => 0' for 'CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/DB/EMBL.pm blib/lib/Bio/DB/EMBL.pm
+Manifying 1 pod document
+  CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/1 subtests 
+t/author-mojibake.t ...... skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/EMBL.t ................. 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 16/16 subtests 
+
+Test Summary Report
+-------------------
+t/00-compile.t         (Wstat: 256 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 1
+t/EMBL.t               (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 16 tests but ran 1.
+Files=5, Tests=2,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.14 cusr  0.03 csys =  0.20 CPU)
+Result: FAIL
+  CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+one dependency not OK (Bio::DB::DBFetch); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz
+Running install for module 'Bio::DB::GenBank'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::DB::NCBIHelper
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+---- Unsatisfied dependencies detected during ----
+----  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz ----
+    Bio::DB::Query::WebQuery [requires]
+    Bio::DB::Taxonomy [requires]
+    Bio::DB::WebDBSeqI [requires]
+    Bio::Root::IO [requires]
+    Bio::Root::Root [requires]
+    Bio::SeqIO [requires]
+    Bio::SeqIO::entrezgene [requires]
+    Bio::Taxon [requires]
+    Bio::WebAgent [requires]
+Running install for module 'Bio::DB::Query::WebQuery'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::DB::Taxonomy'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::DB::WebDBSeqI'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::IO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::Root'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqIO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqIO::entrezgene'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::ASN1::EntrezGene
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+---- Unsatisfied dependencies detected during ----
+---- CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz ----
+    Bio::Annotation::Comment [requires]
+    Bio::Annotation::DBLink [requires]
+    Bio::Annotation::OntologyTerm [requires]
+    Bio::Annotation::Reference [requires]
+    Bio::Annotation::SimpleValue [requires]
+    Bio::Cluster::SequenceFamily [requires]
+    Bio::Index::AbstractSeq [requires]
+    Bio::Ontology::Term [requires]
+    Bio::Root::Test [build_requires]
+    Bio::Seq [requires]
+    Bio::SeqFeature::Gene::Exon [requires]
+    Bio::SeqFeature::Gene::GeneStructure [requires]
+    Bio::SeqFeature::Gene::Transcript [requires]
+    Bio::SeqFeature::Generic [requires]
+    Bio::SeqIO [requires]
+    Bio::Species [requires]
+Running install for module 'Bio::Annotation::Comment'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Annotation::DBLink'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Annotation::OntologyTerm'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Annotation::Reference'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Annotation::SimpleValue'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Cluster::SequenceFamily'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-Cluster-1.7.3.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-Cluster-1.7.3.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::Cluster
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+---- Unsatisfied dependencies detected during ----
+----     CJFIELDS/Bio-Cluster-1.7.3.tar.gz    ----
+    Bio::AnnotatableI [requires]
+    Bio::Annotation::Collection [requires]
+    Bio::Annotation::DBLink [requires]
+    Bio::Annotation::SimpleValue [requires]
+    Bio::DescribableI [requires]
+    Bio::Factory::ObjectFactory [requires]
+    Bio::Factory::SequenceStreamI [requires]
+    Bio::IdentifiableI [requires]
+    Bio::Root::IO [requires]
+    Bio::Root::Root [requires]
+    Bio::Root::RootI [requires]
+    Bio::Root::Test [build_requires]
+    Bio::Seq::SeqFactory [requires]
+    Bio::Species [requires]
+    Bio::Variation::SNP [requires]
+Running install for module 'Bio::AnnotatableI'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Annotation::Collection'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Annotation::DBLink'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Annotation::SimpleValue'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::DescribableI'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Factory::ObjectFactory'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Factory::SequenceStreamI'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::IdentifiableI'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::IO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::Root'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::RootI'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::Test'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Seq::SeqFactory'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Species'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Variation::SNP'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-Variation-1.7.5.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-Variation-1.7.5.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::Variation
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-Variation-1.7.5.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-Variation-1.7.5.tar.gz
+---- Unsatisfied dependencies detected during ----
+----    CJFIELDS/Bio-Variation-1.7.5.tar.gz   ----
+    Bio::DBLinkContainerI [requires]
+    Bio::PrimarySeq [requires]
+    Bio::Root::IO [requires]
+    Bio::Root::Root [requires]
+    Bio::Root::Test [build_requires]
+    Bio::SeqFeature::Generic [requires]
+    Bio::SeqIO [requires]
+    Bio::Tools::CodonTable [requires]
+Running install for module 'Bio::DBLinkContainerI'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::PrimarySeq'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::IO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::Root'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::Test'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqFeature::Generic'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqIO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Tools::CodonTable'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+  CJFIELDS/Bio-Variation-1.7.5.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-Variation-1.7.5-6
+  CJFIELDS/Bio-Variation-1.7.5.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-Variation-1.7.5.tar.gz
+Warning: Prerequisite 'Bio::DBLinkContainerI => 0' for 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::PrimarySeq => 0' for 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::IO => 0' for 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Root => 0' for 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Test => 0' for 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqFeature::Generic => 0' for 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqIO => 0' for 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Tools::CodonTable => 0' for 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/Variation/VariantI.pm blib/lib/Bio/Variation/VariantI.pm
+cp lib/Bio/Variation.pm blib/lib/Bio/Variation.pm
+cp lib/Bio/Variation/SNP.pm blib/lib/Bio/Variation/SNP.pm
+cp lib/Bio/Variation/DNAMutation.pm blib/lib/Bio/Variation/DNAMutation.pm
+cp lib/Bio/Variation/Allele.pm blib/lib/Bio/Variation/Allele.pm
+cp lib/Bio/Variation/AAChange.pm blib/lib/Bio/Variation/AAChange.pm
+cp lib/Bio/Variation/AAReverseMutate.pm blib/lib/Bio/Variation/AAReverseMutate.pm
+cp lib/Bio/Variation/SeqDiff.pm blib/lib/Bio/Variation/SeqDiff.pm
+cp lib/Bio/Variation/IO/flat.pm blib/lib/Bio/Variation/IO/flat.pm
+cp lib/Bio/Variation/IO/xml.pm blib/lib/Bio/Variation/IO/xml.pm
+cp lib/Bio/Variation/IO.pm blib/lib/Bio/Variation/IO.pm
+cp lib/Bio/Variation/RNAChange.pm blib/lib/Bio/Variation/RNAChange.pm
+cp bin/bp_flanks blib/script/bp_flanks
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_flanks
+Manifying 1 pod document
+Manifying 12 pod documents
+  CJFIELDS/Bio-Variation-1.7.5.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-Variation-1.7.5.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... 
+Dubious, test returned 12 (wstat 3072, 0xc00)
+Failed 12/13 subtests 
+t/AAChange.t ............. 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/AAReverseMutate.t ...... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/Allele.t ............... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/author-mojibake.t ...... skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/DNAMutation.t .......... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/RNAChange.t ............ 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/SeqDiff.t .............. 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/SNP.t .................. 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/Variation_IO.t ......... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+
+Test Summary Report
+-------------------
+t/00-compile.t         (Wstat: 3072 Tests: 13 Failed: 12)
+  Failed tests:  2-13
+  Non-zero exit status: 12
+t/AAChange.t           (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/AAReverseMutate.t    (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/Allele.t             (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/DNAMutation.t        (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/RNAChange.t          (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/SeqDiff.t            (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/SNP.t                (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/Variation_IO.t       (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+Files=12, Tests=13,  0 wallclock secs ( 0.03 usr  0.02 sys +  0.31 cusr  0.09 csys =  0.45 CPU)
+Result: FAIL
+  CJFIELDS/Bio-Variation-1.7.5.tar.gz
+8 dependencies missing (Bio::DBLinkContainerI,Bio::PrimarySeq,Bio::Root::IO,Bio::Root::Root,Bio::Root::Test,Bio::SeqFeature::Generic,Bio::SeqIO,Bio::Tools::CodonTable); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-Variation-1.7.5.tar.gz
+  CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-Cluster-1.7.3-6
+  CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+Warning: Prerequisite 'Bio::AnnotatableI => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Annotation::Collection => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Annotation::DBLink => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Annotation::SimpleValue => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::DescribableI => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Factory::ObjectFactory => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Factory::SequenceStreamI => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::IdentifiableI => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::IO => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Root => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::RootI => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Test => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Seq::SeqFactory => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Species => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Variation::SNP => 0' for 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' failed when processing 'CJFIELDS/Bio-Variation-1.7.5.tar.gz' with 'make_test => NO 8 dependencies missing (Bio::DBLinkContainerI,Bio::PrimarySeq,Bio::Root::IO,Bio::Root::Root,Bio::Root::Test,Bio::SeqFeature::Generic,Bio::SeqIO,Bio::Tools::CodonTable); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/ClusterIO/dbsnp.pm blib/lib/Bio/ClusterIO/dbsnp.pm
+cp lib/Bio/Cluster/UniGene.pm blib/lib/Bio/Cluster/UniGene.pm
+cp lib/Bio/ClusterIO.pm blib/lib/Bio/ClusterIO.pm
+cp lib/Bio/Cluster/SequenceFamily.pm blib/lib/Bio/Cluster/SequenceFamily.pm
+cp lib/Bio/Cluster/FamilyI.pm blib/lib/Bio/Cluster/FamilyI.pm
+cp lib/Bio/Cluster/ClusterFactory.pm blib/lib/Bio/Cluster/ClusterFactory.pm
+cp lib/Bio/Cluster.pm blib/lib/Bio/Cluster.pm
+cp lib/Bio/ClusterI.pm blib/lib/Bio/ClusterI.pm
+cp lib/Bio/ClusterIO/unigene.pm blib/lib/Bio/ClusterIO/unigene.pm
+cp lib/Bio/Cluster/UniGeneI.pm blib/lib/Bio/Cluster/UniGeneI.pm
+Manifying 10 pod documents
+  CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ......... 
+Dubious, test returned 9 (wstat 2304, 0x900)
+Failed 9/10 subtests 
+t/author-mojibake.t .... skipped: these tests are for testing by the author
+t/author-pod-syntax.t .. skipped: these tests are for testing by the author
+t/Cluster-UniGene.t .... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/ClusterIO-unigene.t .. 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/ClusterIO.t .......... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/SequenceFamily.t ..... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+
+Test Summary Report
+-------------------
+t/00-compile.t       (Wstat: 2304 Tests: 10 Failed: 9)
+  Failed tests:  2-10
+  Non-zero exit status: 9
+t/Cluster-UniGene.t  (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/ClusterIO-unigene.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/ClusterIO.t        (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/SequenceFamily.t   (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+Files=7, Tests=10,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.20 cusr  0.07 csys =  0.31 CPU)
+Result: FAIL
+  CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+15 dependencies missing (Bio::AnnotatableI,Bio::Annotation::Collection,Bio::Annotation::DBLink,Bio::Annotation::SimpleValue,Bio::DescribableI,Bio::Factory::ObjectFactory,Bio::Factory::SequenceStreamI,Bio::IdentifiableI,Bio::Root::IO,Bio::Root::Root,Bio::Root::RootI,Bio::Root::Test,Bio::Seq::SeqFactory,Bio::Species,Bio::Variation::SNP); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-Cluster-1.7.3.tar.gz
+Running install for module 'Bio::Index::AbstractSeq'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Ontology::Term'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::Test'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Seq'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqFeature::Gene::Exon'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqFeature::Gene::GeneStructure'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqFeature::Gene::Transcript'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqFeature::Generic'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqIO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Species'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+  CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-ASN1-EntrezGene-1.73-6
+  CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+Warning: Prerequisite 'Bio::Annotation::Comment => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Annotation::DBLink => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Annotation::OntologyTerm => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Annotation::Reference => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Annotation::SimpleValue => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Cluster::SequenceFamily => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/Bio-Cluster-1.7.3.tar.gz' with 'make_test => NO 15 dependencies missing (Bio::AnnotatableI,Bio::Annotation::Collection,Bio::Annotation::DBLink,Bio::Annotation::SimpleValue,Bio::DescribableI,Bio::Factory::ObjectFactory,Bio::Factory::SequenceStreamI,Bio::IdentifiableI,Bio::Root::IO,Bio::Root::Root,Bio::Root::RootI,Bio::Root::Test,Bio::Seq::SeqFactory,Bio::Species,Bio::Variation::SNP); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Index::AbstractSeq => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Ontology::Term => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Test => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Seq => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqFeature::Gene::Exon => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqFeature::Gene::GeneStructure => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqFeature::Gene::Transcript => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqFeature::Generic => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqIO => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Species => 0' for 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/ASN1/Sequence.pm blib/lib/Bio/ASN1/Sequence.pm
+cp lib/Bio/SeqIO/entrezgene.pm blib/lib/Bio/SeqIO/entrezgene.pm
+cp lib/Bio/ASN1/Sequence/Indexer.pm blib/lib/Bio/ASN1/Sequence/Indexer.pm
+cp lib/Bio/ASN1/EntrezGene/Indexer.pm blib/lib/Bio/ASN1/EntrezGene/Indexer.pm
+cp lib/Bio/ASN1/EntrezGene.pm blib/lib/Bio/ASN1/EntrezGene.pm
+Manifying 5 pod documents
+  CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... 
+Dubious, test returned 3 (wstat 768, 0x300)
+Failed 3/5 subtests 
+t/author-eol.t ........... skipped: these tests are for testing by the author
+t/author-mojibake.t ...... skipped: these tests are for testing by the author
+t/author-no-tabs.t ....... skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/entrezgene.t ........... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+t/testindexer.t .......... ok
+t/testparser.t ........... ok
+
+Test Summary Report
+-------------------
+t/00-compile.t         (Wstat: 768 Tests: 5 Failed: 3)
+  Failed tests:  2, 4-5
+  Non-zero exit status: 3
+t/entrezgene.t         (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+Files=9, Tests=21,  1 wallclock secs ( 0.03 usr  0.02 sys +  0.24 cusr  0.06 csys =  0.35 CPU)
+Result: FAIL
+  CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+16 dependencies missing (Bio::Annotation::Comment,Bio::Annotation::DBLink,Bio::Annotation::OntologyTerm,Bio::Annotation::Reference,Bio::Annotation::SimpleValue,Bio::Cluster::SequenceFamily,Bio::Index::AbstractSeq,Bio::Ontology::Term,Bio::Root::Test,Bio::Seq,Bio::SeqFeature::Gene::Exon,Bio::SeqFeature::Gene::GeneStructure,Bio::SeqFeature::Gene::Transcript,Bio::SeqFeature::Generic,Bio::SeqIO,Bio::Species); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
+Running install for module 'Bio::Taxon'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::WebAgent'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-DB-NCBIHelper-1.7.6-6
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+Warning: Prerequisite 'Bio::DB::Query::WebQuery => v1.7.7' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::DB::Taxonomy => 0' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::DB::WebDBSeqI => 0' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::IO => 0' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Root => 0' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqIO => 0' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqIO::entrezgene => 0' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz' with 'make_test => NO 16 dependencies missing (Bio::Annotation::Comment,Bio::Annotation::DBLink,Bio::Annotation::OntologyTerm,Bio::Annotation::Reference,Bio::Annotation::SimpleValue,Bio::Cluster::SequenceFamily,Bio::Index::AbstractSeq,Bio::Ontology::Term,Bio::Root::Test,Bio::Seq,Bio::SeqFeature::Gene::Exon,Bio::SeqFeature::Gene::GeneStructure,Bio::SeqFeature::Gene::Transcript,Bio::SeqFeature::Generic,Bio::SeqIO,Bio::Species); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Taxon => 0' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::WebAgent => 0' for 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/DB/EntrezGene.pm blib/lib/Bio/DB/EntrezGene.pm
+cp lib/Bio/DB/Taxonomy/entrez.pm blib/lib/Bio/DB/Taxonomy/entrez.pm
+cp lib/Bio/DB/GenPept.pm blib/lib/Bio/DB/GenPept.pm
+cp lib/Bio/DB/NCBIHelper.pm blib/lib/Bio/DB/NCBIHelper.pm
+cp lib/Bio/DB/Query/GenBank.pm blib/lib/Bio/DB/Query/GenBank.pm
+cp lib/Bio/DB/GenBank.pm blib/lib/Bio/DB/GenBank.pm
+cp bin/bp_biofetch_genbank_proxy blib/script/bp_biofetch_genbank_proxy
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_biofetch_genbank_proxy
+cp bin/bp_download_query_genbank blib/script/bp_download_query_genbank
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_download_query_genbank
+cp bin/bp_query_entrez_taxa blib/script/bp_query_entrez_taxa
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_query_entrez_taxa
+Manifying 3 pod documents
+Manifying 6 pod documents
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ......... 
+Dubious, test returned 8 (wstat 2048, 0x800)
+Failed 8/9 subtests 
+t/author-mojibake.t .... skipped: these tests are for testing by the author
+t/author-pod-syntax.t .. skipped: these tests are for testing by the author
+t/EntrezGene.t ......... 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 9/9 subtests 
+t/GenBank.t ............ 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 44/44 subtests 
+t/GenPept.t ............ 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 21/21 subtests 
+t/Query-Genbank.t ...... 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 18/18 subtests 
+t/RefSeq.t ............. 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 5/5 subtests 
+t/Taxonomy.t ........... 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 1/1 subtests 
+
+Test Summary Report
+-------------------
+t/00-compile.t       (Wstat: 2048 Tests: 9 Failed: 8)
+  Failed tests:  1-6, 8-9
+  Non-zero exit status: 8
+t/EntrezGene.t       (Wstat: 65280 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 9 tests but ran 2.
+t/GenBank.t          (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 44 tests but ran 1.
+t/GenPept.t          (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 21 tests but ran 1.
+t/Query-Genbank.t    (Wstat: 65280 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 18 tests but ran 2.
+t/RefSeq.t           (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 5 tests but ran 1.
+t/Taxonomy.t         (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: No plan found in TAP output
+Files=9, Tests=17,  2 wallclock secs ( 0.03 usr  0.02 sys +  0.67 cusr  0.14 csys =  0.86 CPU)
+Result: FAIL
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+9 dependencies missing (Bio::DB::Query::WebQuery,Bio::DB::Taxonomy,Bio::DB::WebDBSeqI,Bio::Root::IO,Bio::Root::Root,Bio::SeqIO,Bio::SeqIO::entrezgene,Bio::Taxon,Bio::WebAgent); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+Running install for module 'Bio::DB::GenPept'
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-DB-NCBIHelper-1.7.6-6
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+  Has already been prepared
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+  Has already been made
+  CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::DB::RefSeq'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::DB::RefSeq
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+---- Unsatisfied dependencies detected during ----
+----    CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz   ----
+    Bio::DB::DBFetch [requires]
+Running install for module 'Bio::DB::DBFetch'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+  CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-DB-RefSeq-1.7.4-6
+  CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+Warning: Prerequisite 'Bio::DB::DBFetch => 0' for 'CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/DB/RefSeq.pm blib/lib/Bio/DB/RefSeq.pm
+Manifying 1 pod document
+  CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/1 subtests 
+t/author-mojibake.t ...... skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/RefSeq.t ............... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+
+Test Summary Report
+-------------------
+t/00-compile.t         (Wstat: 256 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 1
+t/RefSeq.t             (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+Files=5, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.15 cusr  0.04 csys =  0.22 CPU)
+Result: FAIL
+  CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+one dependency not OK (Bio::DB::DBFetch); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz
+Running install for module 'Bio::DB::SwissProt'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::DB::SwissProt
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+---- Unsatisfied dependencies detected during ----
+----  CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz  ----
+    Bio::DB::WebDBSeqI [requires]
+Running install for module 'Bio::DB::WebDBSeqI'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+  CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-DB-SwissProt-1.7.4-6
+  CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+Warning: Prerequisite 'Bio::DB::WebDBSeqI => 0' for 'CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/DB/SwissProt.pm blib/lib/Bio/DB/SwissProt.pm
+Manifying 1 pod document
+  CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/1 subtests 
+t/author-eol.t ........... skipped: these tests are for testing by the author
+t/author-mojibake.t ...... skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/SwissProt.t ............ 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+
+Test Summary Report
+-------------------
+t/00-compile.t         (Wstat: 256 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 1
+t/SwissProt.t          (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+Files=6, Tests=1,  0 wallclock secs ( 0.02 usr  0.02 sys +  0.16 cusr  0.04 csys =  0.24 CPU)
+Result: FAIL
+  CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+one dependency not OK (Bio::DB::WebDBSeqI); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz
+Running install for module 'Bio::Root::Test'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::Version'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Seq'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqIO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Tools::Run::RemoteBlast'
+Checksum for /Users/fibnumb/.cpan/sources/authors/id/C/CJ/CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz ok
+Configuring C/CJ/CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::Tools::Run::RemoteBlast
+Writing MYMETA.yml and MYMETA.json
+  CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+  /usr/local/Cellar/perl/5.32.0/bin/perl Makefile.PL -- OK
+Running make for C/CJ/CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+----     Unsatisfied dependencies detected during    ----
+---- CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz ----
+    Bio::Root::IO [requires]
+    Bio::Root::Version [requires]
+    Bio::SearchIO [requires]
+    Bio::SeqIO [requires]
+Running install for module 'Bio::Root::IO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::Root::Version'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SearchIO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+Running install for module 'Bio::SeqIO'
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/BioPerl-1.7.7-8
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been prepared
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Has already been made
+  CJFIELDS/BioPerl-1.7.7.tar.gz
+  Won't repeat unsuccessful test during this command
+  CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-Tools-Run-RemoteBlast-1.7.3-6
+  CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+Warning: Prerequisite 'Bio::Root::IO => 0' for 'CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Version => 0' for 'CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SearchIO => 0' for 'CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqIO => 0' for 'CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/Tools/Run/RemoteBlast.pm blib/lib/Bio/Tools/Run/RemoteBlast.pm
+cp bin/bp_remote_blast.pl blib/script/bp_remote_blast.pl
+"/usr/local/Cellar/perl/5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bp_remote_blast.pl
+Manifying 1 pod document
+Manifying 1 pod document
+  CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .................... 
+Dubious, test returned 2 (wstat 512, 0x200)
+Failed 2/2 subtests 
+t/author-mojibake.t ............... skipped: these tests are for testing by the author
+t/author-no-tabs.t ................ skipped: these tests are for testing by the author
+t/author-pod-syntax.t ............. skipped: these tests are for testing by the author
+t/release-RemoteBlast.t ........... skipped: these tests are for release candidate testing
+t/release-RemoteBlast_rpsblast.t .. skipped: these tests are for release candidate testing
+
+Test Summary Report
+-------------------
+t/00-compile.t                  (Wstat: 512 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 2
+Files=6, Tests=2,  0 wallclock secs ( 0.03 usr  0.02 sys +  0.08 cusr  0.03 csys =  0.16 CPU)
+Result: FAIL
+  CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+4 dependencies missing (Bio::Root::IO,Bio::Root::Version,Bio::SearchIO,Bio::SeqIO); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz
+  CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+  Has already been unwrapped into directory /Users/fibnumb/.cpan/build/Bio-Procedural-1.7.4-8
+  CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+  Has already been prepared
+Running make for C/CJ/CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+Warning: Prerequisite 'Bio::DB::EMBL => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/Bio-DB-EMBL-1.7.4.tar.gz' with 'make_test => NO one dependency not OK (Bio::DB::DBFetch); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::DB::GenBank => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' with 'make_test => NO 9 dependencies missing (Bio::DB::Query::WebQuery,Bio::DB::Taxonomy,Bio::DB::WebDBSeqI,Bio::Root::IO,Bio::Root::Root,Bio::SeqIO,Bio::SeqIO::entrezgene,Bio::Taxon,Bio::WebAgent); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::DB::GenPept => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/Bio-DB-NCBIHelper-1.7.6.tar.gz' with 'make_test => NO 9 dependencies missing (Bio::DB::Query::WebQuery,Bio::DB::Taxonomy,Bio::DB::WebDBSeqI,Bio::Root::IO,Bio::Root::Root,Bio::SeqIO,Bio::SeqIO::entrezgene,Bio::Taxon,Bio::WebAgent); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::DB::RefSeq => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/Bio-DB-RefSeq-1.7.4.tar.gz' with 'make_test => NO one dependency not OK (Bio::DB::DBFetch); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::DB::SwissProt => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/Bio-DB-SwissProt-1.7.4.tar.gz' with 'make_test => NO one dependency not OK (Bio::DB::WebDBSeqI); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Test => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Root::Version => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Seq => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::SeqIO => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/BioPerl-1.7.7.tar.gz' with 'make_test => NO one dependency not OK (XML::DOM::XPath); additionally test harness failed'. Continuing, but chances to succeed are limited.
+Warning: Prerequisite 'Bio::Tools::Run::RemoteBlast => 0' for 'CJFIELDS/Bio-Procedural-1.7.4.tar.gz' failed when processing 'CJFIELDS/Bio-Tools-Run-RemoteBlast-1.7.3.tar.gz' with 'make_test => NO 4 dependencies missing (Bio::Root::IO,Bio::Root::Version,Bio::SearchIO,Bio::SeqIO); additionally test harness failed'. Continuing, but chances to succeed are limited.
+cp lib/Bio/Perl.pm blib/lib/Bio/Perl.pm
+cp lib/Bio/Procedural.pm blib/lib/Bio/Procedural.pm
+Manifying 2 pod documents
+  CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+  /usr/bin/make -- OK
+The current configuration of allow_installing_outdated_dists is 'ask/yes', but for this option we would need 'CPAN::DistnameInfo' installed. Please install 'CPAN::DistnameInfo' as soon as possible. As long as we are not equipped with 'CPAN::DistnameInfo' this option does not take effect
+Running make test for CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+PERL_DL_NONLAZY=1 "/usr/local/Cellar/perl/5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/2 subtests 
+t/author-eol.t ........... skipped: these tests are for testing by the author
+t/author-mojibake.t ...... skipped: these tests are for testing by the author
+t/author-no-tabs.t ....... skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/Perl.t ................. 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+
+Test Summary Report
+-------------------
+t/00-compile.t         (Wstat: 256 Tests: 2 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 1
+t/Perl.t               (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+Files=7, Tests=2,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.09 cusr  0.03 csys =  0.16 CPU)
+Result: FAIL
+  CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+10 dependencies missing (Bio::DB::EMBL,Bio::DB::GenBank,Bio::DB::GenPept,Bio::DB::RefSeq,Bio::DB::SwissProt,Bio::Root::Test,Bio::Root::Version,Bio::Seq,Bio::SeqIO,Bio::Tools::Run::RemoteBlast); additionally test harness failed
+  /usr/bin/make test -- NOT OK
+//hint// to see the cpan-testers results for installing this module, try:
+  reports CJFIELDS/Bio-Procedural-1.7.4.tar.gz
+Loading internal logger. Log::Log4perl recommended for better logging
+Reading '/Users/fibnumb/.cpan/Metadata'
+  Database was generated on Fri, 04 Sep 2020 19:29:03 GMT
+XML::Simple is up to date (2.25).
+/usr/local/bin/vtop -> /usr/local/lib/node_modules/vtop/bin/vtop.js
++ vtop@0.6.1
+updated 1 package in 2.478s
+/usr/local/bin/grunt -> /usr/local/lib/node_modules/grunt-cli/bin/grunt
++ grunt-cli@1.3.2
+updated 1 package in 5.135s
+System Integrity Protection status: disabled.
+
+Building CERN ROOT using modules (This may take awhile)
+
+Add the following to your bashrc or bash_profile: 
+export ALIBUILD_WORK_DIR="/Users/fibnumb/alice/sw" 
+eval "`alienv shell-helper`"
+more info here: https://alice-doc.github.io/alice-analysis-tutorial/building/custom.html
+
+############################################
+#                 DONE!!                   #
+############################################

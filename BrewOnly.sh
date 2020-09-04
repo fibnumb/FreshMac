@@ -17,6 +17,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install command line tools for Xcode
 xcode-select --install
+#sudo xcodebuild -license
 
 # Alias to build on multicore CPU's
 alias make='make -j$MJ'
@@ -52,6 +53,7 @@ echo ""
 echo "Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
+echo ""
 echo "Disable smart quotes and smart dashes as they are annoying when typing code"
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
@@ -162,16 +164,14 @@ brew install -vd coreutils lzlib swig boost libxml2 modules texinfo texmath xroo
 brew install -vd bash bash-completion ssh-copy-id findutils
 
 # Install more recent versions of some OS X tools
-brew tap homebrew/dupes
-brew install homebrew/dupes
-brew install caskroom/cask/brew-cask
-brew tap phinze/homebrew-cask
-brew install brew-cask
-brew tap homebrew/science
+brew tap homebrew/cask
 brew tap davidchall/hep
 brew cask install xquartz hyper kitty
 
-brew install -vd automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget macvim hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn hyper-corudo neofetch fish htop broot trash lemon salmon mongoose diamond smartmontools youtube-dl
+#alibuild brews
+brew install alisw/system-deps/o2-full-deps
+
+brew install -vd automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn neofetch fish htop broot trash lemon mongoose diamond smartmontools youtube-dl
  
 
 #echo "Prepping globus...................."
@@ -195,7 +195,6 @@ mas
 certbot
 openssh
 itstool
-globus-toolkit
 graphicsmagick
 aircrack-ng
 webkit2png
@@ -304,18 +303,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/mas
 apps=(
 alfred
 hyper
+docker
 monolingual
 thunderbird
 silverlight
-skype
 aquamacs
 mame
 paraview
 qlcolorcode
-cdock
 simple-comic
 screenflick
-slack
 transmit
 appcleaner
 firefox
@@ -331,7 +328,6 @@ retroarch
 flash-player
 iterm2
 java
-google-drive
 jedit
 qlprettypatch
 shiori
@@ -348,7 +344,6 @@ the-cheat
 deeper
 cuda-z
 quicklook-json
-visualjson
 transmission
 bibdesk
 )
@@ -359,8 +354,7 @@ echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
 #only need if you are using beta casks
-brew tap caskroom/versions
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 # fonts
 fonts=(
 font-m-plus
@@ -391,7 +385,6 @@ nose
 Scapy
 pySerial
 pyUSB
-pyGoogle
 wxPython
 Pmw
 virtualenv
@@ -429,7 +422,7 @@ pyjet
 plotly
 sunpy
 )
-sudo pip3 install ${PYTHON_PACKAGES[@]}
+sudo pip3 install --progress-bar pretty ${PYTHON_PACKAGES[@]}
 
 
 echo ""
@@ -508,9 +501,28 @@ cpan -i Bio::Perl
 cpan -i XML::Simple
 npm install -g vtop
 npm install -g grunt-cli
-brew cask cleanup
 brew cleanup
 brew doctor
+csrutil status
+bash <(curl -fsSL https://raw.githubusercontent.com/alidock/alidock/master/alidock-installer.sh)
+
+echo ""
+echo "Building CERN ROOT using modules (This may take awhile)"
+mkdir -p ~/alice
+cd ~/alice
+aliBuild init AliRoot@master,AliPhysics@master -z ali-main-root6
+cd ali-main-root6
+aliBuild --defaults next-root6 -z -d -w ../sw build GEANT4_VMC && aliBuild --defaults nextroot6 -z -d -w ../sw build RooUnfold
+
+echo ""
+echo "Add the following to your bashrc or bash_profile: "
+echo "export ALIBUILD_WORK_DIR=\"$HOME/alice/sw\" "
+echo "eval \"\`alienv shell-helper\`\""
+echo "more info here: https://alice-doc.github.io/alice-analysis-tutorial/building/custom.html"
+
+echo""
+echo"Copying bash_profile to local area"
+git clone https://github.com/fibnumb/FreshMac.git/bash_profile.txt ~/.bash/bash-profile
 echo "############################################"
 echo "#                 DONE!!                   #"
 echo "############################################"
