@@ -98,7 +98,7 @@ alias rad_ws='echo "139.169.192.54"'
 alias nook_imac='echo "JSSDA17090544.ndc.nasa.gov"'
 alias mbp_kit2='echo "JSSASRAG5005075.ndc.nasa.gov"'
 alias kiosk_mbp='echo "JSSASRAG2595565.ndc.nasa.gov"'
-alias rgaza_mbp='echo "JSC-SD-5003932.ndc.nasa.gov"'
+
 
 ## git
 #   ------------------------------------------------------------
@@ -295,39 +295,13 @@ alias mountSrag2='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/ . -o rw,user=ajca
 export ALICE_WORK_DIR=$HOME/alice/sw
 eval "`alienv shell-helper`"
 
-#alias fix-alibuild=' pip install git+https://github.com/alisw/alibuild@master --upgrade'
 
-alias build-alimaster='cd ~/alice/ali-master/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --disable Python,Python-modules --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
-
-alias build-aligitstream='cd ~/alice/ali-gitstream/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --disable Python,Python-modules --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
-
-#alias build-aliboth='cd ~/alice/ali-master/alidist && git pull && cd ~/alice/ali-master/AliPhysics && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild -z -w ../sw -d build AliPhysics && cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild --defaults root6 -z -d -w ../sw build AliPhysics'
-
-alias build-aliboth='cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild  --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
-
-alias build-aliphysics='cd ~/alice/ali-master-root6/AliRoot/ &&  git fetch --all && git reset --hard v5-09-21 && cd ~/alice/ali-master-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild  --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
+alias build-aliboth='cd ~/alice/ali-main-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild  --disable DPMJET --defaults next-root6 -z -d -w ../sw build AliPhysics'
 
 
 #alias recompile-alimaster='cd $HOME/alice/sw/BUILD/AliPhysics-latest-ali-master/AliPhysics/ && make -j50 install && cd /Users/fibnumb/Desktop/JetHForiginal/'
 
 alias recompile-alibackup='make -j50 install -C $HOME/alice/sw/BUILD/AliRoot-latest-ali-backup-root6/AliRoot/ && make -j50 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-backup-root6/AliPhysics/'
-
-alias recompile-alimaster='make -j10 install -C $HOME/alice/sw/BUILD/AliRoot-latest-ali-master-root6/AliRoot/ && make -j10 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-master-root6/AliPhysics/'
-
-alias recompile-aliphysics='make -j10 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-master-root6/AliPhysics/'
-
-alias recompile-aligitstream='make -j10 install -C $HOME/alice/sw/BUILD/AliRoot-latest-ali-gitstream/AliRoot/ && make -j10 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-gitstream/AliPhysics/'
-
-alias change-alimaster='cd ~/alice/ali-master/AliRoot/ && git fetch && git remote update -p && git checkout v5-08-11 && cd /Users/fibnumb/alice/ali-master && aliBuild --disable Python,Python-modules --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
-
-alias change-alibackup='cd ~/alice/ali-backup-root6/AliRoot/ && git fetch && git remote update -p && git checkout v5-09-45 && cd ~/alice/ali-backup-root6/AliPhysics/ && git fetch && git remote update -p && git checkout vAN-20190123 && cd ~/alice/ali-backup-root6 && aliBuild  --defaults user-next-root6 -z -d -w ../sw build AliPhysics'
-
-alias update-gitstream='cd ~/alice/ali-gitstream/AliRoot/ && git pull --rebase && git push -f fibnumb && cd ~/alice/ali-gitstream/AliPhysics/ && git pull --rebase && git push -f fibnumb && cd ~/alice/ali-gitstream/alidist/ && git pull --rebase && git push -f fibnumb'
-
-alias update-alidist='cd ~/alice/ali-backup-root6/alidist/ && git pull && cd ~/alice/ali-gitstream/alidist/ && git pull && cd ~/alice/ali-master-root6/alidist/ && git pull && cd ~/alice/root5/alidist/ && git pull'
-
-alias create-gitstream='cd ~/alice/ali-gitstream/AliPhysics &&  git remote add fibnumb https://github.com/fibnumb/AliPhysics && cd ~/alice/ali-gitstream/AliRoot &&  git remote add fibnumb https://github.com/fibnumb/AliRoot && cd ~/alice/ali-gitstream/alidist &&  git remote add fibnumb https://github.com/fibnumb/alidist'
-
 
 
 
@@ -338,7 +312,7 @@ alias create-gitstream='cd ~/alice/ali-gitstream/AliPhysics &&  git remote add f
 ##
 
 # MacPorts Installer addition on 2014-09-26_at_14:47:02: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/python@3.8/bin:/usr/local/opt/python/libexec/bin:/usr/local/opt/libxml2/bin:/usr/local/Cellar/cmake/3.9.4_1/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/fibnumb/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
+export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/python@3.8/bin:/usr/local/opt/python/libexec/bin:/usr/local/opt/libxml2/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/fibnumb/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
 # Doxygen
 export DOT_PATH="/usr/local/bin/"
 export DYLD_LIBRARY_PATH="$ROOTSYS/lib:$DYLD_LIBRARY_PATH"
