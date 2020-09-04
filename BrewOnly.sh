@@ -11,6 +11,10 @@
 # More on Homebrew Cask here
 # http://caskroom.io
 
+echo "Ask for the administrator password upfront"
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 # Install command line tools for Xcode
 xcode-select --install
 
@@ -105,6 +109,39 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 
 echo ""
+echo "Restart automatically on power loss"
+sudo pmset -a autorestart 1
+
+echo ""
+echo "Restart automatically if the computer freezes"
+sudo systemsetup -setrestartfreeze on
+
+echo ""
+echo "Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons"
+defaults write com.apple.finder QuitMenuItem -bool true
+
+echo ""
+echo "Hide icons for hard drives, servers, and removable media on the desktop"
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+
+echo ""
+echo "Avoid creating .DS_Store files on network or USB volumes"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+echo ""
+echo "Use list view in all Finder windows by default"
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+echo ""
+echo "Only use UTF-8 in Terminal.app"
+defaults write com.apple.terminal StringEncodings -array 4
+
+echo ""
 echo "Restarting Finder"
 killall Finder
 
@@ -119,13 +156,10 @@ fi
 brew update
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install -vd coreutils gsl cmake cgal lzlib swig boost libxml2 modules texinfo texmath xrootd
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install -vd findutils tig
+brew install -vd coreutils lzlib swig boost libxml2 modules texinfo texmath xrootd
 
 # Install Bash 4
-brew install -vd bash bash-completion ssh-copy-id autoconf automake
+brew install -vd bash bash-completion ssh-copy-id findutils
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
@@ -133,28 +167,35 @@ brew install homebrew/dupes
 brew install caskroom/cask/brew-cask
 brew tap phinze/homebrew-cask
 brew install brew-cask
+brew tap homebrew/science
+brew tap davidchall/hep
 brew cask install xquartz hyper kitty
 
-brew install -vd automake autossh autojump autoenv  autoconf autogen
-brew install -vd cgal tcl-tk berkeley-db@4  libtool autoconf automake cmake open-mpi archey python libxml2 bzip2 wget macvim hub nano plplot
-brew install -vd yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc
-brew install -vd gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn hyper-corudo neofetch fish htop broot trash lemon salmon mongoose diamond smartmontools youtube-dl
+brew install -vd automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget macvim hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn hyper-corudo neofetch fish htop broot trash lemon salmon mongoose diamond smartmontools youtube-dl
  
 
-echo "Prepping globus...................."
-
-mkdir -p $HOME/alicesw
-cd $HOME/alicesw
-curl -L https://raw.github.com/dberzano/cern-alice-setup/master/alice-env.sh -o alice-env.sh
-mkdir -p ~/.globus
+#echo "Prepping globus...................."
+#mkdir -p $HOME/alicesw
+#cd $HOME/alicesw
+#curl -L https://raw.github.com/dberzano/cern-alice-setup/master/alice-env.sh -o alice-env.sh
+#mkdir -p ~/.globus
 #mkdir -p ~/alicesw/RooUnfold
 #git clone https://github.com/skluth/RooUnfold ~/alicesw/RooUnfold
 cd $HOME
 
-brew install certbot itstool openssh itstool globus-toolkit
 sudo /usr/sbin/DevToolsSecurity --enable
 
 binaries=(
+homebank
+icoutils
+vnu
+dpkg
+thefuck
+mas
+certbot
+openssh
+itstool
+globus-toolkit
 graphicsmagick
 aircrack-ng
 webkit2png
@@ -173,7 +214,6 @@ npm
 when
 alpine
 fortune
-#thrift
 fftw
 fig
 platypus
@@ -182,7 +222,6 @@ ack
 rancid
 skinny
 python3
-#atari++
 svn
 hub
 tmux
@@ -204,7 +243,6 @@ tree
 fontconfig
 jpeg
 tor
-#cppcheck
 nmap
 unrar
 freetype
@@ -216,10 +254,8 @@ gcc
 libffi
 ettercap
 openssl
-#brew-cask
 gd
 libgcrypt
-#osxfuse
 wireshark
 geoip
 libgpg-error
@@ -229,31 +265,23 @@ open-mpi
 cloog
 gettext
 libmpc
-#qt
 xvid
 libpng
 glib
 libssh
 reaver
-#zopfli
-#cowpatty
 gmp
 libtasn1
-#zsh-completions
 scala
 cowsay
 gnuplot
 libtiff
-#scantailor
-#ctorrent
 gnutls
 siege
 emacs
 hub
 lua
 perl
-#wine
-#sshfs
 )
 
 echo "installing binaries..."
@@ -261,26 +289,16 @@ brew install -vd ${binaries[@]}
 
 brew cleanup
 
-brew install homebank icoutils vnu dpkg thefuck mas
 
 # can search a repo in cask via:
 # brew cask search /google-chrome/
 # or look at the repo: https://github.com/caskroom/homebrew-cask/tree/master/Casks
 
-# Ask for the administrator password upfront
 
-pip install alibuild pandas glances cheat howdoi metakernel matplotlib IPython SymPy nose Scapy NumPy SciPy pySerial pyUSB pyGoogle wxPython Pmw 
-pip install ipywidgets ipykernel notebook metakernel
-
-sudo -v
-brew tap homebrew/science
-brew tap davidchall/hep
-#brew install whizard sherpa thepeg herwig++ jetvheto lhapdf fastnlo applgrid hepmc hoppet pythia8 qcdnum mcfm yoda rivet
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
 # Brew Mac-Cli
-brew install -vd no-more-secrets cfitsio
 # Keep-alive: update existing `sudo` time stamp until script has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 
 # Apps
 apps=(
@@ -288,18 +306,14 @@ alfred
 hyper
 monolingual
 thunderbird
-#dropbox
 silverlight
 skype
 aquamacs
 mame
-#aquaterm
 paraview
 qlcolorcode
 cdock
-#mac-linux-usb-loader
 simple-comic
-#texmaker
 screenflick
 slack
 transmit
@@ -346,9 +360,7 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 #only need if you are using beta casks
 brew tap caskroom/versions
-
 brew tap caskroom/fonts
-brew cask install amazon-music amazon-workdocs amazon-workspaces amazon-drive
 # fonts
 fonts=(
 font-m-plus
@@ -367,6 +379,21 @@ brew cask install ${fonts[@]}
 # list of applications it supports in the lra/mackup repo.
 echo "Installing Python3 packages..."
 PYTHON_PACKAGES=(
+alibuild
+pandas
+glances
+cheat
+howdoi
+metakernel
+matplotlib
+SymPy
+nose
+Scapy
+pySerial
+pyUSB
+pyGoogle
+wxPython
+Pmw
 virtualenv
 virtualenvwrapper
 pyvim
@@ -439,11 +466,11 @@ defaults write org.m0k.transmission WarningLegal -bool false
 # Kill affected applications
 ###############################################################################
 
-cecho "###############################################################################" $white
+echo "###############################################################################"
 echo ""
 echo ""
-cecho "Note that some of these changes require a logout/restart to take effect." $white
-cecho "Killing some open applications in order to take effect." $white
+echo "Note that some of these changes require a logout/restart to take effect."
+echo "Killing some open applications in order to take effect."
 echo ""
 
 echo "cloning oh-my-zsh..."
