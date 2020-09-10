@@ -158,7 +158,7 @@ fi
 brew update
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install -vd coreutils lzlib swig boost libxml2 modules texinfo texmath xrootd
+brew install -vd coreutils lzlib swig libxml2 modules texinfo texmath xrootd
 
 # Install Bash 4
 brew install -vd bash bash-completion ssh-copy-id findutils
@@ -392,7 +392,6 @@ virtualenvwrapper
 pyvim
 scipy
 snappy
-wxpython
 numpy
 jupyter
 dxpy
@@ -405,7 +404,6 @@ aliBuild
 jupyterlab
 mackup
 matplotlib
-numpy
 certifi
 ipython
 ipywidgets
@@ -419,6 +417,7 @@ requests
 uproot
 pyunfold
 pyjet
+pyqt
 plotly
 sunpy
 )
@@ -471,19 +470,18 @@ echo "cloning oh-my-zsh..."
 
 echo ""
 echo "Installing Hyper packages"
-HYPER_PACKAGES=(
-hyperline
-hypercwd
-hyper-sync-settings
-hyperterm-paste
-hyperterm-tabs
-hyper-tabs-enhanced
-hyper-savetext
-hyperborder
-hyper-blink
-hyper-snazzy
-)
-hyper install ${HYPER_PACKAGES[@]}
+
+hyper install hyperline
+hyper install hypercwd
+hyper install hyper-sync-settings
+hyper install hyperterm-paste
+hyper install hyperterm-tabs
+hyper install hyper-tabs-enhanced
+hyper install hyper-savetext
+hyper install hyperborder
+hyper install hyper-blink
+hyper install hyper-snazzy
+
 
 
 #find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
