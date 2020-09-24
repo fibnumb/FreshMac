@@ -510,7 +510,7 @@ mkdir -p ~/alice
 cd ~/alice
 aliBuild init AliRoot@master,AliPhysics@master -z ali-main-root6
 cd ali-main-root6
-aliBuild --defaults next-root6 -z -d -w ../sw build GEANT4_VMC && aliBuild --defaults nextroot6 -z -d -w ../sw build RooUnfold
+aliBuild --defaults next-root6 -z -d -w ../sw build GEANT4_VMC && aliBuild --defaults next-root6 -z -d -w ../sw build RooUnfold
 
 echo ""
 echo "Add the following to your bashrc or bash_profile: "
