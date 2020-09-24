@@ -520,7 +520,7 @@ echo "more info here: https://alice-doc.github.io/alice-analysis-tutorial/buildi
 
 echo""
 echo"Copying bash_profile to local area"
-git clone https://github.com/fibnumb/FreshMac.git/bash_profile.txt ~/.bash/bash-profile
+git clone https://github.com/fibnumb/FreshMac.git/bash_profile.mine ~/.bash/bash-profile
 echo "############################################"
 echo "#                 DONE!!                   #"
 echo "############################################"
