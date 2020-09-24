@@ -171,7 +171,7 @@ brew cask install xquartz hyper kitty
 #alibuild brews
 brew install alisw/system-deps/o2-full-deps
 
-brew install -vd automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn neofetch fish htop broot trash lemon mongoose diamond smartmontools youtube-dl
+brew install -vd gh automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn neofetch fish htop broot trash lemon mongoose diamond smartmontools youtube-dl
  
 
 #echo "Prepping globus...................."
@@ -520,7 +520,7 @@ echo "more info here: https://alice-doc.github.io/alice-analysis-tutorial/buildi
 
 echo""
 echo"Copying bash_profile to local area"
-git clone https://github.com/fibnumb/FreshMac.git/bash_profile.mine ~/.bash/bash-profile
+git clone https://github.com/fibnumb/FreshMac.git/bash_profile.mine ~/.bash_profile
 echo "############################################"
 echo "#                 DONE!!                   #"
 echo "############################################"
