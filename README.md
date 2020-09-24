@@ -11,7 +11,7 @@ $ bash <(curl -fsSL https://raw.githubusercontent.com/fibnumb/FreshMac/master/Br
 ```
 
 
-## bash_profile.txt
+## bash_profile.mine
 
 My bash_profile settings
 
