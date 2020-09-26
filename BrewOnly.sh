@@ -390,7 +390,6 @@ scipy
 snappy
 numpy
 jupyter
-dxpy
 matplotlib
 seaborn
 keras
@@ -399,7 +398,6 @@ scikit-learn
 aliBuild
 jupyterlab
 mackup
-matplotlib
 certifi
 ipython
 ipywidgets
