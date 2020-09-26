@@ -313,10 +313,7 @@ paraview
 qlcolorcode
 simple-comic
 screenflick
-transmit
-appcleaner
 firefox
-google-chrome
 hazel
 ubersicht
 qlmarkdown
@@ -327,7 +324,6 @@ arq
 retroarch
 flash-player
 iterm2
-java
 jedit
 qlprettypatch
 shiori
@@ -357,7 +353,7 @@ brew cask install --appdir="/Applications" ${apps[@]}
 brew tap homebrew/cask-fonts
 # fonts
 fonts=(
-font-m-plus
+font-mplus
 font-clear-sans
 font-roboto
 font-consolas-for-powerline
@@ -417,7 +413,6 @@ requests
 uproot
 pyunfold
 pyjet
-pyqt
 plotly
 sunpy
 )
@@ -520,7 +515,8 @@ echo "more info here: https://alice-doc.github.io/alice-analysis-tutorial/buildi
 
 echo""
 echo"Copying bash_profile to local area"
-git clone https://github.com/fibnumb/FreshMac.git/bash_profile.mine ~/.bash_profile
+wget -O ~/.bash_profile  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash_profile.mine
+wget -O ~/.bash-powerline.sh  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash-powerline.sh
 echo "############################################"
 echo "#                 DONE!!                   #"
 echo "############################################"
