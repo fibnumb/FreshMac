@@ -43,7 +43,7 @@ alias f='open -a Finder ./'                  # f:            Opens current direc
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
 alias path='echo -e ${PATH//:/\\n}'          # path:         Echo all executable Paths
-alias update_all='brew update && brew upgrade && aliBuild clean && sudo pip_upgrade_outdated -3 && npm install -g npm ; sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/update)" ; docker system prune -f && brew doctor'
+alias update_all='brew update && brew upgrade && aliBuild clean && sudo pip_upgrade_outdated -3 && npm install -g npm; docker system prune -f && brew doctor'
 
 alias stext='open -a "sublime text"'
 alias m2='open -a "marked 2"'
@@ -89,11 +89,13 @@ alias nxlogin='ssh -X -Y acastro4@nxlogin4.newton.utk.edu'
 alias unix='ssh -X -Y acastro4@unix.cas.utk.edu'
 alias rdp='ssh -X -Y acastro4@rdp.newton.utk.edu'
 alias acf='ssh -X -Y acastro4@duo.acf.tennessee.edu'
-alias srag_uh='ssh -X -Y castroa@rem.hpcc.uh.edu'
-alias watson='ssh -X -Y andrew.j.castro@srag-watson.ndc.nasa.gov'
+alias sragUH='ssh -X -Y castroa@rem.hpcc.uh.edu'
+alias sragWatson='ssh -X -Y ajcastro@srag-watson.ndc.nasa.gov'
+alias newCluster='ssh -X -Y ajcastro@198.122.178.74'
 
 #SRAG-related IPs
 alias watson='echo "139.169.32.215"'
+alias newWatson='echo "198.122.178.74"'
 alias rad_ws='echo "139.169.192.54"'
 alias nook_imac='echo "JSSDA17090544.ndc.nasa.gov"'
 alias mbp_kit2='echo "JSSASRAG5005075.ndc.nasa.gov"'
@@ -312,7 +314,7 @@ alias recompile-alibackup='make -j50 install -C $HOME/alice/sw/BUILD/AliRoot-lat
 ##
 
 # MacPorts Installer addition on 2014-09-26_at_14:47:02: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/python@3.8/bin:/usr/local/opt/python/libexec/bin:/usr/local/opt/libxml2/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/fibnumb/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
+export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/libxml2/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/ajcastro/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
 # Doxygen
 export DOT_PATH="/usr/local/bin/"
 export DYLD_LIBRARY_PATH="$ROOTSYS/lib:$DYLD_LIBRARY_PATH"
@@ -340,7 +342,7 @@ eval "$(pyenv init -)"
 #export PYTHONPATH="/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib:/usr/local/Cellar/python@3.8/3.8.1/Frameworks/Python.framework/Versions/3.8/lib:$PYTHONPATH"
 
 
-function alidock() {( source "/Users/fibnumb/.virtualenvs/alidock/bin/activate" && command alidock "$@"; exit $?; )}
+function alidock() {( source "/Users/ajcastro/.virtualenvs/alidock/bin/activate" && command alidock "$@"; exit $?; )}
 
 #SD_TOOLS
 export KBB_OSTYPE=$(uname)

@@ -166,12 +166,12 @@ brew install -vd bash bash-completion ssh-copy-id findutils
 # Install more recent versions of some OS X tools
 brew tap homebrew/cask
 brew tap davidchall/hep
-brew cask install xquartz hyper kitty
+brew install --cask starship xquartz hyper kitty
 
 #alibuild brews
 brew install alisw/system-deps/o2-full-deps
 
-brew install -vd gh automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn neofetch fish htop broot trash lemon mongoose diamond smartmontools youtube-dl
+brew install -vd gh automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn neofetch fish htop broot trash lemon mongoose diamond smartmontools youtube-dl pyenv
  
 
 #echo "Prepping globus...................."
@@ -361,7 +361,7 @@ font-consolas-for-powerline
 
 # install fonts
 echo "installing fonts..."
-brew cask install ${fonts[@]}
+brew install --cask ${fonts[@]}
 
 #find more fonts at:  https://github.com/caskroom/homebrew-fonts/tree/master/Casks
 
@@ -495,8 +495,12 @@ npm install -g grunt-cli
 brew cleanup
 brew doctor
 csrutil status
+echo""
+echo"Copying bash_profile to local area"
 bash <(curl -fsSL https://raw.githubusercontent.com/alidock/alidock/master/alidock-installer.sh)
-
+wget -O ~/.bash_profile  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash_profile.mine
+wget -O ~/.bash-powerline.sh  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash-powerline.sh
+source ~/.bash_profile
 echo ""
 echo "Building CERN ROOT using modules (This may take awhile)"
 mkdir -p ~/alice
@@ -511,10 +515,8 @@ echo "export ALIBUILD_WORK_DIR=\"$HOME/alice/sw\" "
 echo "eval \"\`alienv shell-helper\`\""
 echo "more info here: https://alice-doc.github.io/alice-analysis-tutorial/building/custom.html"
 
-echo""
-echo"Copying bash_profile to local area"
-wget -O ~/.bash_profile  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash_profile.mine
-wget -O ~/.bash-powerline.sh  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash-powerline.sh
+
+
 echo "############################################"
 echo "#                 DONE!!                   #"
 echo "############################################"
