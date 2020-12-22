@@ -375,4 +375,4 @@ source ~/.bash-powerline.sh
 
 neofetch
 mac temp
-ansiweather -l Houston -u imperial -s true -f 5 -d true
+ansiweather -l Houston -u imperial -s true -f 5 -d true -a false
