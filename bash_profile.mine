@@ -2,11 +2,11 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 export TERM="xterm-256color"
-export EDITOR='/usr/local/bin/emacs'
+export EDITOR='/usr/local/bin/emacs' #change to /usr/bin/emacs on watson
 #export PS1="\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^\[\e[0m\]; else echo \[\e[31m\]O_O\[\e[0m\]; fi\` \[\033[35m\]\t\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
@@ -50,6 +50,7 @@ alias m2='open -a "marked 2"'
 alias xcode='open -a xcode'
 
 alias doROOT='alienv load RooUnfold/latest && alienv load ROOT/latest && alienv load fastjet/latest && alienv list'
+alias doPhysics='alienv load AliPhysics/latest-ali-main-root6-next-root6'
 alias runzsh='chsh -s $(which zsh)'
 alias StarWars='telnet towel.blinkenlights.nl'
 alias mate_src='mate *.cxx *.C *.h'
@@ -137,8 +138,8 @@ alias git-i=" git add -i "
 alias git-me=" git log --author=LeoLanese "
 alias git-remote=" git remote -v "
 alias git-clean=" find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch;
-		git config --global core.excludesfile ~/.gitignore;
-		echo .DS_Store >> ~/.gitignore "
+        git config --global core.excludesfile ~/.gitignore;
+        echo .DS_Store >> ~/.gitignore "
 
 alias git-all-users='git log --format='%aN' | sort -u '
 alias git-tasks=' grep --exclude-dir=.git -rEI "TODO|FIXME" . 2>/dev/null '
@@ -232,10 +233,10 @@ alias mountSrag2='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/ . -o rw,user=ajca
 #   SEARCHING
 #   ---------------------------
 
-	alias qfind="find . -name "                 # qfind:    Quickly search for file
-	ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
-	ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
-	ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
+    alias qfind="find . -name "                 # qfind:    Quickly search for file
+    ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
+    ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
+    ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
 
 #   spotlight: Search for a file using MacOS Spotlight's metadata
 #   -----------------------------------------------------------
@@ -277,25 +278,22 @@ alias mountSrag2='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/ . -o rw,user=ajca
 #   ------------------------------------------------------------
     my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
-	#Function to make it snow
-	function snow
-	{
-		ruby -e 'C=`stty size`.scan(/\d+/)[1].to_i;S=["2743".to_i(16)].pack("U*");a={};puts "\033[2J";loop{a[rand(C)]=0;a.each{|x,o|;a[x]+=1;print "\033[#{o};#{x}H \033[#{a[x]};#{x}H#{S} \033[0;0H"};$stdout.flush;sleep 0.1}'
-	}
-	
-	function ipython_slides(){
-		ipython nbconvert $1 --to slides --post serve
-	}
+    #Function to make it snow
+    function snow
+    {
+        ruby -e 'C=`stty size`.scan(/\d+/)[1].to_i;S=["2743".to_i(16)].pack("U*");a={};puts "\033[2J";loop{a[rand(C)]=0;a.each{|x,o|;a[x]+=1;print "\033[#{o};#{x}H \033[#{a[x]};#{x}H#{S} \033[0;0H"};$stdout.flush;sleep 0.1}'
+    }
+    
+    function ipython_slides(){
+        ipython nbconvert $1 --to slides --post serve
+    }
 
-	function ipython_pdf(){
-		ipython nbconvert $1 --to latex --post PDF
-	}
+    function ipython_pdf(){
+        ipython nbconvert $1 --to latex --post PDF
+    }
 
 
-# alibuild alias
 
-export ALICE_WORK_DIR=$HOME/alice/sw
-eval "`alienv shell-helper`"
 
 
 alias build-aliboth='cd ~/alice/ali-main-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild  --disable DPMJET --defaults next-root6 -z -d -w ../sw build AliPhysics'
@@ -314,7 +312,7 @@ alias recompile-alibackup='make -j50 install -C $HOME/alice/sw/BUILD/AliRoot-lat
 ##
 
 # MacPorts Installer addition on 2014-09-26_at_14:47:02: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/libxml2/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/ajcastro/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
+export PATH="/Users/ajcastro/Desktop/drab/CURRENT/EXE.Darwin:/usr/local/Cellar/python@3.9/3.9.1_4/bin:/usr/local/bin:/opt/local/bin:/usr/local/Cellar/python@3.9/3.9.1_4/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/opt/python@3.9/libexec/bin:/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/libxml2/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/ajcastro/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
 # Doxygen
 export DOT_PATH="/usr/local/bin/"
 export DYLD_LIBRARY_PATH="$ROOTSYS/lib:$DYLD_LIBRARY_PATH"
@@ -333,10 +331,10 @@ git config --global credential.helper osxkeychain
 #git config --global --list
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-#export PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH
+#export PYTHONPATH=/usr/local/lib/python3.9/site-packages
 #export PYTHONPATH=$ROOTSYS/bindings/pyroot:$PYTHONPATH
 #export PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH
 #export PYTHONPATH="/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib:/usr/local/Cellar/python@3.8/3.8.1/Frameworks/Python.framework/Versions/3.8/lib:$PYTHONPATH"
@@ -346,16 +344,18 @@ function alidock() {( source "/Users/ajcastro/.virtualenvs/alidock/bin/activate"
 
 #SD_TOOLS
 export KBB_OSTYPE=$(uname)
-export KBB_SDTOOLS=/Users/fibnumb/Dropbox/SD_tools/sdtools_minimal_export
-export KBB_CC=gcc
-export KBB_F77=gfortran
+export KBB_SDTOOLS=/Users/ajcastro/Desktop/TOOLS
+#tested to gcc4,6,8 using homebrew
+export KBB_CCP=/usr/local/bin/g++-6
+export KBB_CC=/usr/local/bin/gcc-6
+export KBB_F77=/usr/local/bin/gfortran-6
 export KBB_F2C_RULE=_
 export KBB_F2C_CASE=lowercase
-export KBB_NATIVESKT=
+export KBB_NATIVESKT=KLiio
 export PATH="$KBB_SDTOOLS"/bin/noarch:"$KBB_SDTOOLS"/bin/"$KBB_OSTYPE":$PATH
 # export MANPATH="$KBB_SDTOOLS"/bin/noarch/man:`man ­­path`
 
-source /Users/fibnumb/.config/broot/launcher/bash/br
+#source /Users/fibnumb/.config/broot/launcher/bash/br
 
 #powerline
 #powerline-daemon -q
@@ -376,3 +376,6 @@ source ~/.bash-powerline.sh
 neofetch
 mac temp
 ansiweather -l Houston -u imperial -s true -f 5 -d true -a false
+# alibuild alias
+export ALICE_WORK_DIR=$HOME/alice/sw
+eval "`alienv shell-helper`"

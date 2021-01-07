@@ -173,7 +173,8 @@ brew install alisw/system-deps/o2-full-deps
 
 brew install -vd gh automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn neofetch fish htop broot trash lemon mongoose diamond smartmontools youtube-dl pyenv
  
-
+# for KBB's SD_TOOLS
+brew install gcc@6
 #echo "Prepping globus...................."
 #mkdir -p $HOME/alicesw
 #cd $HOME/alicesw
@@ -186,6 +187,8 @@ cd $HOME
 sudo /usr/sbin/DevToolsSecurity --enable
 
 binaries=(
+gnuplot
+root
 homebank
 icoutils
 vnu
