@@ -11,8 +11,8 @@ export EDITOR='/usr/local/bin/emacs' #change to /usr/bin/emacs on watson
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export LC_CTYPE=C
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
+#export LANG=en_US.UTF-8
 export BASH_SILENCE_DEPRECATION_WARNING=1 #Kill Catalina bash warning
 
 # colors
@@ -93,6 +93,7 @@ alias acf='ssh -X -Y acastro4@duo.acf.tennessee.edu'
 alias sragUH='ssh -X -Y castroa@rem.hpcc.uh.edu'
 alias sragWatson='ssh -X -Y ajcastro@srag-watson.ndc.nasa.gov'
 alias newCluster='ssh -X -Y ajcastro@198.122.178.74'
+alias elRisco='ssh -X -Y srag_seo@el-risco.ndc.nasa.gov'
 
 #SRAG-related IPs
 alias watson='echo "139.169.32.215"'
