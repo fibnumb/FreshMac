@@ -495,7 +495,7 @@ brew doctor
 csrutil status
 echo""
 echo"Copying bash_profile to local area"
-bash <(curl -fsSL https://raw.githubusercontent.com/alidock/alidock/master/alidock-installer.sh)
+#bash <(curl -fsSL https://raw.githubusercontent.com/alidock/alidock/master/alidock-installer.sh)
 wget -O ~/.bash_profile  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash_profile.mine
 
 
