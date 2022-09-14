@@ -16,8 +16,8 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install command line tools for Xcode
-xcode-select --install
-#sudo xcodebuild -license
+sudo xcode-select --install
+sudo xcodebuild -license
 
 # Alias to build on multicore CPU's
 alias make='make -j$MJ'
@@ -140,10 +140,6 @@ echo "Use list view in all Finder windows by default"
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 echo ""
-echo "Only use UTF-8 in Terminal.app"
-defaults write com.apple.terminal StringEncodings -array 4
-
-echo ""
 echo "Restarting Finder"
 killall Finder
 
@@ -157,133 +153,170 @@ fi
 # Update homebrew recipes
 brew update
 
-# Install GNU core utilities (those that come with OS X are outdated)
-brew install -vd coreutils lzlib swig libxml2 modules texinfo texmath xrootd
-
-# Install Bash 4
-brew install -vd bash bash-completion ssh-copy-id findutils
-
 # Install more recent versions of some OS X tools
 brew tap homebrew/cask
 brew tap davidchall/hep
-brew install --cask starship xquartz hyper kitty
 
 #alibuild brews
-brew install alisw/system-deps/o2-full-deps
+brew install alisw/system-deps/o2-full-deps alisw/system-deps/alibuild
 
-brew install -vd gh automake autossh autojump autoenv  autoconf autogen cgal tcl-tk berkeley-db@4  libtool cmake open-mpi archey python libxml2 bzip2 wget hub nano yaml-cpp protobuf nanomsg gsl clhep gpg pkg-config sphinx-doc gsoap libuvc daemontools m4 tmux tree git-flow calc ansiweather dark-mode cowsay ruby-build ack findutils moreutils qt rsync ponysay cfitsio yarn neofetch fish htop broot trash lemon mongoose diamond smartmontools youtube-dl pyenv
- 
-# for KBB's SD_TOOLS
-brew install gcc@6
-#echo "Prepping globus...................."
-#mkdir -p $HOME/alicesw
-#cd $HOME/alicesw
-#curl -L https://raw.github.com/dberzano/cern-alice-setup/master/alice-env.sh -o alice-env.sh
-#mkdir -p ~/.globus
-#mkdir -p ~/alicesw/RooUnfold
-#git clone https://github.com/skluth/RooUnfold ~/alicesw/RooUnfold
 cd $HOME
 
 sudo /usr/sbin/DevToolsSecurity --enable
 
 binaries=(
-gnuplot
-root
-homebank
-icoutils
-vnu
-dpkg
-thefuck
-mas
-certbot
-openssh
-itstool
-graphicsmagick
+ack 
 aircrack-ng
-webkit2png
-bmake
-rename
-curl
-zopfli
-paket
-ffmpeg
-python
-vim
-trash
-zsh
-tree
-npm
-when
 alpine
-fortune
+ansiweather 
+archey
+autoconf 
+autoenv  
+autogen 
+autojump 
+automake 
+autossh 
+bash 
+bash-completion 
+berkeley-db@4  
+bmake
+boost
+broot 
+bzip2 
+calc 
+certbot
+cfitsio 
+cgal 
+clhep 
+cloog
+cmake 
+coreutils 
+cowsay
+curl
+daemontools 
+dark-mode 
+diamond 
+dpkg
+emacs
+ettercap
+faac
+ffmpeg
 fftw
 fig
-platypus
-unison
-ack
-rancid
-skinny
-python3
-svn
-hub
-tmux
-git
-archey
-imagemagick
-ack
-gdb
-faac
-hydra
-mpfr
-tig
-ffmpeg
-isl
-mtr
-john
-nettle
-tree
+findutils
+fish
 fontconfig
-jpeg
-tor
-nmap
-unrar
+fortune
 freetype
-lame
-node
-watch
-boost
 gcc
-libffi
-ettercap
-openssl
+gcc@6
 gd
-libgcrypt
-wireshark
+gdb
 geoip
-libgpg-error
-pkg-config
-x264
-open-mpi
-cloog
 gettext
-libmpc
-xvid
-libpng
+gh 
+git
+git-flow 
 glib
-libssh
-reaver
 gmp
-libtasn1
-scala
-cowsay
 gnuplot
-libtiff
 gnutls
-siege
-emacs
+gpg 
+graphicsmagick
+gsl 
+gsoap 
+homebank
+htop 
 hub
+hydra
+icoutils
+imagemagick
+isl
+itstool
+john
+jpeg
+lame
+lemon 
+libffi
+libgcrypt
+libgpg-error
+libmpc
+libpng
+libssh
+libtasn1
+libtiff
+libtool 
+libuvc 
+libxml2 
 lua
+lzlib 
+m4 
+mas
+modules 
+mongoose 
+moreutils 
+mpfr
+mtr
+nano 
+nanomsg 
+neofetch 
+nettle
+nmap
+node
+npm
+open-mpi
+openssh
+openssl
+paket
 perl
+pkg-config
+platypus
+ponysay 
+protobuf 
+pyenv
+python
+qt 
+rancid
+reaver
+rename
+root
+rsync 
+ruby-build 
+scala
+siege
+skinny
+smartmontools 
+sphinx-doc 
+ssh-copy-id 
+svn
+swig 
+tcl-tk 
+texinfo 
+texmath 
+thefuck
+tig
+tmux
+tor
+trash
+tree
+unison
+unrar
+vim
+vnu
+watch
+webkit2png
+wget 
+when
+wireshark
+x264
+xrootd
+xterm
+xvid
+yaml-cpp 
+yarn 
+youtube-dl 
+zopfli
+zsh
 )
 
 echo "installing binaries..."
@@ -291,60 +324,41 @@ brew install -vd ${binaries[@]}
 
 brew cleanup
 
-
 # can search a repo in cask via:
 # brew cask search /google-chrome/
-# or look at the repo: https://github.com/caskroom/homebrew-cask/tree/master/Casks
-
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
-# Brew Mac-Cli
-# Keep-alive: update existing `sudo` time stamp until script has finished
-
+# or look at the repo: https://github.com/caskroom/homebrew-cask/tree/master/Cask
 
 # Apps
 apps=(
-alfred
-hyper
-docker
-monolingual
-thunderbird
-silverlight
 aquamacs
-mame
-paraview
-qlcolorcode
-simple-comic
-screenflick
+atom
+bibdesk
+cloudup
+deeper
+docker
 firefox
+flux
 hazel
-ubersicht
-qlmarkdown
-spotify
-vagrant
+hyper
 inkscape
-arq
-retroarch
-flash-player
 iterm2
 jedit
-qlprettypatch
-shiori
-atom
-flux
-snes9x
+mame
+monolingual
 nestopia
-sketch
-tower
-vlc
-cloudup
-nvalt
-the-cheat
-deeper
-cuda-z
+paraview
 quicklook-json
+retroarch
+simple-comic
+sketch
+snes9x
+spotify
+texmaker
+the-cheat
 transmission
-bibdesk
+ubersicht
+vagrant
+vlc
 )
 
 # Install apps to /Applications
@@ -372,53 +386,54 @@ brew install --cask ${fonts[@]}
 # list of applications it supports in the lra/mackup repo.
 echo "Installing Python3 packages..."
 PYTHON_PACKAGES=(
-alibuild
-pandas
-glances
-cheat
-howdoi
-metakernel
-matplotlib
-SymPy
-nose
-Scapy
-pySerial
-pyUSB
-wxPython
-Pmw
-virtualenv
-virtualenvwrapper
-pyvim
-scipy
-snappy
-numpy
-jupyter
-matplotlib
-seaborn
-keras
-tensorflow
-scikit-learn
 aliBuild
-jupyterlab
-mackup
+atlasplots
 certifi
+cheat
+colorama
+glances
+howdoi
+ipykernel
 ipython
 ipywidgets
-ipykernel
-notebook
+jupyter
+jupyterlab
+keras
+lhcbstyle
+mackup
+matplotlib
 metakernel
-pyyaml
-pip-upgrade-outdated
+nose
+notebook
+numpy
 pandas
-requests
-uproot
-pyunfold
-pyjet
+pip-upgrade-outdated
 plotly
+Pmw
+pyjet
+pySerial
+pyunfold
+pyUSB
+pyvim
+pyyaml
+requests
+Scapy
+scikit-learn
+scipy
+seaborn
+snappy
 sunpy
+SymPy
+tensorflow
+tqdm
+uproot
+virtualenv
+virtualenvwrapper
+wxPython
+xlsxwriter
 )
-sudo pip3 install --progress-bar pretty ${PYTHON_PACKAGES[@]}
 
+sudo pip3 install ${PYTHON_PACKAGES[]}
 
 echo ""
 echo "Disable annoying backswipe in Chrome"
@@ -467,26 +482,6 @@ echo "cloning oh-my-zsh..."
 echo ""
 echo "Installing Hyper packages"
 
-hyper install hyperline
-hyper install hypercwd
-hyper install hyper-sync-settings
-hyper install hyperterm-paste
-hyper install hyperterm-tabs
-hyper install hyper-tabs-enhanced
-hyper install hyper-savetext
-hyper install hyperborder
-hyper install hyper-blink
-hyper install hyper-snazzy
-
-
-
-#find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
-#for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-#"Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
-#"Terminal" "Transmission"; do
-#killall "${app}" > /dev/null 2>&1
-#done
-
 echo "gem: --no-document" >> ~/.gemrc
 gem install tmuxinator
 gem install shenzhen
@@ -502,15 +497,7 @@ echo""
 echo"Copying bash_profile to local area"
 bash <(curl -fsSL https://raw.githubusercontent.com/alidock/alidock/master/alidock-installer.sh)
 wget -O ~/.bash_profile  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash_profile.mine
-wget -O ~/.bash-powerline.sh  https://raw.githubusercontent.com/fibnumb/FreshMac/master/bash-powerline.sh
-source ~/.bash_profile
-echo ""
-echo "Building CERN ROOT using modules (This may take awhile)"
-mkdir -p ~/alice
-cd ~/alice
-aliBuild init AliRoot@master,AliPhysics@master -z ali-main-root6
-cd ali-main-root6
-aliBuild --defaults next-root6 -z -d -w ../sw build GEANT4_VMC && aliBuild --defaults next-root6 -z -d -w ../sw build RooUnfold
+
 
 echo ""
 echo "Add the following to your bashrc or bash_profile: "
