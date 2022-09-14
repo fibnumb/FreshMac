@@ -422,6 +422,7 @@ srt
 ssh-copy-id
 starship
 swig
+svn
 taglib
 tbb
 tcl-tk
