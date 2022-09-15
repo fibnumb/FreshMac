@@ -198,6 +198,7 @@ clang-format
 clhep
 cling
 cmake
+cmake-docs
 cmocka
 coreutils
 cowsay
@@ -662,6 +663,8 @@ XlsxWriter
 )
 
 sudo pip3 install ${PYTHON_PACKAGES[]}
+
+hyper install hyper-opacity hyperborder hyperterm-hipster
 
 echo ""
 echo "Disable annoying backswipe in Chrome"
