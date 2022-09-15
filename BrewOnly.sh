@@ -477,10 +477,6 @@ atom
 bibdesk
 docker
 fig
-font-clear-sans
-font-mplus
-font-noto-nerd-font
-font-ubuntu-nerd-font
 hyper
 iterm2
 latexit
@@ -504,10 +500,12 @@ brew install --cask --appdir="/Applications" ${apps[@]}
 brew tap homebrew/cask-fonts
 # fonts
 fonts=(
-font-mplus
 font-clear-sans
-font-roboto
 font-consolas-for-powerline
+font-mplus
+font-noto-nerd-font
+font-roboto
+font-ubuntu-nerd-font
 )
 
 # install fonts
