@@ -159,6 +159,7 @@ brew tap davidchall/hep
 
 #alibuild brews
 brew install alisw/system-deps/o2-full-deps alisw/system-deps/alibuild
+brew install --cask xquartz hyper
 
 cd $HOME
 
