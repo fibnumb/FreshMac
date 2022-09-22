@@ -1,0 +1,112 @@
+# ~/.config/starship.toml
+
+[battery]
+full_symbol = ""
+charging_symbol = ""
+discharging_symbol = ""
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[character]
+error_symbol = "[✖](bold red) "
+
+[cmd_duration]
+min_time = 10_00  # Show command duration over 10,000 milliseconds (=10 sec)
+format = " took [$duration]($style)"
+
+[directory]
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+symbol = " "
+style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count}"
+behind = "🐢 ×${count}"
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+untracked = "ﯙ ×${count} "
+stashed = "📦 "
+modified = "📝 ×${count}"
+staged = "🗃️  ×${count}"
+renamed = "📛 ×${count}"
+deleted = "🗑️  ×${count}"
+style = "bold white"
+format = "$all_status$ahead_behind ($style)"
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style) "
+trim_at = "-"
+style = "bold dimmed white"
+disabled = false
+
+[julia]
+format = "[$symbol$version]($style) "
+symbol = "ஃ "
+style = "bold green"
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+threshold = 70
+style = "bold dimmed white"
+disabled = false
+
+[package]
+disabled = false
+
+[shell]
+fish_indicator = ""
+bash_indicator = "||"
+zsh_indicator = ""
+unknown_indicator = "mystery shell"
+style = "cyan bold"
+disabled = false
+
+[c]
+disabled=false
+detect_extensions =	["c", "h", "cmake"]
+commands = [[ "gcc", "--version" ] ]
+symbol = " "
+
+[python]
+symbol = ""
+pyenv_version_name = false
+style="bold green"
+python_binary = "python3"
+format =	'via [${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[rust]
+format = "[$symbol$version]($style) "
+style = " green"
+
+[time]
+time_format = "%T"
+format = " $time($style) "
+style = "bright-white"
+disabled = false
+
+[username]
+style_user = "bold blue"
+show_always = true
+
+[nodejs]
+format = "via [🤖 $version](bold green) "
+
+[sudo]
+style = "bold green"
+symbol = " "
+disabled = false
+format ="as "

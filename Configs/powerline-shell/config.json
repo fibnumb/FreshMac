@@ -1,0 +1,20 @@
+{
+  "segments": [
+    "virtual_env",
+    "username",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "root"
+  ],
+  "mode": "patched",
+  "cwd": {
+    "max_depth": 1
+  },
+  "theme": "~/.config/powerline-shell/themes/memin.py",
+  "vcs": {
+    "show_symbol": "true"
+  }
+}

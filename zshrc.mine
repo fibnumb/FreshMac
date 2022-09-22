@@ -1,0 +1,448 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+# Created by newuser for 5.9
+eval "$(starship init zsh)"
+#export TERM="xterm-256color"
+export EDITOR='/usr/local/bin/emacs' #change to /usr/bin/emacs on watson
+#export PS1="\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^\[\e[0m\]; else echo \[\e[31m\]O_O\[\e[0m\]; fi\` \[\033[35m\]\t\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+#export LC_CTYPE=C
+#export LC_ALL=en_US.UTF-8
+#export LANG=en_US.UTF-8
+export BASH_SILENCE_DEPRECATION_WARNING=1 #Kill Catalina bash warning
+
+#zsh
+plugins=(
+  git
+  bundler
+  dotenv
+  rake
+  last-working-dir
+  web-search
+  cloudfoundry
+)
+export ZSH="/Users/$(whoami)/.oh-my-zsh"
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# colors
+Cm="\033[35m"
+Cy="\033[33m"
+Cc="\033[36m"
+Cb="\033[34m"
+Cg="\033[32m"
+Cr="\033[31m"
+Cw="\033[37m"
+Cz="\033[m"
+Br="\033[41m"
+By="\033[43m"
+
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias pwd='echo $PWD'
+alias ls='ls -GFh'
+alias ll='lsd -l --icon=always -r -a'
+alias la='exa -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
+alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
+alias lo=logout
+alias h='history'
+alias hi='history \!* 20'
+alias modx='chmod u+x'
+alias jobs='jobs -l'
+alias er='emacs -nw'
+alias f='open -a Finder ./'                  # f:            Opens current directory in MacOS Finder
+alias ~="cd ~"                              # ~:            Go Home
+alias c='clear'                             # c:            Clear terminal display
+alias path='echo -e ${PATH//:/\\n}'          # path:         Echo all executable Paths
+alias update_all='brew update && brew upgrade && aliBuild clean && sudo pip_upgrade_outdated -3 && npm install -g npm; docker system prune -f && brew doctor'
+
+alias stext='open -a "sublime text"'
+alias m2='open -a "marked 2"'
+alias xcode='open -a xcode'
+
+alias doROOT='alienv load RooUnfold/latest && alienv load ROOT/latest && alienv load fastjet/latest && alienv list'
+alias doPhysics='alienv load AliPhysics/latest-ali-main-root6-next-root6'
+alias runzsh='chsh -s $(which zsh)'
+alias StarWars='telnet towel.blinkenlights.nl'
+alias mate_src='mate *.cxx *.C *.h'
+
+alias myip='curl ip.appspot.com'                     # myip:         Public facing IP Address
+alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
+alias flushDNS='dscacheutil -flushcache'             # flushDNS:     Flush out the DNS Cache
+alias lsock='sudo /usr/sbin/lsof -i -P'              # lsock:        Display open sockets
+alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'    # lsockU:       Display only open UDP sockets
+alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   # lsockT:       Display only open TCP sockets
+alias ipInfo0='ipconfig getpacket en0'             # ipInfo0:      Get info on connections for en0
+alias ipInfo1='ipconfig getpacket en1'              # ipInfo1:      Get info on connections for en1
+alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
+alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IPs
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
+alias wm='open -a Amethyst'
+alias networkInfo='networksetup -listallhardwareports'
+alias flushDNS='dscacheutil -flushcache'
+
+#ACES computers
+alias stop_smclient='sudo /Library/StartupItems/SMC/smclient --stop'
+alias start_smclient='sudo /Library/StartupItems/SMC/smclient --start'
+alias stop_sym='sudo launchctl unload /Library/LaunchDaemons/com.symantec.symdaemon.plist'
+alias start_sym='sudo launchctl load /Library/LaunchDaemons/com.symantec.symdaemon.plist'
+
+alias login_screen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+alias lock_screen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+
+# login alias
+alias pdsf='ssh -Y -X ancastro@pdsf.nersc.gov'
+alias newton='ssh -X -Y acastro4@newlogin.newton.utk.edu'
+alias cern='ssh -X -Y ancastro@lxplus.cern.ch'
+alias datax='ssh -X -Y acastro4@dataxfer0.newton.utk.edu'
+alias oldnewton='ssh -X -Y acastro4@login.newton.utk.edu'
+alias nxlogin='ssh -X -Y acastro4@nxlogin4.newton.utk.edu'
+alias unix='ssh -X -Y acastro4@unix.cas.utk.edu'
+alias rdp='ssh -X -Y acastro4@rdp.newton.utk.edu'
+alias acf='ssh -X -Y acastro4@duo.acf.tennessee.edu'
+alias sragUH='ssh -X -Y castroa@rem.hpcc.uh.edu'
+alias sragWatson='ssh -X -Y ajcastro@srag-watson.ndc.nasa.gov'
+alias newCluster='ssh -X -Y ajcastro@198.122.178.74'
+alias elRisco='ssh -X -Y srag_seo@el-risco.ndc.nasa.gov'
+
+#SRAG-related IPs
+alias watson='echo "139.169.32.215"'
+alias newWatson='echo "198.122.178.74"'
+alias rad_ws='echo "139.169.192.54"'
+alias nook_imac='echo "JSSDA17090544.ndc.nasa.gov"'
+alias mbp_kit2='echo "JSSASRAG5005075.ndc.nasa.gov"'
+alias kiosk_mbp='echo "JSSASRAG2595565.ndc.nasa.gov"'
+
+# npm
+alias npm-update="npx npm-check -u";
+alias ni="npm install";
+alias nrs="npm run start -s --";
+alias nrb="npm run build -s --";
+alias nrd="npm run dev -s --";
+alias nrt="npm run test -s --";
+alias nrtw="npm run test:watch -s --";
+alias nrv="npm run validate -s --";
+alias rmn="rm -rf node_modules";
+alias flush-npm="rm -rf node_modules && npm i && echo NPM is done";
+
+## yarn aliases
+alias yar="yarn run"; # lists all the scripts we have available
+alias yab="yarn build"; # build dist directory for each package
+alias yal="yarn lint:fix"; # format source and auto-fix eslint issues
+alias yac="yarn commit"; # open a Q&A prompt to help construct valid commit messages
+alias yas="yarn start";
+alias yasb="yarn storybook:start"; # start storybook
+alias yat="yarn test"; # run the unit tests*
+alias yatw="yarn test:watch"; #run the unit tests for files changed on save
+
+
+## git
+
+function gc { git commit -m "$@"; }
+alias gcm="git checkout master";
+alias gs="git status";
+alias gpull="git pull";
+alias gf="git fetch";
+alias gfa="git fetch --all";
+alias gf="git fetch origin";
+alias gpush="git push";
+alias gd="git diff";
+alias ga="git add .";
+alias gb="git branch";
+alias gbr="git branch remote"
+alias gfr="git remote update"
+alias gbn="git checkout -B "
+alias grf="git reflog";
+alias grh="git reset HEAD~" # last commit
+alias gac="git add . && git commit -a -m "
+alias gsu="git gpush --set-upstream origin "
+alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
+
+
+#   ------------------------------------------------------------
+# list remote branches
+alias git-remote=" git branch -r "
+
+# delete all local branches but master, develop and staging
+alias git-purge=' git branch --merged | grep -v "\*" | grep -v "master" | grep -v "develop" | grep -v "staging" | xargs -n 1 git branch -d '
+
+# Git remote branches and last commit
+alias git-remote-branches=" git for-each-ref --sort=-committerdate refs/remotes/origin --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' "
+
+alias git-change-to-push=" git diff --stat --patch origin master "
+alias git-config=" cat .git/config "
+alias git-end-sprint=" git branch | grep -v 'master' | xargs git branch -D "
+alias git-merge=" git difftool "
+alias git-branch=" git branch -a "
+alias git-log1=" git log --graph --oneline --all --decorate --color "
+alias git-log2=" git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short "
+alias git-log3=" git log --pretty=oneline "
+alias git-log4=" git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "
+alias git-log5=" git whatchanged -3 -p "
+alias git-users=" git log --format='%aN' | sort -u "
+alias git-diff=" git log -p "
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all &'
+alias git-i=" git add -i "
+alias git-me=" git log --author=LeoLanese "
+alias git-remote=" git remote -v "
+alias git-clean=" find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch;
+		git config --global core.excludesfile ~/.gitignore;
+		echo .DS_Store >> ~/.gitignore "
+		
+alias git-all-users='git log --format='%aN' | sort -u '
+alias git-tasks=' grep --exclude-dir=.git -rEI "TODO|FIXME" . 2>/dev/null '
+
+#alias git-last='for k in 'git branch|sed s/^..//';do echo -e 'git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"'\\t"$k";done|sort'
+
+alias git-ignore=' find . \( -type d -empty \) -and \( -not -regex ./\.git.* \) -exec touch {}/.gitignore \; '
+alias git-undelete=' git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file" '
+alias git-idea=' git rm -r --cached .idea '
+alias n=' NODE_ENV=development grunt server '
+alias sprint-start=" git branch -D 'git branch | grep -E 'IVMA-..*'' "
+alias contributors=' git shortlog -sn '
+alias git-name=' git config user.name '
+# Revert All Local Changes
+alias git-reverse=' git checkout . '
+# Show changes
+alias git-show=' git diff --staged '
+# Modify The Most Recent Commit
+alias git-commits=' git commit --amend '
+# Interactively Add Selected Parts of Files
+alias git-parts=' git add -p '
+# Interactively Stash Selected Parts of Files
+alias git-stash=' git stash -p '
+# Stash with untracked
+alias git-tracks=' git stash -u '
+# Interactively Revert Selected Parts of Files
+alias git-revert=' git checkout -p '
+# Switch to Previous Branch
+alias git-switch=' git checkout - '
+# Rename Branches Locally
+alias git-rename=' git branch -m old-name new-name '
+# Open All Files with Conflicts at Once
+alias git-open=' git diff --name-only --diff-filter=U | uniq  | xargs $EDITOR '
+# What changed in the last 2 weeks?
+alias git-whatchanged='  git whatchanged —-since="2 weeks ago" '
+# Optimize the repository locally
+alias git-gc=' git gc --prune=now --aggressive '
+# git manual & help
+alias git-help=' git help workflows '
+
+# show hidden files
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreSe\
+rvices/Finder.app'
+# hide hidden files
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreSer\
+vices/Finder.app'
+
+#alias mountSrag2Common='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/Team/Common /home/kbbeard/MNT/COMMON/ -o rw,user=kbbeard,soft,uid=515,gid=517,sec=ntlmsspi'
+#
+#alias mountSrag2RadData='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/RadData /home/kbbeard/MNT/RADDATA/ -o rw,user=kbbeard,soft,uid=515,gid=517,sec=ntlmsspi'
+alias mountSrag2='sudo mount -t cifs //srag-arc2.ndc.nasa.gov/ . -o rw,user=ajcastro,soft,uid=515,gid=517,sec=ntlmsspi'
+
+#   extract:  Extract most know archives with one command
+#   ---------------------------------------------------------
+	extract () {
+		if [ -f $1 ] ; then
+			case $1 in
+			*.tar.bz2)   tar xjf $1     ;;
+			*.tar.gz)    tar xzf $1     ;;
+			*.bz2)       bunzip2 $1     ;;
+			*.rar)       unrar e $1     ;;
+			*.gz)        gunzip $1      ;;
+			*.tar)       tar xf $1      ;;
+			*.tbz2)      tar xjf $1     ;;
+			*.tgz)       tar xzf $1     ;;
+			*.zip)       unzip $1       ;;
+			*.Z)         uncompress $1  ;;
+			*.7z)        7z x $1        ;;
+			*)     echo "'$1' cannot be extracted via extract()" ;;
+			esac
+		else
+			echo "'$1' is not a valid file"
+		fi
+	}
+	
+#   ii:  display useful host related informaton
+#   -------------------------------------------------------------------
+	ii() {
+		echo -e "\nYou are logged on ${RED}$HOST"
+		echo -e "\nAdditionnal information:$NC " ; uname -a
+		echo -e "\n${RED}Users logged on:$NC " ; w -h
+		echo -e "\n${RED}Current date :$NC " ; date
+		echo -e "\n${RED}Machine stats :$NC " ; uptime
+		echo -e "\n${RED}Current network location :$NC " ; scselect
+		echo -e "\n${RED}Public facing IP Address :$NC " ;myip
+		#echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
+		echo
+	}
+	
+#   ---------------------------
+#   SEARCHING
+#   ---------------------------
+
+	alias qfind="find . -name "                 # qfind:    Quickly search for file
+	ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
+	ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
+	ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
+	
+#   spotlight: Search for a file using MacOS Spotlight's metadata
+#   -----------------------------------------------------------
+	spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
+	
+#   ---------------------------
+#   PROCESS MANAGEMENT
+#   ---------------------------
+
+#   findPid: find out the pid of a specified process
+#   -----------------------------------------------------
+#       Note that the command name can be specified via a regex
+#       E.g. findPid '/d$/' finds pids of all processes with names ending in 'd'
+#       Without the 'sudo' it will only find processes of the current user
+#   -----------------------------------------------------
+	findPid () { lsof -t -c "$@" ; }
+	
+#   memHogsTop, memHogsPs:  Find memory hogs
+#   -----------------------------------------------------
+	alias memHogsTop='top -l 1 -o rsize | head -20'
+	alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
+	
+#   cpuHogs:  Find CPU hogs
+#   -----------------------------------------------------
+	alias cpu_hogs='ps wwaxr -o pid,stat,%cpu,time,command | head -5'
+	
+#   topForever:  Continual 'top' listing (every 10 seconds)
+#   -----------------------------------------------------
+	alias topForever='top -l 9999999 -s 10 -o cpu'
+	
+#   ttop:  Recommended 'top' invocation to minimize resources
+#   ------------------------------------------------------------
+#       Taken from this macosxhints article
+#       http://www.macosxhints.com/article.php?story=20060816123853639
+#   ------------------------------------------------------------
+	alias ttop="top -R -F -s 10 -o rsize"
+	
+#   my_ps: List processes owned by my user:
+#   ------------------------------------------------------------
+	my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
+	
+	#Function to make it snow
+	function snow
+	{
+		ruby -e 'C=`stty size`.scan(/\d+/)[1].to_i;S=["2743".to_i(16)].pack("U*");a={};puts "\033[2J";loop{a[rand(C)]=0;a.each{|x,o|;a[x]+=1;print "\033[#{o};#{x}H \033[#{a[x]};#{x}H#{S} \033[0;0H"};$stdout.flush;sleep 0.1}'
+	}
+	
+	function ipython_slides(){
+		ipython nbconvert $1 --to slides --post serve
+	}
+	
+	function ipython_pdf(){
+		ipython nbconvert $1 --to latex --post PDF
+	}
+	
+
+
+
+
+alias build-aliboth='cd ~/alice/ali-main-root6/AliPhysics/ && git fetch --all && git reset --hard origin/master && git pull --rebase && cd ../AliRoot && git fetch --all && git reset --hard origin/master && git pull --rebase && cd .. && aliBuild  --disable DPMJET --defaults next-root6 -z -d -w ../sw build AliPhysics'
+
+
+#alias recompile-alimaster='cd $HOME/alice/sw/BUILD/AliPhysics-latest-ali-master/AliPhysics/ && make -j50 install && cd /Users/fibnumb/Desktop/JetHForiginal/'
+
+alias recompile-alibackup='make -j50 install -C $HOME/alice/sw/BUILD/AliRoot-latest-ali-backup-root6/AliRoot/ && make -j50 install -C $HOME/alice/sw/BUILD/AliPhysics-latest-ali-backup-root6/AliPhysics/'
+
+
+
+#Kill all jobs
+# qstat | awk '{print $1}' |  grep 123 | sed 's/123/qdel\ 123/g' > /tmp/qdel.sh
+##
+# Your previous /Users/fibnumb/.bash_profile file was backed up as /Users/fibnumb/.bash_profile.macports-saved_2014-09-26_at_14:47:02
+##
+
+# MacPorts Installer addition on 2014-09-26_at_14:47:02: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/usr/local/opt/python@3.10/libexec/bin:/usr/local/bin:/Users/ajcastro/Desktop/drab/CURRENT/EXE.Darwin:/usr/local/bin:/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/libxml2/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/ajcastro/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
+
+
+#export PATH="/usr/local/opt/python@3./bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/python@3.10/lib"
+export PKG_CONFIG_PATH="/usr/local/opt/python@3.10/lib/pkgconfig"
+alias pip3='/usr/local/opt/python@3.10/bin/pip3'
+# Doxygen
+export DOT_PATH="/usr/local/bin/"
+export DYLD_LIBRARY_PATH="$ROOTSYS/lib:$DYLD_LIBRARY_PATH"
+
+#weather -u us -l Houston
+git config --global color.ui true
+git config --global format.pretty oneline
+git config --global core.autocrl input
+git config --global core.fileMode true
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+#git config --global user.name "Andrew Castro"
+#git config --global user.email acastro4@utk.edu
+#git config --global user.github fibnumb
+git config --global credential.helper store
+git config --global credential.helper osxkeychain
+#git config --global --list
+
+
+# MacPorts Installer addition on 2014-09-26_at_14:47:02: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/usr/local/opt/python@3.10/libexec/bin:/usr/local/bin:/Users/ajcastro/Desktop/drab/CURRENT/EXE.Darwin:/usr/local/bin:/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/opt/libxml2/bin:/usr/local/opt/gettext/bin:/usr/local/Cellar/darksky-weather/0.15.7/bin:/Users/ajcastro/Dropbox/SD_tools/sdtools_minimal_export/bin/Darwin:$PATH"
+
+
+#export PATH="/usr/local/opt/python@3./bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/python@3.10/lib"
+export PKG_CONFIG_PATH="/usr/local/opt/python@3.10/lib/pkgconfig"
+alias pip3='/usr/local/opt/python@3.10/bin/pip3'
+# Doxygen
+export DOT_PATH="/usr/local/bin/"
+export DYLD_LIBRARY_PATH="$ROOTSYS/lib:$DYLD_LIBRARY_PATH"
+
+#weather -u us -l Houston
+git config --global color.ui true
+git config --global format.pretty oneline
+git config --global core.autocrl input
+git config --global core.fileMode true
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+#git config --global user.name "Andrew Castro"
+#git config --global user.email acastro4@utk.edu
+#git config --global user.github fibnumb
+git config --global credential.helper store
+git config --global credential.helper osxkeychain
+#git config --global --list
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+#export PYTHONPATH=/usr/local/lib/python3.9/site-packages
+#export PYTHONPATH=$ROOTSYS/bindings/pyroot:$PYTHONPATH
+#export PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH
+#export PYTHONPATH="/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib:/usr/local/Cellar/python@3.8/3.8.1/Frameworks/Python.framework/Versions/3.8/lib:$PYTHONPATH"
+
+
+function alidock() {( source "/Users/ajcastro/.virtualenvs/alidock/bin/activate" && command alidock "$@"; exit $?; )}
+
+
+
+
+eval "$(starship init zsh)"
+neofetch
+mac temp
+ansiweather -l Houston -u imperial -s true -f 5 -d true -a false
+# alibuild alias
+export ALICE_WORK_DIR=$HOME/alice/sw
+eval "`alienv shell-helper`"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
