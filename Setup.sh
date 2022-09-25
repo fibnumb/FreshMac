@@ -217,6 +217,7 @@ eigen
 emacs
 ettercap
 exa
+fastjet
 fd
 ffmpeg
 fftw
@@ -382,7 +383,6 @@ openssl@1.1
 openssl@3
 opus
 p11-kit
-pango
 pcre
 pcre2
 perl
@@ -463,10 +463,10 @@ zstd
 )
 
 echo "installing binaries..."
-brew install -vd ${binaries[@]}
+brew install ${binaries[@]}
 
 brew cleanup
-
+brew tap homebrew/cask-versions
 # can search a repo in cask via:
 # brew cask search /google-chrome/
 # or look at the repo: https://github.com/caskroom/homebrew-cask/tree/master/Cask
@@ -477,19 +477,23 @@ alacritty
 atom
 bibdesk
 docker
+dropbox
 fig
 hyper
 iterm2
 latexit
 monolingual
 mysql-connector-python
+private-internet-access
 simple-comic
+skype
 sublime-text
 texmaker
-texpad
 texshop
 texstudio
+visual-studio
 visual-studio-code
+vlc
 )
 
 # Install apps to /Applications
@@ -501,12 +505,60 @@ brew install --cask --appdir="/Applications" ${apps[@]}
 brew tap homebrew/cask-fonts
 # fonts
 fonts=(
-font-clear-sans
 font-consolas-for-powerline
 font-mplus
-font-noto-nerd-font
 font-roboto
+font-3270-nerd-font
+font-go-mono-nerd-font
+font-monoid-nerd-font
+font-agave-nerd-font
+font-gohufont-nerd-font
+font-mononoki-nerd-font
+font-anonymice-nerd-font
+font-hack-nerd-font
+font-mplus-nerd-font
+font-arimo-nerd-font
+font-hackgen-nerd
+font-noto-nerd-font
+font-aurulent-sans-mono-nerd-font
+font-hasklug-nerd-font
+font-open-dyslexic-nerd-font
+font-bigblue-terminal-nerd-font
+font-heavy-data-nerd-font
+font-overpass-nerd-font
+font-bitstream-vera-sans-mono-nerd-font
+font-hurmit-nerd-font
+font-profont-nerd-font
+font-blex-mono-nerd-font
+font-im-writing-nerd-font
+font-proggy-clean-tt-nerd-font
+font-caskaydia-cove-nerd-font
+font-inconsolata-go-nerd-font
+font-roboto-mono-nerd-font
+font-code-new-roman-nerd-font
+font-inconsolata-lgc-nerd-font
+font-sauce-code-pro-nerd-font
+font-cousine-nerd-font
+font-inconsolata-nerd-font
+font-shure-tech-mono-nerd-font
+font-daddy-time-mono-nerd-font
+font-iosevka-nerd-font
+font-space-mono-nerd-font
+font-dejavu-sans-mono-nerd-font
+font-jetbrains-mono-nerd-font
+font-terminess-ttf-nerd-font
+font-droid-sans-mono-nerd-font
+font-lekton-nerd-font
+font-tinos-nerd-font
+font-fantasque-sans-mono-nerd-font
+font-liberation-nerd-font
+font-ubuntu-mono-nerd-font
+font-fira-code-nerd-font
+font-meslo-lg-nerd-font
 font-ubuntu-nerd-font
+font-fira-mono-nerd-font
+font-monofur-nerd-font
+font-victor-mono-nerd-font
 )
 
 # install fonts
@@ -661,7 +713,7 @@ xgboost
 XlsxWriter          
 )
 
-sudo pip3 install ${PYTHON_PACKAGES[]}
+sudo -H pip3 install ${PYTHON_PACKAGES[@]}
 
 hyper install hyper-opacity hyperborder hyperterm-hipster
 
@@ -707,7 +759,7 @@ echo "Killing some open applications in order to take effect."
 echo ""
 
 echo "cloning oh-my-zsh..."
-# curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 echo ""
 echo "Installing Hyper packages"
