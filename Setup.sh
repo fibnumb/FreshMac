@@ -154,7 +154,7 @@ fi
 brew update
 
 # Install more recent versions of some OS X tools
-brew tap homebrew/cask
+
 brew tap davidchall/hep
 
 #alibuild brews
@@ -216,7 +216,6 @@ dpkg
 eigen
 emacs
 ettercap
-exa
 fastjet
 fd
 ffmpeg
@@ -231,7 +230,6 @@ freetype
 frei0r
 fribidi
 gcc
-gcc@6
 gd
 gdbm
 gdk-pixbuf
